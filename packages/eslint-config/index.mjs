@@ -381,6 +381,7 @@ export default [
                 { checkSetImmediate: true, checkSetTimeout: true },
             ],
             "unicorn/prefer-scoped-selector": "off",
+            "unicorn/prefer-simple-condition-first": "off", // too much noise
             "unicorn/prefer-single-call": "off",
             "unicorn/prefer-spread": "off", // for now
             "unicorn/prefer-string-raw": "off", // for now
