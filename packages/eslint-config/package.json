@@ -1,0 +1,35 @@
+{
+  "name": "@forsakringskassan/eslint-config",
+  "version": "10.1.0",
+  "description": "Försäkringskassans eslint shareable config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "license": "MIT",
+  "author": "FK IT",
+  "bin": {
+    "eslint": "eslint.js"
+  },
+  "files": [
+    "patch",
+    "eslint.js",
+    "index.js"
+  ],
+  "dependencies": {
+    "@rushstack/eslint-patch": "1.7.2",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-import-resolver-node": "0.3.9",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-sonarjs": "0.23.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6 || ^7 || ^8",
+    "prettier": "^2 || ^3"
+  }
+}
