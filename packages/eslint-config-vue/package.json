@@ -1,0 +1,26 @@
+{
+  "name": "@forsakringskassan/eslint-config-vue",
+  "version": "10.1.0",
+  "description": "Försäkringskassans eslint shareable vue config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config-vue"
+  },
+  "license": "MIT",
+  "author": "FK IT",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@vue/eslint-config-typescript": "12.0.0",
+    "eslint-plugin-vue": "9.21.1",
+    "semver": "^7.0.0"
+  },
+  "devDependencies": {
+    "vue": "3.3.7"
+  },
+  "peerDependencies": {
+    "vue": "^2 || ^3"
+  }
+}

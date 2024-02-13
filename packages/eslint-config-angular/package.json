@@ -1,0 +1,19 @@
+{
+  "name": "@forsakringskassan/eslint-config-angular",
+  "version": "10.1.0",
+  "description": "Försäkringskassans eslint shareable angular config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config-angular"
+  },
+  "license": "MIT",
+  "author": "FK IT",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-config-angular": "0.5.0",
+    "eslint-plugin-angular": "4.1.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@forsakringskassan/eslint-config-cli",
+  "version": "10.1.0",
+  "description": "Försäkringskassans eslint shareable cli config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config-cli"
+  },
+  "license": "MIT",
+  "author": "FK IT",
+  "files": [
+    "index.js"
+  ]
+}
