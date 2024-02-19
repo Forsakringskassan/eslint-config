@@ -2,14 +2,22 @@
   "name": "@forsakringskassan/eslint-config-cli",
   "version": "10.1.0",
   "description": "Försäkringskassans eslint shareable cli config",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Forsakringskassan/eslint-config.git",
     "directory": "packages/eslint-config-cli"
   },
   "license": "MIT",
-  "author": "FK IT",
+  "author": "Försäkringskassan",
   "files": [
     "index.js"
-  ]
+  ],
+  "engines": {
+    "node": ">= 16.10"
+  }
 }

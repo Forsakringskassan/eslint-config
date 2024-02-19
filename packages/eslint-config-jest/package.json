@@ -2,17 +2,25 @@
   "name": "@forsakringskassan/eslint-config-jest",
   "version": "10.1.0",
   "description": "Försäkringskassans eslint shareable jest config",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Forsakringskassan/eslint-config.git",
     "directory": "packages/eslint-config-jest"
   },
   "license": "MIT",
-  "author": "FK IT",
+  "author": "Försäkringskassan",
   "files": [
     "index.js"
   ],
   "dependencies": {
     "eslint-plugin-jest": "27.6.3"
+  },
+  "engines": {
+    "node": ">= 16.10"
   }
 }
