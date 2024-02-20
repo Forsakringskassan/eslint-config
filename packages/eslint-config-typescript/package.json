@@ -2,13 +2,18 @@
   "name": "@forsakringskassan/eslint-config-typescript",
   "version": "10.1.0",
   "description": "Försäkringskassans eslint shareable typescript config",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Forsakringskassan/eslint-config.git",
     "directory": "packages/eslint-config-typescript"
   },
   "license": "MIT",
-  "author": "FK IT",
+  "author": "Försäkringskassan",
   "files": [
     "index.js"
   ],
@@ -19,5 +24,8 @@
   },
   "peerDependencies": {
     "typescript": "^3 || ^4 || ^5"
+  },
+  "engines": {
+    "node": ">= 16.10"
   }
 }

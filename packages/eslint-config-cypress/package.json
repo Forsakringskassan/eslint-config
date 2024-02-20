@@ -2,18 +2,26 @@
   "name": "@forsakringskassan/eslint-config-cypress",
   "version": "10.1.0",
   "description": "Försäkringskassans eslint shareable cypress config",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Forsakringskassan/eslint-config.git",
     "directory": "packages/eslint-config-cypress"
   },
   "license": "MIT",
-  "author": "FK IT",
+  "author": "Försäkringskassan",
   "files": [
     "index.js"
   ],
   "dependencies": {
     "eslint-plugin-cypress": "2.15.1",
     "eslint-plugin-mocha": "10.2.0"
+  },
+  "engines": {
+    "node": ">= 16.10"
   }
 }

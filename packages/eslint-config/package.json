@@ -2,13 +2,18 @@
   "name": "@forsakringskassan/eslint-config",
   "version": "10.1.0",
   "description": "Försäkringskassans eslint shareable config",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Forsakringskassan/eslint-config.git",
     "directory": "packages/eslint-config"
   },
   "license": "MIT",
-  "author": "FK IT",
+  "author": "Försäkringskassan",
   "bin": {
     "eslint": "eslint.js"
   },
@@ -29,7 +34,9 @@
     "eslint-plugin-sonarjs": "0.23.0"
   },
   "peerDependencies": {
-    "eslint": "^6 || ^7 || ^8",
     "prettier": "^2 || ^3"
+  },
+  "engines": {
+    "node": ">= 16.10"
   }
 }
