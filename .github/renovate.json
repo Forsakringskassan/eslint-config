@@ -1,0 +1,16 @@
+{
+    "extends": ["local>forsakringskassan/renovate-config"],
+    "packageRules": [
+        {
+            "matchPackagePatterns": [
+                "^@rushstack/eslint-patch$",
+                "^@typescript-eslint/",
+                "^@vue/",
+                "^eslint$",
+                "^eslint-"
+            ],
+            "matchDepTypes": ["dependencies"],
+            "rangeStrategy": "pin"
+        }
+    ]
+}
