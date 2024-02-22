@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "eslint-plugin-cypress": "2.15.1",
-    "eslint-plugin-mocha": "10.2.0"
+    "eslint-plugin-mocha": "10.3.0"
   },
   "engines": {
     "node": ">= 16.10"
