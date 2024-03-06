@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 10.3.0 (2024-03-06)
+
+
+### Features
+
+* **deps:** update dependency @typescript-eslint/parser to v7 15d2164
+
 ## 10.2.0 (2024-02-27)
 
 
