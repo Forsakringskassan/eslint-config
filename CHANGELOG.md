@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 10.3.2 (2024-03-22)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-vue to v9.23.0 89b85c1
+
 ## 10.3.1 (2024-03-15)
 
 
