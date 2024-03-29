@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 10.3.3 (2024-03-29)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.8.0 b2fc97a
+* **deps:** update dependency eslint-plugin-vue to v9.24.0 41e9925
+
 ## 10.3.2 (2024-03-22)
 
 
