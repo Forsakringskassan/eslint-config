@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 10.3.4 (2024-04-05)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.10.0 88ffa4d
+* **deps:** update dependency @rushstack/eslint-patch to v1.10.1 ba8d35b
+* **deps:** update dependency @rushstack/eslint-patch to v1.9.0 963df88
+* **deps:** update dependency eslint-plugin-sonarjs to v0.25.0 f20fc2a
+
 ## 10.3.3 (2024-03-29)
 
 
