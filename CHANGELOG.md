@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 11.0.0 (2024-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update dependency prettier to v3
+
+### Features
+
+* **deps:** update dependency prettier to v3 e9d15a0
+
 ## 10.3.5 (2024-04-06)
 
 
