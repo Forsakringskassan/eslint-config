@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 10.3.5 (2024-04-06)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-sonarjs to v0.25.1 86e57c4
+
 ## 10.3.4 (2024-04-05)
 
 
