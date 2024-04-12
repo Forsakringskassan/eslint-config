@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.0.1 (2024-04-12)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-vue to v9.24.1 3b4d382
+
 ## 11.0.0 (2024-04-06)
 
 
