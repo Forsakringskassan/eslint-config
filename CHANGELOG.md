@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 11.0.2 (2024-04-19)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.10.2 da02494
+* **deps:** update dependency eslint-plugin-cypress to v2.15.2 d9dd307
+* **deps:** update dependency eslint-plugin-mocha to v10.4.2 2468a2e
+* **deps:** update dependency eslint-plugin-vue to v9.25.0 315e73f
+
 ## 11.0.1 (2024-04-12)
 
 
