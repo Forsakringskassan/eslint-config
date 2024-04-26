@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.0.3 (2024-04-26)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-mocha to v10.4.3 4b23d79
+
 ## 11.0.2 (2024-04-19)
 
 
