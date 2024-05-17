@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 11.0.4 (2024-05-17)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-vue to v9.26.0 b70df1c
+* **deps:** update dependency semver to v7.6.1 33b6e02
+* **deps:** update dependency semver to v7.6.2 a4d2580
+
 ## 11.0.3 (2024-04-26)
 
 
