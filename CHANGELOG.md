@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.0.5 (2024-05-24)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.10.3 ad305e8
+
 ## 11.0.4 (2024-05-17)
 
 
