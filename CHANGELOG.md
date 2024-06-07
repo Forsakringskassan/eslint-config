@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.0.6 (2024-06-07)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-tsdoc to v0.3.0 41e7572
+
 ## 11.0.5 (2024-05-24)
 
 
