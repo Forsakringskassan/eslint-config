@@ -30,3 +30,25 @@ jobs:
                       cd $pkg
                       npm pack && npm exec npm-pkg-lint
                   ); done
+
+    vue:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                vue-version: [2.x, 3.x]
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js 20.x
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20.x
+            - name: Install dependencies
+              run: |
+                  npm ci
+                  npm install -w @forsakringskassan/eslint-config-vue vue@${{ matrix.vue-version }}
+            - name: Disable vue/no-multiple-template-root (vue 2 only)
+              if: matrix.vue-version == '2.x'
+              run: |
+                  echo '{ "rules": { "vue/no-multiple-template-root": "off" } }' > packages/eslint-config-vue/.eslintrc.json
+            - name: ESLint
+              run: npm run eslint
