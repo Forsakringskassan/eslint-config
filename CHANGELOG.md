@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 11.1.0 (2024-06-22)
+
+
+### Features
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v7 85756dc
+* **deps:** update dependency @typescript-eslint/parser to v7 dba1a31
+* **deps:** update dependency @vue/eslint-config-typescript to v13 422fb35
+* **deps:** update dependency eslint-plugin-cypress to v3 d762564
+* **deps:** update dependency eslint-plugin-jest to v28 037ba02
+* **deps:** update dependency eslint-plugin-sonarjs to v1 61d57de
+
 ## 11.0.6 (2024-06-07)
 
 
