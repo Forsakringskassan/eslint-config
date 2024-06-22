@@ -4,7 +4,7 @@ module.exports = {
         "plugin:prettier/recommended",
         "plugin:import/errors",
         "plugin:eslint-comments/recommended",
-        "plugin:sonarjs/recommended",
+        "plugin:sonarjs/recommended-legacy",
     ],
 
     env: {
