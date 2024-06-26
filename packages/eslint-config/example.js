@@ -93,3 +93,8 @@ export function errorHandling() {
         }
     }
 }
+
+/* 5 params should be ok */
+export function withManyParams(a, b, c, d, e) {
+    return [a, b, c, d, e];
+}

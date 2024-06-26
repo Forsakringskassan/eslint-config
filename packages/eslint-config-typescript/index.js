@@ -31,6 +31,10 @@ module.exports = {
         /* require all members to specify "public", "private", etc */
         "@typescript-eslint/explicit-member-accessibility": "error",
 
+        /* replace base max-params rule with @typescript-eslint/max-params */
+        "max-params": "off",
+        "@typescript-eslint/max-params": ["error", { max: 5 }],
+
         /* allow "const foo: number = 0" */
         "@typescript-eslint/no-inferrable-types": "off",
 

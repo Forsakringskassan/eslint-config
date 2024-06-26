@@ -84,3 +84,15 @@ export function overloaded(b: string): void;
 export function overloaded(_value: number | string): void {
     /* do nothing */
 }
+
+/* 5 params should be ok (excluding this) */
+export function withManyParams(
+    this: void,
+    a: number,
+    b: number,
+    c: number,
+    d: number,
+    e: number,
+): number[] {
+    return [a, b, c, d, e];
+}
