@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.1.1 (2024-06-26)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v7.14.1 3767ac4
+
 ## 11.1.0 (2024-06-22)
 
 
