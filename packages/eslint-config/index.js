@@ -31,6 +31,7 @@ module.exports = {
         curly: "error",
         eqeqeq: "error",
         "max-depth": ["error", 3],
+        "max-params": ["error", { max: 5 }],
         "no-eval": "error",
         "no-implied-eval": "error",
         "no-loop-func": "error",
