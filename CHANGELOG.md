@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.2.0 (2024-06-29)
+
+
+### Features
+
+* **@forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config:** enable `max-params` rule with max of 5 paramers ffa2d25
+
 ## 11.1.2 (2024-06-28)
 
 
