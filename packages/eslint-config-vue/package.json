@@ -23,7 +23,7 @@
     "semver": "^7.0.0"
   },
   "devDependencies": {
-    "vue": "3.4.30"
+    "vue": "3.4.31"
   },
   "peerDependencies": {
     "vue": "^2 || ^3"
