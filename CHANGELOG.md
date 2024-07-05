@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.2.1 (2024-07-05)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v7.15.0 9fa9428
+* **deps:** update dependency @typescript-eslint/parser to v7.15.0 b3e0eff
+
 ## 11.2.0 (2024-06-29)
 
 
