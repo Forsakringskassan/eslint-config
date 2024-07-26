@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 11.2.4 (2024-07-26)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v7.17.0 d211156
+* **deps:** update dependency @typescript-eslint/parser to v7.16.1 c67a024
+* **deps:** update dependency eslint-plugin-prettier to v5.2.1 996162d
+* **deps:** update dependency semver to v7.6.3 65cb875
+
 ## 11.2.3 (2024-07-19)
 
 
