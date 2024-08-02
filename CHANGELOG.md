@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 11.2.5 (2024-08-02)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.10.4 aa4313a
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v7.18.0 9066944
+* **deps:** update dependency @typescript-eslint/parser to v7.17.0 bc1c56a
+* **deps:** update dependency eslint-plugin-cypress to v3.4.0 079f9da
+* **deps:** update dependency eslint-plugin-sonarjs to v1.0.4 bd35b21
+
 ## 11.2.4 (2024-07-26)
 
 
