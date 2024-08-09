@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 11.2.6 (2024-08-09)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/parser to v7.18.0 a2d18aa
+* **deps:** update dependency eslint-plugin-jest to v28.7.0 a68acb4
+* **deps:** update dependency eslint-plugin-mocha to v10.5.0 254ec4e
+
 ## 11.2.5 (2024-08-02)
 
 
