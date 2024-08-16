@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.2.7 (2024-08-16)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-cypress to v3.5.0 3ee27f2
+* **deps:** update dependency eslint-plugin-jest to v28.8.0 9eb933a
+
 ## 11.2.6 (2024-08-09)
 
 
