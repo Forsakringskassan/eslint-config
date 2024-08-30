@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.2.8 (2024-08-30)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-import-resolver-typescript to v3.6.3 af8596c
+
 ## 11.2.7 (2024-08-16)
 
 
