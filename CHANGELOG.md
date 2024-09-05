@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 11.3.0 (2024-09-05)
+
+
+### Features
+
+* **deps:** update dependency @typescript-eslint/parser to v8 b9b5960
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-jest to v28.8.1 73f1f67
+* **deps:** update dependency eslint-plugin-jest to v28.8.2 e210c91
+
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** always require extension for css files 64e8a0c
+
 ## 11.2.8 (2024-08-30)
 
 
