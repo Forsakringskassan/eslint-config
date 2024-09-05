@@ -88,7 +88,14 @@ module.exports = {
         "prettier/prettier": "warn",
 
         "import/default": "off",
-        "import/extensions": ["error", "never", { json: "always" }],
+        "import/extensions": [
+            "error",
+            "never",
+            {
+                css: "always",
+                json: "always",
+            },
+        ],
         "import/newline-after-import": "error",
         "import/no-absolute-path": "error",
         "import/no-deprecated": "error",
