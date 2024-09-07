@@ -20,7 +20,6 @@ module.exports = {
             ? "plugin:vue/vue3-recommended"
             : "plugin:vue/recommended",
         "plugin:prettier/recommended",
-        "@vue/typescript",
     ],
 
     env: {
