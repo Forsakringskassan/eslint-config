@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 11.4.0 (2024-09-07)
+
+
+### Features
+
+* **deps:** drop redundant @vue/eslint-config-typescript adffee5
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8 543b6b6
+* **deps:** update dependency @typescript-eslint/parser to v8 ecfb845
+
+
+### Dependency upgrades
+
+* **deps:** update dependency eslint-plugin-import to v2.30.0 0d10336
+* **deps:** update dependency eslint-plugin-vue to v9.28.0 5ce28f4
+
 ## 11.3.0 (2024-09-05)
 
 
