@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.4.1 (2024-09-07)
+
+
+### Dependency upgrades
+
+* **deps:** try to force vue and jest to use correct @typescript-eslint/* packages 0c745b8
+
 ## 11.4.0 (2024-09-07)
 
 
