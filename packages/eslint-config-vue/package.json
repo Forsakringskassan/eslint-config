@@ -25,7 +25,17 @@
     "vue": "3.5.1"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "8.4.0",
+    "@typescript-eslint/parser": "8.4.0",
     "vue": "^2 || ^3"
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    }
   },
   "engines": {
     "node": ">= 18.18"
