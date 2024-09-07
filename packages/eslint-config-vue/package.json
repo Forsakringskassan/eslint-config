@@ -18,7 +18,6 @@
     "index.js"
   ],
   "dependencies": {
-    "@vue/eslint-config-typescript": "13.0.0",
     "eslint-plugin-vue": "9.28.0",
     "semver": "^7.0.0"
   },
