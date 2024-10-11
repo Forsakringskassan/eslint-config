@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.4.3 (2024-10-11)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.8.1 ee108a3
+* **deps:** update dependency eslint-plugin-import to v2.31.0 8c71508
+
 ## 11.4.2 (2024-10-04)
 
 
