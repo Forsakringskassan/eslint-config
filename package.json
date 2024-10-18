@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-monorepo",
-  "version": "11.4.3",
+  "version": "11.4.4",
   "private": true,
   "description": "Försäkringskassans eslint shareable config",
   "homepage": "https://github.com/Forsakringskassan/eslint-config",
