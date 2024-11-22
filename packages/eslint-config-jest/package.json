@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "8.15.0",
-    "@typescript-eslint/parser": "8.14.0",
+    "@typescript-eslint/parser": "8.15.0",
     "eslint-plugin-jest": "28.9.0"
   },
   "peerDependenciesMeta": {
