@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 11.4.9 (2024-11-22)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.15.0 5f0caa5
+* **deps:** update dependency @typescript-eslint/parser to v8.14.0 8210f23
+* **deps:** update dependency eslint-plugin-vue to v9.31.0 e8552a9
+
 ## 11.4.8 (2024-11-15)
 
 
