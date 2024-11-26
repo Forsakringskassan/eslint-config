@@ -20,7 +20,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "8.15.0",
     "@typescript-eslint/parser": "8.15.0",
-    "eslint-plugin-tsdoc": "0.3.0"
+    "eslint-plugin-tsdoc": "0.4.0"
   },
   "peerDependencies": {
     "typescript": "^3 || ^4 || ^5"
