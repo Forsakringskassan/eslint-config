@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 11.4.10 (2024-11-29)
+
+
+### Dependency upgrades
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.16.0 2465a7b
+* **deps:** update dependency @typescript-eslint/parser to v8.15.0 c624745
+* **deps:** update dependency eslint-plugin-tsdoc to v0.4.0 93ba6cd
+
 ## 11.4.9 (2024-11-22)
 
 
