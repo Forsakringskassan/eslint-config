@@ -1,0 +1,39 @@
+{
+  "name": "@forsakringskassan/eslint-config-svelte",
+  "version": "11.4.11",
+  "description": "Försäkringskassans eslint shareable svelte config",
+  "scripts": {
+    "test": "tsc --noEmit"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config-svelte"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-plugin-svelte": "^2.46.1",
+    "svelte-eslint-parser": "0.43.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "8.18.2",
+    "svelte": "^5.0.0"
+  },
+  "engines": {
+    "node": ">= 20.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte": "^5.14.4",
+    "typescript": "^5.7.2"
+  }
+}
