@@ -66,6 +66,10 @@ module.exports = {
             files: "*.cy.[jt]s",
             extends: ["@forsakringskassan/cypress"],
         },
+        {
+            files: ["*.svelte", "*.svelte.js", "*.svelte.ts"],
+            extends: ["@forsakringskassan/svelte"],
+        },
     ],
 };
 ```
