@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 11.4.12 (2024-12-20)
+
+### Bug Fixes
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.18.0 b27eec1
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.18.1 427243b
+* **deps:** update dependency @typescript-eslint/parser to v8.18.0 cc33df8
+* **deps:** update dependency @typescript-eslint/parser to v8.18.1 b41fcc7
+* **deps:** update dependency eslint-import-resolver-typescript to v3.7.0 7981af8
+
 ## 11.4.11 (2024-12-06)
 
 
