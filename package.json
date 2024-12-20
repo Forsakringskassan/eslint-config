@@ -19,6 +19,7 @@
     "eslint:fix": "eslint --fix .",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
+    "pretest": "lerna run test",
     "test": "npm run eslint && npm run prettier:check"
   },
   "prettier": "@forsakringskassan/prettier-config",
