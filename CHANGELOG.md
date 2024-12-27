@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.4.13 (2024-12-27)
+
+### Bug Fixes
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.18.2 731822d
+* **deps:** update dependency eslint-plugin-jest to v28.10.0 e21640f
+
 ## 11.4.12 (2024-12-20)
 
 ### Bug Fixes
