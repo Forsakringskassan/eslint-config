@@ -30,5 +30,13 @@ module.exports = {
             files: "./packages/eslint-config-cypress/*.spec.[jt]s",
             extends: ["@forsakringskassan/cypress"],
         },
+        {
+            files: [
+                "./packages/eslint-config-svelte/**/*.svelte",
+                "./packages/eslint-config-svelte/**/*.svelte.js",
+                "./packages/eslint-config-svelte/**/*.svelte.ts",
+            ],
+            extends: ["@forsakringskassan/svelte"],
+        },
     ],
 };
