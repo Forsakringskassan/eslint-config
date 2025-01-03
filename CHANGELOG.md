@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 11.5.0 (2025-01-03)
+
+### Features
+
+* **@forsakringskassan/eslint-config-svelte:** eslint-konfiguration för Svelte 0476036
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** explicit peerDependencies a9cd3a1
+* **deps:** pin dependency eslint-plugin-svelte to 2.46.1 59f2a76
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.19.0 e2bcd98
+* **deps:** update dependency @typescript-eslint/parser to v8.18.2 d998d14
+
 ## 11.4.13 (2024-12-27)
 
 ### Bug Fixes
