@@ -1,5 +1,5 @@
 <script>
-    const name = 'world';
+    const name = "world";
     function greet(name) {
         alert(`Hello, ${name}!`);
     }

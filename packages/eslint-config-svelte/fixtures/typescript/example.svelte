@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { createCounter } from './counter.svelte';
+    import { createCounter } from "./counter.svelte";
 
-    const name: string = 'world';
+    const name: string = "world";
     function greet(name: string) {
         alert(`Hello, ${name}!`);
     }
