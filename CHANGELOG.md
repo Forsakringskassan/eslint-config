@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.5.1 (2025-01-10)
+
+### Bug Fixes
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.19.1 ff13e4c
+* **deps:** update dependency @typescript-eslint/parser to v8.19.0 741fd1c
+
 ## 11.5.0 (2025-01-03)
 
 ### Features
