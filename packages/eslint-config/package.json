@@ -23,7 +23,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@rushstack/eslint-patch": "1.10.4",
+    "@rushstack/eslint-patch": "1.10.5",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-node": "0.3.9",
