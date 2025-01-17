@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 11.6.0 (2025-01-17)
+
+### Features
+
+* **@forsakringskassan/eslint-config-svelte:** activate prettier rules for svelte 0dc48c9
+
+### Bug Fixes
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.10.5 e1363d5
+* **deps:** update dependency @typescript-eslint/parser to v8.19.1 4fe482f
+
 ## 11.5.1 (2025-01-10)
 
 ### Bug Fixes
