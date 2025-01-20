@@ -25,7 +25,7 @@
     "svelte-eslint-parser": "0.43.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/parser": "8.19.1",
+    "@typescript-eslint/parser": "8.20.0",
     "svelte": "^5.0.0"
   },
   "engines": {
