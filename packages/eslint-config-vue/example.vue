@@ -1,13 +1,3 @@
-<template>
-    <div v-if="myComputed">
-        <!-- @slot Slot description -->
-        <slot name="my-slot"></slot>
-    </div>
-    <div>
-        <span>{{ myComplexProp }}</span>
-    </div>
-</template>
-
 <script lang="ts">
 import type { PropType } from "vue";
 import { defineComponent } from "vue";
@@ -31,10 +21,10 @@ export default defineComponent({
          * Prop description
          */
         myComplexProp: {
-            type: Object,
+            type: Object as PropType<MyInterface>,
             required: false,
             default: () => ({}),
-        } as PropType<MyInterface>,
+        },
     },
     emits: ["change"],
     data() {
@@ -61,3 +51,13 @@ export default defineComponent({
     },
 });
 </script>
+
+<template>
+    <div v-if="myComputed">
+        <!-- @slot Slot description -->
+        <slot name="my-slot"></slot>
+    </div>
+    <div>
+        <span>{{ myComplexProp }}</span>
+    </div>
+</template>
