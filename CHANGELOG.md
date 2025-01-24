@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 11.6.1 (2025-01-24)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue:** typescript config as dependency for vue config b334234
+* **deps:** update dependency @typescript-eslint/eslint-plugin to v8.20.0 f351b50
+* **deps:** update dependency @typescript-eslint/parser to v8.20.0 f994f4d
+* **deps:** update dependency eslint-plugin-jest to v28.11.0 faba429
+* **deps:** update dependency eslint-plugin-prettier to v5.2.2 8e35f39
+* **deps:** update dependency eslint-plugin-prettier to v5.2.3 963deb4
+
 ## 11.6.0 (2025-01-17)
 
 ### Features
