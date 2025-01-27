@@ -36,5 +36,13 @@ module.exports = {
 
         /* documentation for vue components does not adhere with tsdoc syntax */
         "tsdoc/syntax": "off",
+
+        /* this rule warns about the order of the top-level tags */
+        "vue/block-order": [
+            "error",
+            {
+                order: ["script", "template", "style"],
+            },
+        ],
     },
 };
