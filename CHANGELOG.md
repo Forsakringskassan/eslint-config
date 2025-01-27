@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 11.7.0 (2025-01-27)
+
+### Features
+
+* **@forsakringskassan/eslint-config-vue:** add top-level warning (refs SB-4982) 3d2c558
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8.21.0 d2d9a38
+
 ## 11.6.1 (2025-01-24)
 
 ### Bug Fixes
