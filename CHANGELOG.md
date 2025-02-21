@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.7.3 (2025-02-21)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.0 854713d
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.1 de67f32
+
 ## 11.7.2 (2025-02-14)
 
 ### Bug Fixes
