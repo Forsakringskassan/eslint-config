@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 11.8.0 (2025-02-28)
+
+### Features
+
+* **deps:** update dependency eslint-config-prettier to v10 46a30e6
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.2 365eaff
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.3 8406fd3
+* **deps:** update typescript-eslint monorepo to v8.24.1 f3ec55d
+* **deps:** update typescript-eslint monorepo to v8.25.0 4a81c77
+
 ## 11.7.3 (2025-02-21)
 
 ### Bug Fixes
