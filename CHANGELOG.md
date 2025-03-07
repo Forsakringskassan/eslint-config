@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.8.1 (2025-03-07)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v10.0.2 28533f3
+* **deps:** update dependency eslint-plugin-vue to v9.33.0 036ec9d
+* **deps:** update typescript-eslint monorepo to v8.26.0 674c03f
+
 ## 11.8.0 (2025-02-28)
 
 ### Features
