@@ -17,8 +17,8 @@ module.exports = {
     extends: [
         "@forsakringskassan/typescript",
         detectVueMajor() === 3
-            ? "plugin:vue/vue3-recommended"
-            : "plugin:vue/recommended",
+            ? "plugin:vue/recommended"
+            : "plugin:vue/vue2-recommended",
         "plugin:prettier/recommended",
     ],
 

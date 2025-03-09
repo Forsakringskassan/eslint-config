@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "@forsakringskassan/eslint-config-typescript": "^11.8.1",
-    "eslint-plugin-vue": "9.33.0",
+    "eslint-plugin-vue": "10.0.0",
     "semver": "^7.0.0"
   },
   "devDependencies": {
