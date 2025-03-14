@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-svelte",
-  "version": "11.8.1",
+  "version": "11.8.2",
   "description": "Försäkringskassans eslint shareable svelte config",
   "scripts": {
     "test": "tsc --noEmit"

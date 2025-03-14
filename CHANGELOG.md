@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.8.2 (2025-03-14)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v10.1.1 73104fb
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.4 41d5a4b
+
 ## 11.8.1 (2025-03-07)
 
 ### Bug Fixes
