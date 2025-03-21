@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 11.8.3 (2025-03-21)
+
+### Bug Fixes
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.11.0 caf2715
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.5 5d1b44f
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.6 7f33344
+* **deps:** update dependency eslint-import-resolver-typescript to v3.8.7 69d7a15
+* **deps:** update dependency eslint-import-resolver-typescript to v3.9.0 bee94ed
+* **deps:** update dependency eslint-import-resolver-typescript to v3.9.1 c5843d3
+* **deps:** update typescript-eslint monorepo to v8.26.1 ad27007
+
 ## 11.8.2 (2025-03-14)
 
 ### Bug Fixes
