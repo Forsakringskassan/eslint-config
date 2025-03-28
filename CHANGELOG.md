@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.8.4 (2025-03-28)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-prettier to v5.2.4 23198db
+* **deps:** update typescript-eslint monorepo to v8.27.0 16c0772
+* **deps:** update typescript-eslint monorepo to v8.28.0 6ebad3c
+
 ## 11.8.3 (2025-03-21)
 
 ### Bug Fixes
