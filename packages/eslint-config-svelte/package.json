@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@tsconfig/svelte": "5.0.4",
-    "svelte": "5.25.6",
+    "svelte": "5.25.7",
     "typescript": "5.8.3"
   }
 }
