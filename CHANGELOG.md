@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.9.1 (2025-04-11)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to v4.3.2 6da4533
+* **deps:** update dependency eslint-plugin-prettier to v5.2.6 561e082
+* **deps:** update typescript-eslint monorepo to v8.29.1 cfd211e
+
 ## 11.9.0 (2025-04-04)
 
 ### Features
