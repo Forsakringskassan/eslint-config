@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 11.9.2 (2025-04-18)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v10.1.2 3fd697f
+
 ## 11.9.1 (2025-04-11)
 
 ### Bug Fixes
