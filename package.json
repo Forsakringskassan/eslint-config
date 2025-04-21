@@ -21,11 +21,13 @@
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "pretest": "lerna run test",
-    "test": "npm run eslint && npm run prettier:check"
+    "test": "npm run eslint && npm run prettier:check",
+    "posttest": "ava"
   },
-  "prettier": "@forsakringskassan/prettier-config-svelte",
-  "release": {
-    "extends": "@forsakringskassan/semantic-release-monorepo-config"
+  "ava": {
+    "files": [
+      "config.test.mjs"
+    ]
   },
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
@@ -37,10 +39,15 @@
       "eslint --fix"
     ]
   },
+  "prettier": "@forsakringskassan/prettier-config-svelte",
+  "release": {
+    "extends": "@forsakringskassan/semantic-release-monorepo-config"
+  },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "1.4.2",
     "@forsakringskassan/prettier-config-svelte": "3.0.5",
     "@types/jest": "29.5.14",
+    "ava": "6.2.0",
     "eslint": "8.57.1",
     "husky": "9.1.7",
     "jest": "29.7.0",

@@ -14,15 +14,19 @@
   },
   "license": "MIT",
   "author": "Försäkringskassan",
+  "main": "index.cjs",
   "bin": {
     "eslint": "eslint.js"
   },
   "files": [
     "patch",
     "eslint.js",
-    "index.js"
+    "flat.mjs",
+    "index.cjs"
   ],
   "dependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.25.0",
     "@rushstack/eslint-patch": "1.11.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.2",
