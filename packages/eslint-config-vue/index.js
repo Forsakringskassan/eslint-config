@@ -44,5 +44,8 @@ module.exports = {
                 order: ["script", "template", "style"],
             },
         ],
+
+        /* underlying custom elements have started to expose native slots */
+        "vue/no-deprecated-slot-attribute": "off",
     },
 };
