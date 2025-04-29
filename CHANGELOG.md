@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.9.4 (2025-04-29)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue:** disable `vue/no-deprecated-slot-attribute` (refs SFKUI-6500) 66cc5b3
+* **deps:** update typescript-eslint monorepo to v8.31.0 3057711
+
 ## 11.9.3 (2025-04-25)
 
 ### Bug Fixes
