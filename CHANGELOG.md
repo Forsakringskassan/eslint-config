@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 11.9.6 (2025-05-09)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-prettier to v5.3.1 2de5e68
+* **deps:** update dependency eslint-plugin-prettier to v5.4.0 1568f34
+
 ## 11.9.5 (2025-05-02)
 
 ### Bug Fixes

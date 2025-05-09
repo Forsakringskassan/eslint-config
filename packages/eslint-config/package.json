@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config",
-  "version": "11.9.3",
+  "version": "11.9.6",
   "description": "Försäkringskassans eslint shareable config",
   "keywords": [
     "eslint"
