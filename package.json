@@ -30,22 +30,14 @@
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
-  "lint-staged": {
-    "*.{json,md,css,scss,html}": "prettier --write",
-    "*.{js,cjs,mjs,vue,ts, svelte}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "1.4.2",
+    "@forsakringskassan/commitlint-config": "2.0.1",
     "@forsakringskassan/prettier-config-svelte": "3.0.5",
     "@types/jest": "29.5.14",
     "eslint": "8.57.1",
     "husky": "9.1.7",
     "jest": "29.7.0",
     "lerna": "8.2.2",
-    "lint-staged": "15.5.2",
     "npm-pkg-lint": "1.14.1"
   },
   "engines": {
