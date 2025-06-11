@@ -7,7 +7,7 @@
   "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Forsakringskassan/eslint-config.git"
+    "url": "git+https://github.com/Forsakringskassan/eslint-config.git"
   },
   "license": "MIT",
   "author": "Försäkringskassans",
@@ -38,7 +38,7 @@
     "husky": "9.1.7",
     "jest": "29.7.0",
     "lerna": "8.2.2",
-    "npm-pkg-lint": "1.14.1"
+    "npm-pkg-lint": "4.0.0"
   },
   "engines": {
     "node": ">= 18.18"
