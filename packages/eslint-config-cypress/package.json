@@ -9,7 +9,7 @@
   "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Forsakringskassan/eslint-config.git",
+    "url": "git+https://github.com/Forsakringskassan/eslint-config.git",
     "directory": "packages/eslint-config-cypress"
   },
   "license": "MIT",
