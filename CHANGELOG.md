@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.9.11 (2025-06-13)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to v4.4.3 3434ddf
+* **deps:** update dependency eslint-plugin-jest to v28.13.0 24a7fad
+* **deps:** update typescript-eslint monorepo to v8.33.1 6415606
+
 ## 11.9.10 (2025-06-06)
 
 ### Bug Fixes
