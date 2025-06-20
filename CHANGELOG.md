@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 11.9.12 (2025-06-20)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to v28.13.3 c86652a
+* **deps:** update dependency eslint-plugin-jest to v28.13.5 4f0d44e
+* **deps:** update dependency eslint-plugin-jest to v28.14.0 20a2155
+* **deps:** update typescript-eslint monorepo to v8.34.0 b2273b6
+* **deps:** update typescript-eslint monorepo to v8.34.1 f77b6a8
+
 ## 11.9.11 (2025-06-13)
 
 ### Bug Fixes
