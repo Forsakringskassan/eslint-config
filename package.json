@@ -31,7 +31,7 @@
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "2.0.2",
+    "@forsakringskassan/commitlint-config": "2.0.3",
     "@forsakringskassan/prettier-config-svelte": "3.0.5",
     "@types/jest": "29.5.14",
     "eslint": "8.57.1",
