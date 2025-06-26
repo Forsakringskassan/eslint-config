@@ -18,8 +18,8 @@
     "index.js"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "8.34.1",
-    "@typescript-eslint/parser": "8.34.1",
+    "@typescript-eslint/eslint-plugin": "8.35.0",
+    "@typescript-eslint/parser": "8.35.0",
     "eslint-plugin-tsdoc": "0.4.0"
   },
   "peerDependencies": {
