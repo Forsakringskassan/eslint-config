@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 11.9.13 (2025-06-27)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import to v2.32.0 c4ac35f
+* **deps:** update dependency eslint-plugin-prettier to v5.5.0 e152118
+* **deps:** update typescript-eslint monorepo to v8.35.0 f33fe13
+
 ## 11.9.12 (2025-06-20)
 
 ### Bug Fixes
