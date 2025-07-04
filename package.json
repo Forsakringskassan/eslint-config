@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "2.0.3",
-    "@forsakringskassan/prettier-config-svelte": "3.1.4",
+    "@forsakringskassan/prettier-config-svelte": "3.1.5",
     "@types/jest": "29.5.14",
     "eslint": "8.57.1",
     "husky": "9.1.7",
