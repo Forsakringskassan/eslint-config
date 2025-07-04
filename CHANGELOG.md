@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 11.9.14 (2025-07-04)
+
+### Bug Fixes
+
+* **deps:** update dependency @rushstack/eslint-patch to v1.12.0 85e6db3
+* **deps:** update dependency eslint-import-resolver-typescript to v4.4.4 0c208bb
+* **deps:** update dependency eslint-plugin-prettier to v5.5.1 ebd55f8
+* **deps:** update typescript-eslint monorepo to v8.35.1 6d0046d
+
 ## 11.9.13 (2025-06-27)
 
 ### Bug Fixes
