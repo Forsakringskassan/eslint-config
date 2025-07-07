@@ -22,6 +22,7 @@ jobs:
             - name: ESLint
               if: success() || failure()
               run: npm run eslint -- --max-warnings 0 || false
+
     npm-pkg-lint:
         runs-on: ubuntu-latest
         steps:
@@ -35,4 +36,3 @@ jobs:
               with:
                   folders: packages/*
                   allow-dependencies: eslint,vue
-                  ignore-node-version: 18
