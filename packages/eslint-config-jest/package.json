@@ -20,7 +20,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "8.35.1",
     "@typescript-eslint/parser": "8.35.1",
-    "eslint-plugin-jest": "28.14.0"
+    "eslint-plugin-jest": "29.0.1"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
