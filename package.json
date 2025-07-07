@@ -23,12 +23,12 @@
     "pretest": "lerna run test",
     "test": "npm run eslint && npm run prettier:check"
   },
+  "commitlint": {
+    "extends": "@forsakringskassan/commitlint-config/no-jira"
+  },
   "prettier": "@forsakringskassan/prettier-config-svelte",
   "release": {
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
-  },
-  "commitlint": {
-    "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "2.0.3",
