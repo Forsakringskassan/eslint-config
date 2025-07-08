@@ -111,7 +111,9 @@ export default [
             "**/coverage/**",
             "**/dist/**",
             "**/node_modules/**",
+            "**/public/**",
             "**/temp/**",
+            "**/typedoc/**",
         ],
     },
 
