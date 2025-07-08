@@ -91,6 +91,64 @@ If you are using Cypress 9 or earlier and using the file extension `*.spec.[jt]s
 
 All inställningar kan men bör inte skrivas över i din `.eslintrc.cjs` fil.
 
+### Flat config
+
+Experimentellt stöd för Flat config:
+
+```ts
+import defaultConfig from "./packages/eslint-config/flat.mjs";
+import cliConfig from "./packages/eslint-config-cli/flat.mjs";
+import cypressConfig from "./packages/eslint-config-cypress/flat.mjs";
+import jestConfig from "./packages/eslint-config-jest/flat.mjs";
+import svelteConfig from "./packages/eslint-config-svelte/flat.mjs";
+import typescriptConfig from "./packages/eslint-config-typescript/flat.mjs";
+import vueConfig from "./packages/eslint-config-vue/flat.mjs";
+
+export default [
+    {
+        name: "Ignored files",
+        ignores: [
+            "**/coverage/**",
+            "**/dist/**",
+            "**/node_modules/**",
+            "**/temp/**",
+        ],
+    },
+
+    ...defaultConfig,
+
+    cliConfig(),
+    typescriptConfig(),
+    vueConfig(),
+    jestConfig(),
+    cypressConfig(),
+    svelteConfig(),
+];
+```
+
+Konfigurationsfabriker tar ett optional object för att anpassa filer som ska matchas:
+
+```ts
+export default [
+    cliConfig({
+        files: ["..."],
+    }),
+];
+```
+
+Behöver man skriva över regler använder man ett nytt block under fabriker:
+
+```ts
+export default [
+    {
+        name: "local",
+        rules: {
+            /* ... */
+        },
+    },
+];
+```
+
 ### CLI
 
 For pure CLI packages the best is to extend both base and cli presets right away:
