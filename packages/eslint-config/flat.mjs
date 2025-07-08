@@ -16,25 +16,33 @@ const compat = new FlatCompat({
 const migrated = compat.config(legacyConfig);
 
 for (const ruleset of migrated) {
-    if (
-        ruleset.languageOptions &&
-        typeof ruleset.languageOptions.ecmaVersion === "string"
-    ) {
-        ruleset.languageOptions.ecmaVersion = parseInt(
-            ruleset.languageOptions.ecmaVersion,
-            10,
-        );
+    if (!ruleset.languageOptions) {
+        continue;
+    }
+    delete ruleset.languageOptions.ecmaVersion;
+    delete ruleset.languageOptions.sourceType;
+    if (Object.keys(ruleset.languageOptions).length === 0) {
+        delete ruleset.languageOptions;
     }
 }
 
 export default [
     ...migrated,
     {
+        name: "@forsakringskassan/eslint-config/ecma-version",
+        languageOptions: {
+            ecmaVersion: 2024,
+            sourceType: "module",
+        },
+    },
+    {
         /* ensure cjs and mjs files are linted too */
+        name: "@forsakringskassan/eslint-config/extensions",
         files: ["*.cjs", "*.mjs"],
     },
     {
         /* mjs requires file extension */
+        name: "@forsakringskassan/eslint-config/esm",
         files: ["*.mjs"],
         rules: {
             "import/extensions": ["error", "always"],
