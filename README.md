@@ -96,13 +96,13 @@ All inställningar kan men bör inte skrivas över i din `.eslintrc.cjs` fil.
 Experimentellt stöd för Flat config:
 
 ```ts
-import defaultConfig from "./packages/eslint-config/flat.mjs";
-import cliConfig from "./packages/eslint-config-cli/flat.mjs";
-import cypressConfig from "./packages/eslint-config-cypress/flat.mjs";
-import jestConfig from "./packages/eslint-config-jest/flat.mjs";
-import svelteConfig from "./packages/eslint-config-svelte/flat.mjs";
-import typescriptConfig from "./packages/eslint-config-typescript/flat.mjs";
-import vueConfig from "./packages/eslint-config-vue/flat.mjs";
+import defaultConfig from "@forsakringskassan/eslint-config/flat.mjs";
+import cliConfig from "@forsakringskassan/eslint-config-cli/flat.mjs";
+import cypressConfig from "@forsakringskassan/eslint-config-cypress/flat.mjs";
+import jestConfig from "@forsakringskassan/eslint-config-jest/flat.mjs";
+import svelteConfig from "@forsakringskassan/eslint-config-svelte/flat.mjs";
+import typescriptConfig from "@forsakringskassan/eslint-config-typescript/flat.mjs";
+import vueConfig from "@forsakringskassan/eslint-config-vue/flat.mjs";
 
 export default [
     {
