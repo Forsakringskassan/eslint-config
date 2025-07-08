@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 12.0.0 (2025-07-08)
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** NodeJS v20 or later required.
+
+### Features
+
+* **@forsakringskassan/eslint-config-angular, @forsakringskassan/eslint-config-cli, @forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-svelte, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** experimental flat config support 99a9b65
+* **deps:** require nodejs v20 or later 6034de8
+* **deps:** update dependency eslint-plugin-jest to v29 949fac4
+* **deps:** update dependency eslint-plugin-vue to v10 608b76a
+
 ## 11.9.14 (2025-07-04)
 
 ### Bug Fixes
