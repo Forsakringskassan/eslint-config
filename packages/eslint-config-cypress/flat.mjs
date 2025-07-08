@@ -3,16 +3,6 @@ import path from "node:path";
 import { FlatCompat } from "@eslint/eslintrc";
 import legacyConfig from "./index.cjs";
 
-function merge(result, it) {
-    return {
-        ...result,
-        ...it,
-        languageOptions: { ...result.languageOptions, ...it.languageOptions },
-        plugins: { ...result.plugins, ...it.plugins },
-        rules: { ...result.rules, ...it.rules },
-    };
-}
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -21,9 +11,25 @@ const compat = new FlatCompat({
     resolvePluginsRelativeTo: __dirname,
 });
 
-const migrated = compat.config(legacyConfig).reduce(merge, {});
+const migrated = compat.config(legacyConfig);
+const flat = migrated.reduce((result, it) => {
+    return {
+        languageOptions: {
+            ...result.languageOptions,
+            ...it.languageOptions,
+        },
+        plugins: {
+            ...result.plugins,
+            ...it.plugins,
+        },
+        rules: {
+            ...result.rules,
+            ...it.rules,
+        },
+    };
+}, {});
 
-migrated.name = "@forsakringskassan/eslint-config-cypress";
-migrated.files = ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"];
+flat.name = "@forsakringskassan/eslint-config-cypress";
+flat.files = ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"];
 
-export default (override) => merge(migrated, override ?? {});
+export default flat;
