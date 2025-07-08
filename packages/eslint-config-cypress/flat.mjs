@@ -24,6 +24,6 @@ const compat = new FlatCompat({
 const migrated = compat.config(legacyConfig).reduce(merge, {});
 
 migrated.name = "@forsakringskassan/eslint-config-cypress";
-migrated.files = ["**/*.cy.[jt]s"];
+migrated.files = ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"];
 
 export default (override) => merge(migrated, override ?? {});

@@ -24,6 +24,6 @@ const compat = new FlatCompat({
 const migrated = compat.config(legacyConfig).reduce(merge, {});
 
 migrated.name = "@forsakringskassan/eslint-config-typescript";
-migrated.files = ["**/*.ts"];
+migrated.files = ["**/*.{ts,cts,mts}"];
 
 export default (override) => merge(migrated, override ?? {});
