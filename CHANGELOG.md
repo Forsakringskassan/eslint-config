@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 12.0.2 (2025-07-08)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cli, @forsakringskassan/eslint-config:** more extension fixes for flat config a1528b7
+* **@forsakringskassan/eslint-config:** force es2024 for flat config 80c53da
+* **deps:** remove unused deepmerge dependency 4917aa3
+
 ## 12.0.1 (2025-07-08)
 
 ### Bug Fixes
