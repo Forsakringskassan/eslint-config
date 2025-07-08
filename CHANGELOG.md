@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 12.0.1 (2025-07-08)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-typescript:** fix extensions for cypress and typescript flat config f0f1219
+
 ## 12.0.0 (2025-07-08)
 
 ### ⚠ BREAKING CHANGES
