@@ -18,6 +18,8 @@ jobs:
               run: npm ci
             - name: Build
               run: npm run --if-present build
+            - name: Test
+              run: npm exec ava
 
     vue:
         runs-on: ubuntu-latest
