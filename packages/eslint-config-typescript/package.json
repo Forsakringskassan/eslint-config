@@ -14,12 +14,16 @@
   },
   "license": "MIT",
   "author": "Försäkringskassan",
+  "main": "index.cjs",
   "files": [
-    "index.js"
+    "flat.mjs",
+    "index.cjs"
   ],
   "dependencies": {
+    "@eslint/eslintrc": "3.3.1",
     "@typescript-eslint/eslint-plugin": "8.35.1",
     "@typescript-eslint/parser": "8.35.1",
+    "deepmerge": "4.3.1",
     "eslint-plugin-tsdoc": "0.4.0"
   },
   "peerDependencies": {

@@ -14,13 +14,17 @@
   },
   "license": "MIT",
   "author": "Försäkringskassan",
+  "main": "index.cjs",
   "files": [
-    "index.js"
+    "flat.mjs",
+    "index.cjs"
   ],
   "scripts": {
     "test": "tsc --noEmit"
   },
   "dependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "deepmerge": "4.3.1",
     "eslint-plugin-svelte": "2.46.1",
     "svelte-eslint-parser": "0.43.0"
   },
