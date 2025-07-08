@@ -38,12 +38,12 @@ export default [
     {
         /* ensure cjs and mjs files are linted too */
         name: "@forsakringskassan/eslint-config/extensions",
-        files: ["*.cjs", "*.mjs"],
+        files: ["**/*.cjs", "**/*.mjs"],
     },
     {
         /* mjs requires file extension */
         name: "@forsakringskassan/eslint-config/esm",
-        files: ["*.mjs"],
+        files: ["**/*.mjs"],
         rules: {
             "import/extensions": ["error", "always"],
         },

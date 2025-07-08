@@ -24,6 +24,6 @@ const compat = new FlatCompat({
 const migrated = compat.config(legacyConfig).reduce(merge, {});
 
 migrated.name = "@forsakringskassan/eslint-config-cli";
-migrated.files = ["./*.{js,ts,cjs,mjs}", "**/scripts/*.{js,ts,cjs,mjs}"];
+migrated.files = ["**/*.{js,ts,cjs,mjs}", "**/scripts/*.{js,ts,cjs,mjs}"];
 
 export default (override) => merge(migrated, override ?? {});
