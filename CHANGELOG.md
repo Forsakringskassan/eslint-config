@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 12.0.3 (2025-07-09)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cli:** fix ecmaVersion for flat config 097bddd
+
 ## 12.0.2 (2025-07-08)
 
 ### Bug Fixes
