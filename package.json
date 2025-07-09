@@ -27,6 +27,13 @@
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
+  "lint-staged": {
+    "*.{json,md,css,scss,html}": "prettier --write",
+    "*.{js,cjs,mjs,vue,ts, svelte}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "prettier": "@forsakringskassan/prettier-config-svelte",
   "release": {
     "extends": "@forsakringskassan/semantic-release-monorepo-config"

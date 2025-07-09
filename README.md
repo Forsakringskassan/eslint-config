@@ -32,6 +32,67 @@ Kataloger och filer som ska ignoreras läggs in i `.eslintignore` eller med `exc
 
 `@forsakringskassan/eslint-config` inkluderar `eslint` så din applikation behöver inte själv hålla ett eget beroende mot `eslint`, om du har ett sen tidigare kan du med fördel ta bort det.
 
+### Flat configuration (recommended)
+
+I din `eslint.config.mjs`:
+
+```js
+import defaultConfig from "@forsakringskassan/eslint-config/flat.mjs";
+import typescriptConfig from "@forsakringskassan/eslint-config-typescript/flat.mjs";
+import vueConfig from "@forsakringskassan/eslint-config-vue/flat.mjs";
+import cliConfig from "@forsakringskassan/eslint-config-cli/flat.mjs";
+import jestConfig from "@forsakringskassan/eslint-config-jest/flat.mjs";
+import cypressConfig from "@forsakringskassan/eslint-config-cypress/flat.mjs";
+import svelteConfig from "@forsakringskassan/eslint-config-svelte/flat.mjs";
+
+export default [
+    {
+        name: "Ignored files",
+        ignores: ["**/node_modules/**"],
+    },
+
+    ...defaultConfig,
+
+    {
+        name: "@forsakringskassan/eslint-config-typescript",
+        files: ["**/*.{ts,cts,mts}"],
+        ...typescriptConfig,
+    },
+
+    {
+        name: "@forsakringskassan/eslint-config-vue",
+        files: ["**/*.vue"],
+        ...vueConfig,
+    },
+
+    {
+        name: "@forsakringskassan/eslint-config-cli",
+        files: ["*.[jt]s"],
+        ...cliConfig,
+    },
+
+    {
+        name: "@forsakringskassan/eslint-config-jest",
+        files: ["**/*.spec.[jt]s"],
+        ...jestConfig,
+    },
+
+    {
+        name: "@forsakringskassan/eslint-config-cypress",
+        files: ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"],
+        ...cypressConfig,
+    },
+
+    {
+        name: "@forsakringskassan/eslint-config-svelte",
+        files: ["**/*.svelte", "**/*.svelte.js", "**/*.svelte.ts"],
+        ...svelteConfig,
+    },
+];
+```
+
+### Legacy configuration
+
 I din `.eslintrc.cjs` fil:
 
 ```js
