@@ -1,4 +1,7 @@
 import test from "ava";
+import globals from "globals";
+
+const nodeGlobals = new Set(Object.keys(globals.node));
 
 /**
  * @param {unknown} value
@@ -26,7 +29,16 @@ function serialize(value) {
                 return [key, `[Parser ${it.meta?.name ?? key}]`];
             }
             if (key === "globals") {
-                return [key, "[...]"];
+                const set = new Set(Object.keys(value.globals));
+                const subsets = [];
+                if (nodeGlobals.isSubsetOf(set)) {
+                    subsets.push("node");
+                }
+                if (subsets.length > 0) {
+                    return [key, `{ ${subsets.join(", ")} }`];
+                } else {
+                    return [key, "[...]"];
+                }
             }
             return [key, serialize(it)];
         });

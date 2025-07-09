@@ -1,30 +1,38 @@
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { FlatCompat } from "@eslint/eslintrc";
-import legacyConfig from "./index.cjs";
+import globals from "globals";
 
-function merge(result, it) {
-    return {
-        ...result,
-        ...it,
-        languageOptions: { ...result.languageOptions, ...it.languageOptions },
-        plugins: { ...result.plugins, ...it.plugins },
-        rules: { ...result.rules, ...it.rules },
-    };
+/**
+ * @param {import("eslint").Linter.Config} config
+ * @returns {import("eslint").Linter.Config}
+ */
+function defineConfig(config) {
+    return config;
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+function merge(result, it) {
+    const merged = { ...result };
+    if (it.files) {
+        merged.files = it.files;
+    }
+    if (it.ignores) {
+        merged.ignores = it.ignores;
+    }
+    return merged;
+}
 
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    resolvePluginsRelativeTo: __dirname,
+const config = defineConfig({
+    name: "@forsakringskassan/eslint-config-cli",
+    files: ["*.{js,ts,cjs,mjs}", "**/scripts/*.{js,ts,cjs,mjs}"],
+    languageOptions: {
+        globals: {
+            ...globals.node,
+        },
+    },
+    rules: {
+        "no-console": "off",
+    },
 });
 
-const migrated = compat.config(legacyConfig).reduce(merge, {});
-
-delete migrated.languageOptions;
-migrated.name = "@forsakringskassan/eslint-config-cli";
-migrated.files = ["*.{js,ts,cjs,mjs}", "**/scripts/*.{js,ts,cjs,mjs}"];
-
-export default (override) => merge(migrated, override ?? {});
+/**
+ * @param {{ files?: string[], ignores?: string[]}} [override]
+ */
+export default (override) => merge(config, override ?? {});
