@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 12.0.5 (2025-07-25)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v10.1.8 47b9fa4
+* **deps:** update dependency eslint-plugin-prettier to v5.5.3 9d80586
+* **deps:** update typescript-eslint monorepo to v8.37.0 90aaf3d
+
 ## 12.0.4 (2025-07-18)
 
 ### Bug Fixes
