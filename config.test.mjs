@@ -28,6 +28,10 @@ function serialize(value) {
             if (key === "parser") {
                 return [key, `[Parser ${it.meta?.name ?? key}]`];
             }
+            if (key === "version") {
+                return [key, it.replace(/^(\d+)\.(\d+)\.(\d+)$/, "$1.x.x")];
+            }
+
             if (key === "globals") {
                 const set = new Set(Object.keys(value.globals));
                 const subsets = [];
