@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 12.0.7 (2025-08-07)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to v10.4.0 6e40371
+* **deps:** update typescript-eslint monorepo to v8.39.0 fbeacde
+
 ## 12.0.6 (2025-08-01)
 
 ### Bug Fixes
