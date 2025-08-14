@@ -33,7 +33,7 @@
     "typescript": "5.9.2"
   },
   "peerDependencies": {
-    "@typescript-eslint/parser": "8.39.0",
+    "@typescript-eslint/parser": "8.39.1",
     "svelte": "^5.0.0"
   },
   "engines": {
