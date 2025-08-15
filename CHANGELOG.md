@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 12.0.8 (2025-08-15)
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.32.0 443f59b
+* **deps:** update dependency @eslint/js to v9.33.0 fcc4822
+* **deps:** update dependency eslint-plugin-prettier to v5.5.4 a508860
+* **deps:** update typescript-eslint monorepo to v8.39.1 3804793
+
 ## 12.0.7 (2025-08-07)
 
 ### Bug Fixes
