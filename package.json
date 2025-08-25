@@ -17,7 +17,6 @@
   "scripts": {
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
-    "prepare": "husky",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "pretest": "lerna run test",
@@ -37,13 +36,12 @@
     ]
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "2.0.5",
+    "@forsakringskassan/commitlint-config": "3.0.3",
     "@forsakringskassan/prettier-config-svelte": "3.1.7",
     "@types/jest": "29.5.14",
     "ava": "6.4.1",
     "eslint": "8.57.1",
     "globals": "16.3.0",
-    "husky": "9.1.7",
     "jest": "29.7.0",
     "lerna": "8.2.3",
     "npm-pkg-lint": "4.0.3"
