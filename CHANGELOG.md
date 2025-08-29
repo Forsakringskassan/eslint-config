@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 12.0.10 (2025-08-29)
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint/js to v9.34.0 4d0b56d
+
 ## 12.0.9 (2025-08-22)
 
 ### Bug Fixes
