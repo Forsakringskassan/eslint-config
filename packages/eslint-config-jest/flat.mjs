@@ -1,11 +1,16 @@
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { FlatCompat } from "@eslint/eslintrc";
-import legacyConfig from "./index.cjs";
+import jestPlugin from "eslint-plugin-jest";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
  */
+
+/**
+ * @param {Config} config
+ * @returns {Config}
+ */
+function defineConfig(config) {
+    return config;
+}
 
 /**
  * @param {Config} result
@@ -22,22 +27,49 @@ function merge(result, it) {
     };
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const recommended = jestPlugin.configs["flat/recommended"];
+const style = jestPlugin.configs["flat/style"];
 
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    resolvePluginsRelativeTo: __dirname,
+const config = defineConfig({
+    name: "@forsakringskassan/eslint-config-jest",
+    files: ["**/*.spec.[jt]s"],
+    ignores: ["cypress/**", "tests/e2e/**"],
+
+    languageOptions: {
+        globals: {
+            ...recommended.languageOptions.globals,
+        },
+    },
+
+    plugins: {
+        jest: jestPlugin,
+    },
+
+    rules: {
+        ...recommended.rules,
+        ...style.rules,
+
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "jest/consistent-test-it": ["error", { fn: "it" }],
+        "jest/no-alias-methods": "error",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-duplicate-hooks": "error",
+        "jest/no-focused-tests": "warn",
+        "jest/no-large-snapshots": [
+            "error",
+            { maxSize: 25, inlineMaxSize: 10 },
+        ],
+        "jest/no-test-prefixes": "warn",
+        "jest/prefer-hooks-on-top": "error",
+        "jest/prefer-todo": "error",
+
+        /* jest uses @jest-* tags for per-file configuration */
+        "tsdoc/syntax": "off",
+    },
 });
-
-const migrated = compat.config(legacyConfig).reduce(merge, {});
-
-migrated.name = "@forsakringskassan/eslint-config-jest";
-migrated.files = ["**/*.spec.[jt]s"];
-migrated.ignores = ["cypress/**", "tests/e2e/**"];
 
 /**
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(migrated, override ?? {});
+export default (override) => merge(config, override ?? {});

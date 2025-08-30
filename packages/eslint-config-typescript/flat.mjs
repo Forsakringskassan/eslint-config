@@ -1,11 +1,21 @@
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { FlatCompat } from "@eslint/eslintrc";
-import legacyConfig from "./index.cjs";
+import {
+    configs as tseConfig,
+    parser as tseParser,
+    plugin as tsePlugin,
+} from "typescript-eslint";
+import tsdocPlugin from "eslint-plugin-tsdoc";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
  */
+
+/**
+ * @param {Config} config
+ * @returns {Config}
+ */
+function defineConfig(config) {
+    return config;
+}
 
 /**
  * @param {Config} result
@@ -22,21 +32,96 @@ function merge(result, it) {
     };
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const strict = tseConfig.strict.reduce(merge, {});
+const stylistic = tseConfig.stylistic.reduce(merge, {});
 
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    resolvePluginsRelativeTo: __dirname,
+const config = defineConfig({
+    name: "@forsakringskassan/eslint-config-typescript",
+    files: ["**/*.{ts,cts,mts}"],
+
+    languageOptions: {
+        parser: tseParser,
+        sourceType: "module",
+    },
+
+    plugins: {
+        "@typescript-eslint": tsePlugin,
+        tsdoc: tsdocPlugin,
+    },
+
+    rules: {
+        ...strict.rules,
+        ...stylistic.rules,
+
+        /* Disabled as it is better to let typescript deal with this. For
+         * instance, ESLint cannot detect when exhaustive checks are made and
+         * the rest of the function is dead thus yielding false positives */
+        "consistent-return": "off",
+
+        /* prefer T[] for simple types, Array<T> for complex types (unions, etc) */
+        "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
+
+        /* require all regular functions and methods to explicitly declare
+         * return value type */
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                allowExpressions: true,
+                allowHigherOrderFunctions: true,
+                allowTypedFunctionExpressions: true,
+            },
+        ],
+
+        /* require all members to specify "public", "private", etc */
+        "@typescript-eslint/explicit-member-accessibility": "error",
+
+        /* replace base max-params rule with @typescript-eslint/max-params */
+        "max-params": "off",
+        "@typescript-eslint/max-params": ["error", { max: 5 }],
+
+        /* allow "const foo: number = 0" */
+        "@typescript-eslint/no-inferrable-types": "off",
+
+        /* allow function(this: void, ...) */
+        "@typescript-eslint/no-invalid-void-type": [
+            "error",
+            {
+                allowAsThisParameter: true,
+            },
+        ],
+
+        /* allow constructs such as `unknown | null`, while `unknown` does override
+         * `null` it can still serve as a self-documenting type to signal that
+         * `null` has a special meaning. It also helps when the type is to be
+         * replaced with a better type later. */
+        "@typescript-eslint/no-redundant-type-constituents": "off",
+
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                /* allow `foo` to be unused when `{ foo, ...spread} = bar` is
+                 * used to extract members from objects */
+                ignoreRestSiblings: true,
+
+                /* allow _ as prefix for intentionally unused variables */
+                argsIgnorePattern: "^_",
+            },
+        ],
+
+        /* allow overloading only if the parameters have different names */
+        "@typescript-eslint/unified-signatures": [
+            "error",
+            {
+                ignoreDifferentlyNamedParameters: true,
+            },
+        ],
+
+        "tsdoc/syntax": "error",
+    },
 });
-
-const migrated = compat.config(legacyConfig).reduce(merge, {});
-
-migrated.name = "@forsakringskassan/eslint-config-typescript";
-migrated.files = ["**/*.{ts,cts,mts}"];
 
 /**
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(migrated, override ?? {});
+export default (override) => merge(config, override ?? {});
