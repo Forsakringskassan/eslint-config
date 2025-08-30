@@ -1,11 +1,19 @@
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { FlatCompat } from "@eslint/eslintrc";
-import legacyConfig from "./index.cjs";
+import sveltePlugin from "eslint-plugin-svelte";
+import globals from "globals";
+import svelteParser from "svelte-eslint-parser";
+import { parser as tseParser } from "typescript-eslint";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
  */
+
+/**
+ * @param {Config} config
+ * @returns {Config}
+ */
+function defineConfig(config) {
+    return config;
+}
 
 /**
  * @param {Config} result
@@ -22,21 +30,36 @@ function merge(result, it) {
     };
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const recommended = sveltePlugin.configs["flat/recommended"].reduce(merge, {});
 
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    resolvePluginsRelativeTo: __dirname,
+const config = defineConfig({
+    name: "@forsakringskassan/eslint-config-svelte",
+    files: ["**/*.svelte", "**/*.svelte.[jt]s"],
+
+    languageOptions: {
+        parser: svelteParser,
+        parserOptions: {
+            extraFileExtensions: [".svelte"],
+            parser: tseParser,
+        },
+        globals: {
+            ...globals.browser,
+        },
+    },
+
+    plugins: {
+        svelte: sveltePlugin,
+    },
+
+    processor: sveltePlugin.processors.svelte,
+
+    rules: {
+        ...recommended.rules,
+    },
 });
-
-const migrated = compat.config(legacyConfig).reduce(merge, {});
-
-migrated.name = "@forsakringskassan/eslint-config-svelte";
-migrated.files = ["**/*.svelte", "**/*.svelte.[jt]s"];
 
 /**
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(migrated, override ?? {});
+export default (override) => merge(config, override ?? {});
