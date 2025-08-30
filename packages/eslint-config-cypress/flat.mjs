@@ -1,11 +1,17 @@
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { FlatCompat } from "@eslint/eslintrc";
-import legacyConfig from "./index.cjs";
+import cypressPlugin from "eslint-plugin-cypress";
+import mochaPlugin from "eslint-plugin-mocha";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
  */
+
+/**
+ * @param {Config} config
+ * @returns {Config}
+ */
+function defineConfig(config) {
+    return config;
+}
 
 /**
  * @param {Config} result
@@ -22,21 +28,39 @@ function merge(result, it) {
     };
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const recommended = cypressPlugin.configs.recommended;
 
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    resolvePluginsRelativeTo: __dirname,
+const config = defineConfig({
+    name: "@forsakringskassan/eslint-config-cypress",
+    files: ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"],
+
+    languageOptions: {
+        ecmaVersion: 2019,
+        sourceType: "module",
+        globals: {
+            /* the environment is named "globals" */
+            ...cypressPlugin.environments.globals.globals,
+        },
+    },
+
+    plugins: {
+        cypress: cypressPlugin,
+        mocha: mochaPlugin,
+    },
+
+    rules: {
+        ...recommended.rules,
+
+        "@typescript-eslint/triple-slash-reference": "off",
+        "mocha/no-exclusive-tests": "warn",
+        "mocha/no-identical-title": "error",
+        "mocha/no-pending-tests": "warn",
+        "mocha/no-skipped-tests": "warn",
+    },
 });
-
-const migrated = compat.config(legacyConfig).reduce(merge, {});
-
-migrated.name = "@forsakringskassan/eslint-config-cypress";
-migrated.files = ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"];
 
 /**
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(migrated, override ?? {});
+export default (override) => merge(config, override ?? {});
