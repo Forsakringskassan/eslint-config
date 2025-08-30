@@ -4,6 +4,8 @@ import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import legacyConfig from "./index.cjs";
 
+export { default as globals } from "globals";
+
 /**
  * @typedef {import("eslint").Linter.Config} Config
  */
