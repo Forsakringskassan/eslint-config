@@ -3,6 +3,15 @@ import path from "node:path";
 import { FlatCompat } from "@eslint/eslintrc";
 import legacyConfig from "./index.cjs";
 
+/**
+ * @typedef {import("eslint").Linter.Config} Config
+ */
+
+/**
+ * @param {Config} result
+ * @param {Config} it
+ * @returns {Config}
+ */
 function merge(result, it) {
     return {
         ...result,
@@ -26,4 +35,8 @@ const migrated = compat.config(legacyConfig).reduce(merge, {});
 migrated.name = "@forsakringskassan/eslint-config-svelte";
 migrated.files = ["**/*.svelte", "**/*.svelte.[jt]s"];
 
+/**
+ * @param {Config} [override]
+ * @returns {Config}
+ */
 export default (override) => merge(migrated, override ?? {});

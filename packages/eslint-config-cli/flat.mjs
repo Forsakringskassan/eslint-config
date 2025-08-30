@@ -1,13 +1,22 @@
 import globals from "globals";
 
 /**
- * @param {import("eslint").Linter.Config} config
- * @returns {import("eslint").Linter.Config}
+ * @typedef {import("eslint").Linter.Config} Config
+ */
+
+/**
+ * @param {Config} config
+ * @returns {Config}
  */
 function defineConfig(config) {
     return config;
 }
 
+/**
+ * @param {Config} result
+ * @param {Config} it
+ * @returns {Config}
+ */
 function merge(result, it) {
     const merged = { ...result };
     if (it.files) {
@@ -33,6 +42,7 @@ const config = defineConfig({
 });
 
 /**
- * @param {{ files?: string[], ignores?: string[]}} [override]
+ * @param {Config} [override]
+ * @returns {Config}
  */
 export default (override) => merge(config, override ?? {});

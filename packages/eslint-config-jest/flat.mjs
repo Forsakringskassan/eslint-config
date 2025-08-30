@@ -3,6 +3,15 @@ import path from "node:path";
 import { FlatCompat } from "@eslint/eslintrc";
 import legacyConfig from "./index.cjs";
 
+/**
+ * @typedef {import("eslint").Linter.Config} Config
+ */
+
+/**
+ * @param {Config} result
+ * @param {Config} it
+ * @returns {Config}
+ */
 function merge(result, it) {
     return {
         ...result,
@@ -27,4 +36,8 @@ migrated.name = "@forsakringskassan/eslint-config-jest";
 migrated.files = ["**/*.spec.[jt]s"];
 migrated.ignores = ["cypress/**", "tests/e2e/**"];
 
+/**
+ * @param {Config} [override]
+ * @returns {Config}
+ */
 export default (override) => merge(migrated, override ?? {});
