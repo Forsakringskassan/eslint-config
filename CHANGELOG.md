@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 12.1.0 (2025-08-30)
+
+### Features
+
+* **@forsakringskassan/eslint-config:** expose `globals` package from `@forsakringskassan/eslint-config` 6ccd6f0
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8.41.0 b10c4f3
+
 ## 12.0.10 (2025-08-29)
 
 ### Bug Fixes
