@@ -151,6 +151,26 @@ export default [
 ];
 ```
 
+`@forsakringskassan/eslint-config` reexports [`globals`][npm:globals], if you need to overwrite global variables for a set of files:
+
+[npm:globals]: https://www.npmjs.com/package/globals
+
+```ts
+import defaultConfig, { globals } from "@forsakringskassan/eslint-config";
+
+export default [
+    ...defaultConfig,
+
+    {
+        name: "local/browser",
+        files: ["src/browser/**/*.{js,ts}"],
+        languageOptions: {
+            globals: { ...globals.browser },
+        },
+    },
+];
+```
+
 ### CLI
 
 For pure CLI packages the best is to extend both base and cli presets right away:
