@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 12.2.0 (2025-09-06)
+
+### Features
+
+* **@forsakringskassan/eslint-config-cypress:** allow typescript non-null assertions in cypress tests aa08986
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8.42.0 0ed199b
+
 ## 12.1.0 (2025-08-30)
 
 ### Features
