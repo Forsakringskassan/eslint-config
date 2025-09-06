@@ -1,11 +1,18 @@
-import { fileURLToPath } from "node:url";
-import path from "node:path";
-import { FlatCompat } from "@eslint/eslintrc";
-import legacyConfig from "./index.cjs";
+import angularConfig from "eslint-config-angular";
+import angularPlugin from "eslint-plugin-angular";
+import globals from "globals";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
  */
+
+/**
+ * @param {Config} config
+ * @returns {Config}
+ */
+function defineConfig(config) {
+    return config;
+}
 
 /**
  * @param {Config} result
@@ -22,21 +29,29 @@ function merge(result, it) {
     };
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    resolvePluginsRelativeTo: __dirname,
+const config = defineConfig({
+    name: "@forsakringskassan/eslint-config-angular",
+    files: ["**/*.[jt]s"],
+    languageOptions: {
+        globals: {
+            ...globals.angular,
+        },
+    },
+    plugins: {
+        angular: angularPlugin,
+    },
+    rules: {
+        ...angularConfig.rules,
+        "consistent-this": ["error", "$ctrl", "provider"],
+        "angular/component-name": ["error", "/^(exp|fk)[A-Z].*/"],
+        "angular/controller-as-vm": ["error", "$ctrl"],
+        "angular/di-unused": "error",
+        "angular/directive-name": ["error", "/^(exp|fk)[A-Z].*/"],
+    },
 });
-
-const migrated = compat.config(legacyConfig).reduce(merge, {});
-
-migrated.name = "@forsakringskassan/eslint-config-angular";
-migrated.files = ["**/*.[jt]s"];
 
 /**
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(migrated, override ?? {});
+export default (override) => merge(config, override ?? {});
