@@ -51,6 +51,7 @@ const config = defineConfig({
     rules: {
         ...recommended.rules,
 
+        "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/triple-slash-reference": "off",
         "mocha/no-exclusive-tests": "warn",
         "mocha/no-identical-title": "error",
