@@ -37,9 +37,5 @@ jobs:
               run: |
                   npm ci
                   npm install -w @forsakringskassan/eslint-config-vue vue@${{ matrix.vue-version }}
-            - name: Disable vue/no-multiple-template-root (vue 2 only)
-              if: matrix.vue-version == '2.x'
-              run: |
-                  echo '{ "rules": { "vue/no-multiple-template-root": "off" } }' > packages/eslint-config-vue/.eslintrc.json
             - name: ESLint
               run: npm run eslint
