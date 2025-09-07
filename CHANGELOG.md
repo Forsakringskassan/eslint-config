@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 12.2.1 (2025-09-07)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cli:** include monorepo build scripts by default in cli configuration 4ecaf3e
+
 ## 12.2.0 (2025-09-06)
 
 ### Features
