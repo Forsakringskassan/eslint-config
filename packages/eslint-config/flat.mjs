@@ -27,67 +27,12 @@ export default [
     }),
 
     defineConfig({
-        ...prettierConfig,
-    }),
-
-    defineConfig({
         plugins: {
             prettier: prettierPlugin,
-        },
-        rules: {
-            ...prettierPlugin.configs.recommended.rules,
-        },
-    }),
-
-    defineConfig({
-        plugins: {
             import: importPlugin,
-        },
-        rules: {
-            ...importPlugin.configs.errors.rules,
-        },
-    }),
-
-    defineConfig({
-        plugins: {
             "eslint-comments": eslintCommentsPlugin,
-        },
-        rules: {
-            ...eslintCommentsPlugin.configs.recommended.rules,
-        },
-    }),
-
-    defineConfig({
-        plugins: {
             sonarjs: sonarjsPlugin,
         },
-        rules: {
-            ...sonarjsPlugin.configs.recommended.rules,
-        },
-    }),
-
-    defineConfig({
-        languageOptions: {
-            globals: {
-                ...globals.es6,
-            },
-            parserOptions: {
-                ecmaFeatures: {
-                    globalReturn: true,
-                },
-            },
-        },
-    }),
-
-    defineConfig({
-        languageOptions: {
-            globals: {
-                ...globals.node,
-            },
-        },
-    }),
-
-    defineConfig({
         settings: {
             "import/resolver": {
                 [fileURLToPath(
@@ -98,7 +43,17 @@ export default [
                 )]: true,
             },
         },
+        rules: {
+            ...prettierConfig.rules,
+            ...prettierPlugin.configs.recommended.rules,
+            ...importPlugin.configs.errors.rules,
+            ...eslintCommentsPlugin.configs.recommended.rules,
+            ...sonarjsPlugin.configs.recommended.rules,
+        },
+    }),
 
+    defineConfig({
+        name: "@forsakringskassan/eslint-config/rules",
         rules: {
             camelcase: "error",
             complexity: ["error", 20],
@@ -205,10 +160,25 @@ export default [
     }),
 
     defineConfig({
+        name: "@forsakringskassan/eslint-config/globals",
+        languageOptions: {
+            globals: {
+                ...globals.es6,
+                ...globals.node,
+            },
+        },
+    }),
+
+    defineConfig({
         name: "@forsakringskassan/eslint-config/ecma-version",
         languageOptions: {
             ecmaVersion: 2024,
             sourceType: "module",
+            parserOptions: {
+                ecmaFeatures: {
+                    globalReturn: true,
+                },
+            },
         },
     }),
 
