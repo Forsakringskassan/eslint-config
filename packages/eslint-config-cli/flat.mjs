@@ -30,7 +30,11 @@ function merge(result, it) {
 
 const config = defineConfig({
     name: "@forsakringskassan/eslint-config-cli",
-    files: ["*.{js,ts,cjs,mjs}", "**/scripts/*.{js,ts,cjs,mjs}"],
+    files: [
+        "*.{js,ts,cjs,mjs}",
+        "**/scripts/*.{js,ts,cjs,mjs}",
+        "{internal,packages}/*/*.{js,ts,cjs,mjs}",
+    ],
     languageOptions: {
         globals: {
             ...globals.node,
