@@ -24,6 +24,9 @@
     "eslint-plugin-angular": "4.1.0",
     "globals": "14.0.0"
   },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
   "engines": {
     "node": ">= 20.19"
   }
