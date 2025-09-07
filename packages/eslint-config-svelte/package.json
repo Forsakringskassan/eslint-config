@@ -34,6 +34,7 @@
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "8.42.0",
+    "eslint": "^8.0.0",
     "svelte": "^5.0.0"
   },
   "engines": {
