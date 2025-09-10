@@ -22,6 +22,7 @@
     "patch",
     "eslint.js",
     "flat.mjs",
+    "flat.d.mts",
     "index.cjs"
   ],
   "dependencies": {
