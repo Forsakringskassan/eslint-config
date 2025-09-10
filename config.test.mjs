@@ -54,7 +54,7 @@ function serialize(value) {
                     return [key, "[...]"];
                 }
             }
-            return [key, serialize(it)];
+            return [key.replace(/\\/g, "/"), serialize(it)];
         });
         return Object.fromEntries(mapped);
     }
@@ -118,12 +118,12 @@ function merge(result, it) {
 }
 
 const extensions = {
-    "*.js": "src/index.js",
-    "*.ts": "src/index.ts",
-    "*.cy.ts": "src/foo.cy.ts",
-    "*.spec.ts": "src/foo.spec.ts",
-    "*.vue": "src/Foo.vue",
-    "*.svelte": "src/Foo.svelte",
+    ".js": "src/index.js",
+    ".ts": "src/index.ts",
+    ".cy.ts": "src/foo.cy.ts",
+    ".spec.ts": "src/foo.spec.ts",
+    ".vue": "src/Foo.vue",
+    ".svelte": "src/Foo.svelte",
 };
 
 for (const [key, filePath] of Object.entries(extensions)) {
