@@ -35,14 +35,4 @@ export default [
             "import/no-unresolved": "off",
         },
     },
-
-    {
-        name: "local/vue-2",
-        rules: {
-            /* local examples uses multiple template roots but Vue 2 does not
-             * support it, when Vue 2 support is dropped here this block should
-             * be removed */
-            "vue/no-multiple-template-root": "off",
-        },
-    },
 ];
