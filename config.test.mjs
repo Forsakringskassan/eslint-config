@@ -1,5 +1,16 @@
 import test from "ava";
 import globals from "globals";
+import { minimatch } from "minimatch";
+import defaultConfig from "./packages/eslint-config/flat.mjs";
+import cypressConfig from "./packages/eslint-config-cypress/flat.mjs";
+import jestConfig from "./packages/eslint-config-jest/flat.mjs";
+import svelteConfig from "./packages/eslint-config-svelte/flat.mjs";
+import typescriptConfig from "./packages/eslint-config-typescript/flat.mjs";
+import vueConfig from "./packages/eslint-config-vue/flat.mjs";
+
+/**
+ * @typedef {import("eslint").Linter.Config} Config
+ */
 
 const nodeGlobals = new Set(Object.keys(globals.node));
 
@@ -31,7 +42,6 @@ function serialize(value) {
             if (key === "version") {
                 return [key, it.replace(/^(\d+)\.(\d+)\.(\d+)$/, "$1.x.x")];
             }
-
             if (key === "globals") {
                 const set = new Set(Object.keys(value.globals));
                 const subsets = [];
@@ -63,9 +73,65 @@ const packages = [
 ];
 
 for (const pkg of packages) {
-    test(pkg, async (t) => {
+    test(`Package ${pkg}`, async (t) => {
         const { default: factory } = await import(`${pkg}/flat.mjs`);
         const config = typeof factory === "function" ? factory() : factory;
         t.snapshot(serialize(config));
+    });
+}
+
+const config = [
+    ...defaultConfig,
+    typescriptConfig(),
+    vueConfig(),
+    jestConfig(),
+    cypressConfig(),
+    svelteConfig(),
+];
+
+/**
+ * @param {string} filePath
+ * @returns {Config[]}
+ */
+function matchConfig(filePath) {
+    return config.filter((it) => {
+        const { files = [] } = it;
+        return (
+            files.length === 0 || files.some((jt) => minimatch(filePath, jt))
+        );
+    });
+}
+
+/**
+ * @param {Config} result
+ * @param {Config} it
+ * @returns {Config}
+ */
+function merge(result, it) {
+    return {
+        ...result,
+        ...it,
+        languageOptions: { ...result.languageOptions, ...it.languageOptions },
+        plugins: { ...result.plugins, ...it.plugins },
+        rules: { ...result.rules, ...it.rules },
+    };
+}
+
+const extensions = {
+    "*.js": "src/index.js",
+    "*.ts": "src/index.ts",
+    "*.cy.ts": "src/foo.cy.ts",
+    "*.spec.ts": "src/foo.spec.ts",
+    "*.vue": "src/Foo.vue",
+    "*.svelte": "src/Foo.svelte",
+};
+
+for (const [key, filePath] of Object.entries(extensions)) {
+    test(`Extension ${key}`, async (t) => {
+        const effectiveConfig = matchConfig(filePath).reduce(merge, {});
+        delete effectiveConfig.name;
+        delete effectiveConfig.files;
+        delete effectiveConfig.ignores;
+        t.snapshot(serialize(effectiveConfig));
     });
 }
