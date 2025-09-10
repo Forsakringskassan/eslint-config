@@ -17,6 +17,7 @@
   "main": "index.cjs",
   "files": [
     "flat.mjs",
+    "flat.d.mts",
     "index.cjs"
   ],
   "dependencies": {
