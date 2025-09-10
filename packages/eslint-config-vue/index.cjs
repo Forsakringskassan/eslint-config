@@ -1,24 +1,7 @@
-const semver = require("semver");
-const vue = require("vue");
-
-function detectVueMajor() {
-    try {
-        return semver.major(vue.version);
-    } catch (err) {
-        // eslint-disable-next-line no-console -- Print error
-        console.error("Failed to detect Vue version:", err);
-        // eslint-disable-next-line no-console -- Use Vue 2 as default
-        console.error("Assuming Vue 2");
-        return 2;
-    }
-}
-
 module.exports = {
     extends: [
         "@forsakringskassan/typescript",
-        detectVueMajor() === 3
-            ? "plugin:vue/recommended"
-            : "plugin:vue/vue2-recommended",
+        "plugin:vue/recommended",
         "plugin:prettier/recommended",
     ],
 
