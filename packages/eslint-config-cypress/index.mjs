@@ -28,6 +28,7 @@ function merge(result, it) {
     };
 }
 
+const globals = cypressPlugin.configs.globals;
 const recommended = cypressPlugin.configs.recommended;
 
 const config = defineConfig({
@@ -38,8 +39,7 @@ const config = defineConfig({
         ecmaVersion: 2019,
         sourceType: "module",
         globals: {
-            /* the environment is named "globals" */
-            ...cypressPlugin.environments.globals.globals,
+            ...globals.languageOptions.globals,
         },
     },
 
