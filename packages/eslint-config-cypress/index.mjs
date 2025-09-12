@@ -56,7 +56,6 @@ const config = defineConfig({
         "mocha/no-exclusive-tests": "warn",
         "mocha/no-identical-title": "error",
         "mocha/no-pending-tests": "warn",
-        "mocha/no-skipped-tests": "warn",
     },
 });
 
