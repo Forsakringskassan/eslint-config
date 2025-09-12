@@ -1,12 +1,12 @@
 import test from "ava";
 import globals from "globals";
 import { minimatch } from "minimatch";
-import defaultConfig from "./packages/eslint-config/flat.mjs";
-import cypressConfig from "./packages/eslint-config-cypress/flat.mjs";
-import jestConfig from "./packages/eslint-config-jest/flat.mjs";
-import svelteConfig from "./packages/eslint-config-svelte/flat.mjs";
-import typescriptConfig from "./packages/eslint-config-typescript/flat.mjs";
-import vueConfig from "./packages/eslint-config-vue/flat.mjs";
+import defaultConfig from "./packages/eslint-config/index.mjs";
+import cypressConfig from "./packages/eslint-config-cypress/index.mjs";
+import jestConfig from "./packages/eslint-config-jest/index.mjs";
+import svelteConfig from "./packages/eslint-config-svelte/index.mjs";
+import typescriptConfig from "./packages/eslint-config-typescript/index.mjs";
+import vueConfig from "./packages/eslint-config-vue/index.mjs";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
@@ -74,7 +74,7 @@ const packages = [
 
 for (const pkg of packages) {
     test(`Package ${pkg}`, async (t) => {
-        const { default: factory } = await import(`${pkg}/flat.mjs`);
+        const { default: factory } = await import(`${pkg}/index.mjs`);
         const config = typeof factory === "function" ? factory() : factory;
         t.snapshot(serialize(config));
     });

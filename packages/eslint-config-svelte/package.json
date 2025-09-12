@@ -14,11 +14,10 @@
   },
   "license": "MIT",
   "author": "Försäkringskassan",
-  "main": "index.cjs",
+  "main": "index.mjs",
   "files": [
-    "flat.mjs",
-    "flat.d.mts",
-    "index.cjs"
+    "index.mjs",
+    "index.d.mts"
   ],
   "scripts": {
     "test": "tsc --noEmit"
