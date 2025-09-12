@@ -12,6 +12,7 @@ import vueConfig from "./packages/eslint-config-vue/index.mjs";
  * @typedef {import("eslint").Linter.Config} Config
  */
 
+const browserGlobals = new Set(Object.keys(globals.browser));
 const nodeGlobals = new Set(Object.keys(globals.node));
 
 /**
@@ -44,15 +45,21 @@ function serialize(value) {
             }
             if (key === "globals") {
                 const set = new Set(Object.keys(value.globals));
+                let remainder = new Set(set);
                 const subsets = [];
                 if (nodeGlobals.isSubsetOf(set)) {
-                    subsets.push("node");
+                    subsets.push("globals.node");
+                    remainder = remainder.difference(nodeGlobals);
                 }
-                if (subsets.length > 0) {
-                    return [key, `{ ${subsets.join(", ")} }`];
-                } else {
-                    return [key, "[...]"];
+                if (browserGlobals.isSubsetOf(set)) {
+                    subsets.push("globals.browser");
+                    remainder = remainder.difference(browserGlobals);
                 }
+                const values = [
+                    ...subsets.map((it) => `...${it}`),
+                    ...Array.from(remainder, (it) => `"${it}`),
+                ];
+                return [key, values];
             }
             return [key.replace(/\\/g, "/"), serialize(it)];
         });
