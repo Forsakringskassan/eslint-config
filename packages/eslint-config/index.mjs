@@ -2,7 +2,7 @@ import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
 import prettierConfig from "eslint-config-prettier";
 import importPlugin from "eslint-plugin-import";
-import eslintCommentsPlugin from "eslint-plugin-eslint-comments";
+import eslintCommentsPlugin from "@eslint-community/eslint-plugin-eslint-comments";
 import prettierPlugin from "eslint-plugin-prettier";
 import sonarjsPlugin from "eslint-plugin-sonarjs";
 import globals from "globals";
@@ -30,7 +30,7 @@ export default [
         plugins: {
             prettier: prettierPlugin,
             import: importPlugin,
-            "eslint-comments": eslintCommentsPlugin,
+            "@eslint-community/eslint-comments": eslintCommentsPlugin,
             sonarjs: sonarjsPlugin,
         },
         settings: {
@@ -78,11 +78,11 @@ export default [
             radix: "error",
             yoda: "error",
 
-            "eslint-comments/disable-enable-pair": [
+            "@eslint-community/eslint-comments/disable-enable-pair": [
                 "error",
                 { allowWholeFile: true },
             ],
-            "eslint-comments/require-description": [
+            "@eslint-community/eslint-comments/require-description": [
                 "error",
                 {
                     ignore: [
@@ -94,7 +94,7 @@ export default [
                     ],
                 },
             ],
-            "eslint-comments/no-unused-disable": "error",
+            "@eslint-community/eslint-comments/no-unused-disable": "error",
 
             /* Use eslint native complexity rule instead */
             "sonarjs/cognitive-complexity": "off",
