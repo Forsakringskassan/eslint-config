@@ -30,7 +30,7 @@ function merge(result, it) {
     };
 }
 
-const recommended = sveltePlugin.configs["flat/recommended"].reduce(merge, {});
+const recommended = sveltePlugin.configs["recommended"].reduce(merge, {});
 
 const config = defineConfig({
     name: "@forsakringskassan/eslint-config-svelte",
