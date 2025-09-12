@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## 13.0.0 (2025-09-12)
+
+### ⚠ BREAKING CHANGES
+
+* **@forsakringskassan/eslint-config-angular, @forsakringskassan/eslint-config-cli, @forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-svelte, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** remove support for eslintrc
+* **deps:** Vue 3 or later is now required.
+* **deps:** NodeJS v22 or later is now required.
+
+### Features
+
+* **@forsakringskassan/eslint-config-angular, @forsakringskassan/eslint-config-cli, @forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-svelte, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** remove support for eslintrc 702a460
+* **deps:** replace eslint-comments with @eslint-community/eslint-comments e1aa14e
+* **deps:** require nodejs v22 or later 855f88f
+* **deps:** require vue 3 or later 1747809
+* **deps:** update dependency eslint to v9 a7489b0
+* **deps:** update dependency eslint-plugin-angular to v5 06b4b6d
+* **deps:** update dependency eslint-plugin-cypress to v5 b946105
+* **deps:** update dependency eslint-plugin-mocha to v11 5891d6f
+* **deps:** update dependency eslint-plugin-sonarjs to v3 5a1ac6f
+* **deps:** update dependency eslint-plugin-svelte to v3 1b0420d
+* **deps:** update dependency globals to v16.4.0 d5ec4b7
+* **deps:** update dependency svelte-eslint-parser to v1 41c1fee
+
 ## 12.2.2 (2025-09-12)
 
 ### Bug Fixes
