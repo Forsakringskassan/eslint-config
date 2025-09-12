@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 12.2.2 (2025-09-12)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-angular, @forsakringskassan/eslint-config-cli, @forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-svelte, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** add missing d.mts files to package 9eff8e2
+* **deps:** update dependency @eslint/js to v9.35.0 bdf985a
+* **deps:** update typescript-eslint monorepo to v8.43.0 3a47861
+
 ## 12.2.1 (2025-09-07)
 
 ### Bug Fixes
