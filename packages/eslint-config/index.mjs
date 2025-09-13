@@ -21,6 +21,21 @@ export function defineConfig(config) {
     return config;
 }
 
+/**
+ * @param {Config} result
+ * @param {Config} it
+ * @returns {Config}
+ */
+function merge(result, it) {
+    return {
+        ...result,
+        ...it,
+        languageOptions: { ...result.languageOptions, ...it.languageOptions },
+        plugins: { ...result.plugins, ...it.plugins },
+        rules: { ...result.rules, ...it.rules },
+    };
+}
+
 export default [
     defineConfig({
         ...js.configs.recommended,
@@ -236,3 +251,21 @@ export default [
         },
     },
 ];
+
+const defaultDocsConfig = defineConfig({
+    name: "@forsakringskassan/eslint-config/docs-app",
+    files: ["docs/src/*.{js,ts}"],
+    languageOptions: {
+        globals: {
+            ...globals.browser,
+        },
+    },
+});
+
+/**
+ * @param {Config} [override]
+ * @returns {Config}
+ */
+export function docsConfig(override) {
+    return merge(defaultDocsConfig, override ?? {});
+}
