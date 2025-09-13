@@ -39,7 +39,7 @@ const config = defineConfig({
     languageOptions: {
         parser: svelteParser,
         parserOptions: {
-            extraFileExtensions: [".svelte"],
+            extraFileExtensions: [".svelte", ".vue"],
             parser: tseParser,
         },
         globals: {

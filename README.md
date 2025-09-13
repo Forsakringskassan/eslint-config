@@ -41,6 +41,7 @@ import cypressConfig from "@forsakringskassan/eslint-config-cypress";
 import jestConfig from "@forsakringskassan/eslint-config-jest";
 import svelteConfig from "@forsakringskassan/eslint-config-svelte";
 import typescriptConfig from "@forsakringskassan/eslint-config-typescript";
+import typeinfoConfig from "@forsakringskassan/eslint-config-typescript-typeinfo";
 import vueConfig from "@forsakringskassan/eslint-config-vue";
 
 export default [
@@ -60,6 +61,7 @@ export default [
 
     cliConfig(),
     typescriptConfig(),
+    typeinfoConfig(import.meta.dirname),
     vueConfig(),
     jestConfig(),
     cypressConfig(),

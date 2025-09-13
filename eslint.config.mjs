@@ -4,6 +4,7 @@ import cypressConfig from "./packages/eslint-config-cypress/index.mjs";
 import jestConfig from "./packages/eslint-config-jest/index.mjs";
 import svelteConfig from "./packages/eslint-config-svelte/index.mjs";
 import typescriptConfig from "./packages/eslint-config-typescript/index.mjs";
+import typeinfoConfig from "./packages/eslint-config-typescript-typeinfo/index.mjs";
 import vueConfig from "./packages/eslint-config-vue/index.mjs";
 
 export default [
@@ -23,6 +24,10 @@ export default [
         files: ["packages/eslint-config-cli/example.js"],
     }),
     typescriptConfig(),
+    typeinfoConfig(import.meta.dirname, {
+        files: ["packages/**/*.{ts,vue}"],
+        ignores: ["**/*.d.ts", "**/*.cy.ts", "**/*.spec.ts"],
+    }),
     vueConfig(),
     jestConfig(),
     cypressConfig(),
