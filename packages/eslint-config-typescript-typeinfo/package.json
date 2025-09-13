@@ -1,7 +1,7 @@
 {
-  "name": "@forsakringskassan/eslint-config-cypress",
+  "name": "@forsakringskassan/eslint-config-typescript-typeinfo",
   "version": "13.0.0",
-  "description": "Försäkringskassans eslint shareable cypress config",
+  "description": "Försäkringskassans eslint shareable typescript config with typeinfo",
   "keywords": [
     "eslint"
   ],
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Forsakringskassan/eslint-config.git",
-    "directory": "packages/eslint-config-cypress"
+    "directory": "packages/eslint-config-typescript-typeinfo"
   },
   "license": "MIT",
   "author": "Försäkringskassan",
@@ -20,14 +20,11 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "eslint-plugin-cypress": "5.1.1",
-    "eslint-plugin-mocha": "11.1.0"
-  },
-  "devDependencies": {
-    "cypress": "15.2.0"
+    "typescript-eslint": "8.43.0"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0",
+    "typescript": "^3.0.1 || ^4.0.2 || ^5.0.2"
   },
   "engines": {
     "node": ">= 22.0"
