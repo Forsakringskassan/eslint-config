@@ -1,4 +1,4 @@
-import test from "ava";
+import test from "node:test";
 import globals from "globals";
 import { minimatch } from "minimatch";
 import defaultConfig from "./packages/eslint-config/index.mjs";
@@ -83,7 +83,7 @@ for (const pkg of packages) {
     test(`Package ${pkg}`, async (t) => {
         const { default: factory } = await import(`${pkg}/index.mjs`);
         const config = typeof factory === "function" ? factory() : factory;
-        t.snapshot(serialize(config));
+        t.assert.snapshot(serialize(config));
     });
 }
 
@@ -139,6 +139,6 @@ for (const [key, filePath] of Object.entries(extensions)) {
         delete effectiveConfig.name;
         delete effectiveConfig.files;
         delete effectiveConfig.ignores;
-        t.snapshot(serialize(effectiveConfig));
+        t.assert.snapshot(serialize(effectiveConfig));
     });
 }
