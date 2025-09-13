@@ -22,4 +22,4 @@ jobs:
             - name: Build
               run: npm run --if-present build
             - name: Test
-              run: npm exec ava
+              run: node --test config.test.mjs
