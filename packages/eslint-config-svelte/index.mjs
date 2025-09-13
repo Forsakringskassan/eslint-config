@@ -55,9 +55,6 @@ const config = defineConfig({
 
     rules: {
         ...recommended.rules,
-
-        /* rule crashes on svelte files */
-        "sonarjs/deprecation": "off",
     },
 });
 

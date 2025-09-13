@@ -51,7 +51,13 @@ export const [first, second, ...rest] = take(fibonacci(), 10);
  * @returns {boolean}
  */
 function complexCondition(value) {
-    return value > 10;
+    /* @TODO add more cases */
+    switch (value) {
+        case 1:
+            return true;
+        default:
+            return value > 10;
+    }
 }
 
 /**
