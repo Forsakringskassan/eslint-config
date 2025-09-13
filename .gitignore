@@ -1,4 +1,5 @@
 *.tgz
+*.tsbuildinfo
 .jest-cache/
 coverage/
 node_modules/

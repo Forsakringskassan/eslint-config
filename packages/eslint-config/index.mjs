@@ -109,6 +109,17 @@ export default [
              * keys. */
             "sonarjs/no-duplicate-string": "off",
 
+            "sonarjs/deprecation": "off", // covered by @typescript-eslint/no-deprecated (and this rule crashes on .svelte files)
+            "sonarjs/function-return-type": "off", // overly broad and opinionated, let typescript deal with this
+            "sonarjs/no-control-regex": "off", // already covered by no-control-regexp
+            "sonarjs/no-empty-test-file": "off", // could be useful but it does not handle it.each or similar constructs thus yields more false positives than its worth */
+            "sonarjs/no-small-switch": "off", // prefer to use small switches when the intention is to all more cases later
+            "sonarjs/no-unused-vars": "off", // already coveredby @typescript-eslint/no-unused-vars
+            "sonarjs/prefer-nullish-coalescing": "off", // requires typescript and strictNullChecks, which is sane, but we also use @typescript-eslint/prefer-nullish-coalescing so this becomes redundant
+            "sonarjs/prefer-regexp-exec": "off", // prefer @typescript-eslint/prefer-regexp-exec
+            "sonarjs/todo-tag": "off", // want to be able to leave todo tasks
+            "sonarjs/unused-import": "off", // already covered by @typescript-eslint/no-unused-vars
+
             /* Lower some errors to warnings, these are allowed on local builds (to
              * not prevent builds during development where code is unfinished and
              * might contain debugging code) but is disallowed when building from

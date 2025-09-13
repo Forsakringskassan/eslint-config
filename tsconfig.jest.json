@@ -1,0 +1,10 @@
+{
+    "extends": ["@tsconfig/node22", "@tsconfig/strictest"],
+    "compilerOptions": {
+        "composite": true,
+        "noEmit": true,
+        "types": ["jest"]
+    },
+    "include": ["**/*.spec.js", "**/*.spec.ts"],
+    "exclude": ["**/node_modules/**"]
+}

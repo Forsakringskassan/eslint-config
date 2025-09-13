@@ -1,17 +1,11 @@
-import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginPrettier from "eslint-plugin-prettier";
-import eslintPluginVue from "eslint-plugin-vue";
-import globals from "globals";
 import {
     configs as tseConfig,
     parser as tseParser,
     plugin as tsePlugin,
 } from "typescript-eslint";
-import tsdocPlugin from "eslint-plugin-tsdoc";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
- * @typedef {import("eslint").Linter.RulesRecord} RulesRecord
  */
 
 /**
@@ -37,38 +31,23 @@ function merge(result, it) {
     };
 }
 
-const strict = tseConfig.strict.reduce(merge, {});
-const stylistic = tseConfig.stylistic.reduce(merge, {});
-
-const recommended = eslintPluginVue.configs["flat/recommended"].reduce(
-    merge,
-    {},
-);
+const strict = tseConfig.strictTypeCheckedOnly.reduce(merge, {});
+const stylistic = tseConfig.stylisticTypeCheckedOnly.reduce(merge, {});
 
 const config = defineConfig({
-    name: "@forsakringskassan/eslint-config-vue",
-    files: ["**/*.vue"],
+    name: "@forsakringskassan/eslint-config-typescript-typeinfo",
+    files: ["**/*.{ts,cts,mts}"],
 
     languageOptions: {
-        parser: recommended.languageOptions.parser,
-        parserOptions: {
-            extraFileExtensions: [".svelte", ".vue"],
-            parser: tseParser,
-        },
+        parser: tseParser,
         sourceType: "module",
-        ecmaVersion: "latest",
-        globals: {
-            ...globals.browser,
+        parserOptions: {
+            projectService: true,
         },
     },
 
-    processor: eslintPluginVue.processors.vue,
-
     plugins: {
         "@typescript-eslint": tsePlugin,
-        vue: eslintPluginVue,
-        prettier: eslintPluginPrettier,
-        tsdoc: tsdocPlugin,
     },
 
     rules: {
@@ -138,32 +117,18 @@ const config = defineConfig({
             },
         ],
 
-        ...recommended.rules,
-        ...eslintConfigPrettier.rules,
-        ...eslintPluginPrettier.configs.recommended.rules,
-
-        curly: "error" /* disabled by prettier/recommended, reenabled again */,
-
-        "@typescript-eslint/no-object-literal-type-assertion": ["off"],
-
-        /* documentation for vue components does not adhere with tsdoc syntax */
-        "tsdoc/syntax": "off",
-
-        /* this rule warns about the order of the top-level tags */
-        "vue/block-order": [
-            "error",
-            {
-                order: ["script", "template", "style"],
-            },
-        ],
-
-        /* underlying custom elements have started to expose native slots */
-        "vue/no-deprecated-slot-attribute": "off",
+        "tsdoc/syntax": "error",
     },
 });
 
 /**
+ * @param {string | URL} [tsconfigRootDir]
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(config, override ?? {});
+export default (tsconfigrootDir, override) => {
+    const merged = merge(config, override ?? {});
+    merged.languageOptions.parserOptions.tsconfigRootDir =
+        tsconfigrootDir ?? process.cwd();
+    return merged;
+};

@@ -1,0 +1,24 @@
+{
+    "extends": ["@tsconfig/node22", "@tsconfig/strictest"],
+    "compilerOptions": {
+        "composite": true,
+        "noEmit": true,
+        "checkJs": false,
+        "types": ["node"]
+    },
+    "include": [
+        "packages/**/*.js",
+        "packages/**/*.mjs",
+        "packages/**/*.cjs",
+        "packages/**/*.ts",
+        "packages/**/*.mts",
+        "packages/**/*.svelte",
+        "packages/**/*.vue"
+    ],
+    "exclude": [
+        "**/*.cy.ts",
+        "**/*.spec.ts",
+        "**/*.svelte.ts",
+        "**/node_modules/**"
+    ]
+}

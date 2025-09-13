@@ -1,4 +1,4 @@
-import test from "ava";
+import test from "node:test";
 import globals from "globals";
 import { minimatch } from "minimatch";
 import defaultConfig from "./packages/eslint-config/index.mjs";
@@ -6,6 +6,7 @@ import cypressConfig from "./packages/eslint-config-cypress/index.mjs";
 import jestConfig from "./packages/eslint-config-jest/index.mjs";
 import svelteConfig from "./packages/eslint-config-svelte/index.mjs";
 import typescriptConfig from "./packages/eslint-config-typescript/index.mjs";
+import typeinfoConfig from "./packages/eslint-config-typescript-typeinfo/index.mjs";
 import vueConfig from "./packages/eslint-config-vue/index.mjs";
 
 /**
@@ -30,6 +31,9 @@ function serialize(value) {
         const entries = Object.entries(value);
         const mapped = entries.map(([key, it]) => {
             key = key.replace(process.cwd(), "<rootDir>");
+            if (typeof it === "string") {
+                it = it.replace(process.cwd(), "<rootDir>");
+            }
             if (key === "plugins") {
                 const pluginEntries = Object.entries(it);
                 const pluginMapped = pluginEntries.map(([key, jt]) => {
@@ -76,6 +80,7 @@ const packages = [
     "@forsakringskassan/eslint-config-jest",
     "@forsakringskassan/eslint-config-svelte",
     "@forsakringskassan/eslint-config-typescript",
+    "@forsakringskassan/eslint-config-typescript-typeinfo",
     "@forsakringskassan/eslint-config-vue",
 ];
 
@@ -83,13 +88,14 @@ for (const pkg of packages) {
     test(`Package ${pkg}`, async (t) => {
         const { default: factory } = await import(`${pkg}/index.mjs`);
         const config = typeof factory === "function" ? factory() : factory;
-        t.snapshot(serialize(config));
+        t.assert.snapshot(serialize(config));
     });
 }
 
 const config = [
     ...defaultConfig,
     typescriptConfig(),
+    typeinfoConfig(import.meta.dirname),
     vueConfig(),
     jestConfig(),
     cypressConfig(),
@@ -139,6 +145,6 @@ for (const [key, filePath] of Object.entries(extensions)) {
         delete effectiveConfig.name;
         delete effectiveConfig.files;
         delete effectiveConfig.ignores;
-        t.snapshot(serialize(effectiveConfig));
+        t.assert.snapshot(serialize(effectiveConfig));
     });
 }
