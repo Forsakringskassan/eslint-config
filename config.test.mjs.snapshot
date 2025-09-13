@@ -723,7 +723,7 @@ exports[`Extension .cy.ts 1`] = `
     ],
     "max-params": "off",
     "no-eval": "error",
-    "no-implied-eval": "error",
+    "no-implied-eval": "off",
     "no-loop-func": "error",
     "no-new": "error",
     "no-new-func": "error",
@@ -846,7 +846,10 @@ exports[`Extension .cy.ts 1`] = `
     "@typescript-eslint/consistent-generic-constructors": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
-    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "error",
@@ -870,6 +873,98 @@ exports[`Extension .cy.ts 1`] = `
     ],
     "@typescript-eslint/no-redundant-type-constituents": "off",
     "tsdoc/syntax": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/no-array-delete": "error",
+    "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-deprecated": "error",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-meaningless-void-operator": "error",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": {
+          "arguments": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-misused-spread": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "no-throw-literal": "off",
+    "@typescript-eslint/only-throw-error": "error",
+    "prefer-promise-reject-errors": "off",
+    "@typescript-eslint/prefer-promise-reject-errors": "error",
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+    "@typescript-eslint/prefer-return-this-type": "error",
+    "@typescript-eslint/related-getter-setter-pairs": "error",
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/restrict-plus-operands": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowNumberAndString": false,
+        "allowRegExp": false
+      }
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
+        "allowNumber": false,
+        "allowRegExp": false
+      }
+    ],
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": [
+      "error",
+      "error-handling-correctness-only"
+    ],
+    "@typescript-eslint/unbound-method": "error",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "error",
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+    "@typescript-eslint/prefer-find": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      {
+        "fixMixedExportsWithInlineTypeSpecifier": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "fixStyle": "inline-type-imports"
+      }
+    ],
     "cypress/no-assigning-return-values": "error",
     "cypress/no-unnecessary-waiting": "error",
     "cypress/no-async-tests": "error",
@@ -910,9 +1005,8 @@ exports[`Extension .cy.ts 1`] = `
     "ecmaVersion": 2019,
     "sourceType": "module",
     "parserOptions": {
-      "ecmaFeatures": {
-        "globalReturn": true
-      }
+      "projectService": true,
+      "tsconfigRootDir": "<rootDir>"
     },
     "parser": "[Parser typescript-eslint/parser]"
   },
@@ -2476,7 +2570,7 @@ exports[`Extension .spec.ts 1`] = `
     ],
     "max-params": "off",
     "no-eval": "error",
-    "no-implied-eval": "error",
+    "no-implied-eval": "off",
     "no-loop-func": "error",
     "no-new": "error",
     "no-new-func": "error",
@@ -2599,7 +2693,10 @@ exports[`Extension .spec.ts 1`] = `
     "@typescript-eslint/consistent-generic-constructors": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
-    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "error",
@@ -2623,6 +2720,98 @@ exports[`Extension .spec.ts 1`] = `
     ],
     "@typescript-eslint/no-redundant-type-constituents": "off",
     "tsdoc/syntax": "off",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/no-array-delete": "error",
+    "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-deprecated": "error",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-meaningless-void-operator": "error",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": {
+          "arguments": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-misused-spread": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "no-throw-literal": "off",
+    "@typescript-eslint/only-throw-error": "error",
+    "prefer-promise-reject-errors": "off",
+    "@typescript-eslint/prefer-promise-reject-errors": "error",
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+    "@typescript-eslint/prefer-return-this-type": "error",
+    "@typescript-eslint/related-getter-setter-pairs": "error",
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/restrict-plus-operands": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowNumberAndString": false,
+        "allowRegExp": false
+      }
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
+        "allowNumber": false,
+        "allowRegExp": false
+      }
+    ],
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": [
+      "error",
+      "error-handling-correctness-only"
+    ],
+    "@typescript-eslint/unbound-method": "error",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "error",
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+    "@typescript-eslint/prefer-find": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      {
+        "fixMixedExportsWithInlineTypeSpecifier": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "fixStyle": "inline-type-imports"
+      }
+    ],
     "jest/expect-expect": "warn",
     "jest/no-alias-methods": "error",
     "jest/no-commented-out-tests": "warn",
@@ -2681,9 +2870,8 @@ exports[`Extension .spec.ts 1`] = `
     "ecmaVersion": 2024,
     "sourceType": "module",
     "parserOptions": {
-      "ecmaFeatures": {
-        "globalReturn": true
-      }
+      "projectService": true,
+      "tsconfigRootDir": "<rootDir>"
     },
     "parser": "[Parser typescript-eslint/parser]"
   },
@@ -3540,7 +3728,8 @@ exports[`Extension .svelte 1`] = `
     "sourceType": "module",
     "parserOptions": {
       "extraFileExtensions": [
-        ".svelte"
+        ".svelte",
+        ".vue"
       ],
       "parser": "[Parser typescript-eslint/parser]"
     },
@@ -4296,7 +4485,7 @@ exports[`Extension .ts 1`] = `
     ],
     "max-params": "off",
     "no-eval": "error",
-    "no-implied-eval": "error",
+    "no-implied-eval": "off",
     "no-loop-func": "error",
     "no-new": "error",
     "no-new-func": "error",
@@ -4419,7 +4608,10 @@ exports[`Extension .ts 1`] = `
     "@typescript-eslint/consistent-generic-constructors": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
-    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "error",
@@ -4442,7 +4634,99 @@ exports[`Extension .ts 1`] = `
       }
     ],
     "@typescript-eslint/no-redundant-type-constituents": "off",
-    "tsdoc/syntax": "error"
+    "tsdoc/syntax": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/no-array-delete": "error",
+    "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-deprecated": "error",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-meaningless-void-operator": "error",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": {
+          "arguments": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-misused-spread": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "no-throw-literal": "off",
+    "@typescript-eslint/only-throw-error": "error",
+    "prefer-promise-reject-errors": "off",
+    "@typescript-eslint/prefer-promise-reject-errors": "error",
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+    "@typescript-eslint/prefer-return-this-type": "error",
+    "@typescript-eslint/related-getter-setter-pairs": "error",
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/restrict-plus-operands": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowNumberAndString": false,
+        "allowRegExp": false
+      }
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
+        "allowNumber": false,
+        "allowRegExp": false
+      }
+    ],
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": [
+      "error",
+      "error-handling-correctness-only"
+    ],
+    "@typescript-eslint/unbound-method": "error",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "error",
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+    "@typescript-eslint/prefer-find": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      {
+        "fixMixedExportsWithInlineTypeSpecifier": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "fixStyle": "inline-type-imports"
+      }
+    ]
   },
   "languageOptions": {
     "globals": [
@@ -4451,9 +4735,8 @@ exports[`Extension .ts 1`] = `
     "ecmaVersion": 2024,
     "sourceType": "module",
     "parserOptions": {
-      "ecmaFeatures": {
-        "globalReturn": true
-      }
+      "projectService": true,
+      "tsconfigRootDir": "<rootDir>"
     },
     "parser": "[Parser typescript-eslint/parser]"
   },
@@ -5478,6 +5761,10 @@ exports[`Extension .vue 1`] = `
     "ecmaVersion": "latest",
     "sourceType": "module",
     "parserOptions": {
+      "extraFileExtensions": [
+        ".svelte",
+        ".vue"
+      ],
       "parser": "[Parser typescript-eslint/parser]"
     },
     "parser": "[Parser vue-eslint-parser]"
@@ -6638,6 +6925,7 @@ exports[`Package @forsakringskassan/eslint-config-jest 1`] = `
     "jest/prefer-to-contain": "error",
     "jest/prefer-to-have-length": "error",
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
     "jest/consistent-test-it": [
       "error",
       {
@@ -6670,7 +6958,8 @@ exports[`Package @forsakringskassan/eslint-config-svelte 1`] = `
     "parser": "[Parser svelte-eslint-parser]",
     "parserOptions": {
       "extraFileExtensions": [
-        ".svelte"
+        ".svelte",
+        ".vue"
       ],
       "parser": "[Parser typescript-eslint/parser]"
     },
@@ -6742,6 +7031,12 @@ exports[`Package @forsakringskassan/eslint-config-typescript 1`] = `
   ],
   "languageOptions": {
     "parser": "[Parser typescript-eslint/parser]",
+    "parserOptions": {
+      "extraFileExtensions": [
+        ".svelte",
+        ".vue"
+      ]
+    },
     "sourceType": "module"
   },
   "plugins": {
@@ -6867,6 +7162,151 @@ exports[`Package @forsakringskassan/eslint-config-typescript 1`] = `
 }
 `;
 
+exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
+{
+  "name": "@forsakringskassan/eslint-config-typescript-typeinfo",
+  "files": [
+    "**/*.{ts,cts,mts}"
+  ],
+  "languageOptions": {
+    "parser": "[Parser typescript-eslint/parser]",
+    "sourceType": "module",
+    "parserOptions": {
+      "projectService": true,
+      "tsconfigRootDir": "<rootDir>"
+    }
+  },
+  "plugins": {
+    "@typescript-eslint": "[Plugin @typescript-eslint/eslint-plugin]"
+  },
+  "rules": {
+    "constructor-super": "off",
+    "getter-return": "off",
+    "no-class-assign": "off",
+    "no-const-assign": "off",
+    "no-dupe-args": "off",
+    "no-dupe-class-members": "off",
+    "no-dupe-keys": "off",
+    "no-func-assign": "off",
+    "no-import-assign": "off",
+    "no-new-native-nonconstructor": "off",
+    "no-new-symbol": "off",
+    "no-obj-calls": "off",
+    "no-redeclare": "off",
+    "no-setter-return": "off",
+    "no-this-before-super": "off",
+    "no-undef": "off",
+    "no-unreachable": "off",
+    "no-unsafe-negation": "off",
+    "no-var": "error",
+    "no-with": "off",
+    "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/no-array-delete": "error",
+    "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-deprecated": "error",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-for-in-array": "error",
+    "no-implied-eval": "off",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-meaningless-void-operator": "error",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": {
+          "arguments": false
+        }
+      }
+    ],
+    "@typescript-eslint/no-misused-spread": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-redundant-type-constituents": "off",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-template-expression": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-unnecessary-type-conversion": "error",
+    "@typescript-eslint/no-unnecessary-type-parameters": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-enum-comparison": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "no-throw-literal": "off",
+    "@typescript-eslint/only-throw-error": "error",
+    "prefer-promise-reject-errors": "off",
+    "@typescript-eslint/prefer-promise-reject-errors": "error",
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+    "@typescript-eslint/prefer-return-this-type": "error",
+    "@typescript-eslint/related-getter-setter-pairs": "error",
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/restrict-plus-operands": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowNumberAndString": false,
+        "allowRegExp": false
+      }
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
+        "allowNumber": false,
+        "allowRegExp": false
+      }
+    ],
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": [
+      "error",
+      "error-handling-correctness-only"
+    ],
+    "@typescript-eslint/unbound-method": "error",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "error",
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+    "@typescript-eslint/prefer-find": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      {
+        "fixMixedExportsWithInlineTypeSpecifier": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "fixStyle": "inline-type-imports"
+      }
+    ],
+    "tsdoc/syntax": "error"
+  }
+}
+`;
+
 exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
 {
   "name": "@forsakringskassan/eslint-config-vue",
@@ -6876,6 +7316,10 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
   "languageOptions": {
     "parser": "[Parser vue-eslint-parser]",
     "parserOptions": {
+      "extraFileExtensions": [
+        ".svelte",
+        ".vue"
+      ],
       "parser": "[Parser typescript-eslint/parser]"
     },
     "sourceType": "module",

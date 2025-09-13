@@ -50,6 +50,10 @@ const config = defineConfig({
         ...style.rules,
 
         "@typescript-eslint/no-non-null-assertion": "off",
+
+        /* jest functions often use "any" */
+        "@typescript-eslint/no-unsafe-assignment": "off",
+
         "jest/consistent-test-it": ["error", { fn: "it" }],
         "jest/no-alias-methods": "error",
         "jest/no-disabled-tests": "warn",

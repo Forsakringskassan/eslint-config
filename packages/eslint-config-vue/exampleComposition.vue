@@ -10,9 +10,11 @@ function increment(): void {
 }
 
 // lifecycle hooks
-onMounted(() => {
+onMounted(async () => {
+    await Promise.resolve();
+
     /* eslint-disable-next-line no-console -- expected to log */
-    console.log(`The initial count is ${count.value}.`);
+    console.log(`The initial count is ${String(count.value)}.`);
 });
 </script>
 

@@ -1,0 +1,32 @@
+{
+  "name": "@forsakringskassan/eslint-config-typescript-typeinfo",
+  "version": "13.0.0",
+  "description": "Försäkringskassans eslint shareable typescript config with typeinfo",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config-typescript-typeinfo"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "main": "index.mjs",
+  "files": [
+    "index.mjs",
+    "index.d.mts"
+  ],
+  "dependencies": {
+    "typescript-eslint": "8.43.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "^3.0.1 || ^4.0.2 || ^5.0.2"
+  },
+  "engines": {
+    "node": ">= 22.0"
+  }
+}

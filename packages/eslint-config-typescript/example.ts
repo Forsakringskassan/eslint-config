@@ -98,3 +98,11 @@ export function withManyParams(
 ): number[] {
     return [a, b, c, d, e];
 }
+
+export function fnExpectingVoidCallback(cb: () => void): void {
+    cb();
+}
+
+fnExpectingVoidCallback(async () => {
+    await Promise.resolve();
+});
