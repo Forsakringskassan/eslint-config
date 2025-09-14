@@ -100,7 +100,16 @@ export function errorHandling() {
     }
 }
 
-/* 5 params should be ok */
+/**
+ * 5 params should be ok.
+ *
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @param {number} d
+ * @param {number} e
+ * @returns {number[]}
+ */
 export function withManyParams(a, b, c, d, e) {
     return [a, b, c, d, e];
 }

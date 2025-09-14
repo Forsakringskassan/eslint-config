@@ -1,0 +1,10 @@
+{
+    "extends": ["@tsconfig/node22", "@tsconfig/strictest"],
+    "files": [],
+    "references": [
+        { "path": "./tsconfig.default.json" },
+        { "path": "./tsconfig.cypress.json" },
+        { "path": "./tsconfig.jest.json" },
+        { "path": "./tsconfig.svelte.json" }
+    ]
+}

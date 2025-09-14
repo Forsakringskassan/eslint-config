@@ -1,0 +1,11 @@
+{
+    "extends": ["@tsconfig/node22", "@tsconfig/strictest"],
+    "compilerOptions": {
+        "composite": true,
+        "noEmit": true,
+        "lib": ["es6", "dom"],
+        "types": ["cypress"]
+    },
+    "include": ["**/*.cy.js", "**/*.cy.ts"],
+    "exclude": ["**/node_modules/**"]
+}
