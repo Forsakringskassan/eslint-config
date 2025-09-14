@@ -6678,6 +6678,7 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
   {
     "name": "@forsakringskassan/eslint-config/legacy-dts",
     "files": [
+      "*.d.ts",
       "packages/*/*.d.ts"
     ],
     "rules": {
