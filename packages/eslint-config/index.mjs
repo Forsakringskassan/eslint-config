@@ -224,4 +224,15 @@ export default [
             "import/no-unresolved": "off",
         },
     }),
+
+    /* E2E tests may import pageobjects from monorepo packages but the import
+     * plugin wont resolve them, yielding lots of false positives */
+    {
+        name: "@forsakringskassan/eslint-config/cypress-pageobjects",
+        files: ["cypress/**/*.[jt]s"],
+        rules: {
+            "import/no-extraneous-dependencies": "off",
+            "import/order": "off",
+        },
+    },
 ];
