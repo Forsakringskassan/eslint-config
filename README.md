@@ -80,13 +80,15 @@ export default [
 Behöver man skriva över regler använder man ett nytt block under fabriker:
 
 ```ts
+import { defineConfig } from "@forsakringskassan/eslint-config";
+
 export default [
-    {
+    defineConfig({
         name: "local",
         rules: {
             /* ... */
         },
-    },
+    }),
 ];
 ```
 
