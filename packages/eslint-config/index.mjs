@@ -234,7 +234,7 @@ export default [
      * yet */
     defineConfig({
         name: "@forsakringskassan/eslint-config/legacy-dts",
-        files: ["packages/*/*.d.ts"],
+        files: ["*.d.ts", "packages/*/*.d.ts"],
         rules: {
             "import/no-unresolved": "off",
         },
