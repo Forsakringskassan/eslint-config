@@ -7,3 +7,4 @@ export default config;
 
 export function defineConfig(config: Linter.Config): Linter.Config;
 export function docsConfig(override?: Linter.Config): Linter.Config;
+export function examplesConfig(override?: Linter.Config): Linter.Config;

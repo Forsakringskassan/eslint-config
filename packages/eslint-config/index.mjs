@@ -262,10 +262,34 @@ const defaultDocsConfig = defineConfig({
     },
 });
 
+const defaultExampleConfig = {
+    name: "@forsakringskassan/eslint-config/docs-examples",
+    files: ["**/examples/**/*.{js,ts,vue}"],
+    rules: {
+        "@eslint-community/eslint-comments/require-description": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "import/no-duplicates": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-console": "off",
+        "no-unused-vars": "off",
+        "sonarjs/no-dead-store": "off",
+        "sonarjs/pseudo-random": "off",
+    },
+};
+
 /**
  * @param {Config} [override]
  * @returns {Config}
  */
 export function docsConfig(override) {
     return merge(defaultDocsConfig, override ?? {});
+}
+
+/**
+ * @param {Config} [override]
+ * @returns {Config}
+ */
+export function examplesConfig(override) {
+    return merge(defaultExampleConfig, override ?? {});
 }
