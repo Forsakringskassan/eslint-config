@@ -6686,6 +6686,16 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
     }
   },
   {
+    "name": "@forsakringskassan/eslint-config/bin",
+    "files": [
+      "bin/*.{js,cjs,mjs}"
+    ],
+    "rules": {
+      "import/extensions": "off",
+      "import/no-unresolved": "off"
+    }
+  },
+  {
     "name": "@forsakringskassan/eslint-config/cypress-pageobjects",
     "files": [
       "cypress/**/*.[jt]s"

@@ -240,6 +240,17 @@ export default [
         },
     }),
 
+    defineConfig({
+        name: "@forsakringskassan/eslint-config/bin",
+        files: ["bin/*.{js,cjs,mjs}"],
+        rules: {
+            /* esm requires the usage of extension in this context */
+            "import/extensions": "off",
+            /* needed to run eslint before sources are compiled to dist folder */
+            "import/no-unresolved": "off",
+        },
+    }),
+
     /* E2E tests may import pageobjects from monorepo packages but the import
      * plugin wont resolve them, yielding lots of false positives */
     {
