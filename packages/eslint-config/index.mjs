@@ -278,6 +278,14 @@ const defaultExampleConfig = {
     },
 };
 
+const defaultSandboxConfig = {
+    name: "@forsakringskassan/eslint-config/sandbox",
+    files: ["internal/vue-sandbox/**/*.{js,ts,vue}"],
+    rules: {
+        "no-console": "off",
+    },
+};
+
 /**
  * @param {Config} [override]
  * @returns {Config}
@@ -292,4 +300,12 @@ export function docsConfig(override) {
  */
 export function examplesConfig(override) {
     return merge(defaultExampleConfig, override ?? {});
+}
+
+/**
+ * @param {Config} [override]
+ * @returns {Config}
+ */
+export function sandboxConfig(override) {
+    return merge(defaultSandboxConfig, override ?? {});
 }
