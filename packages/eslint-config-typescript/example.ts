@@ -1,8 +1,8 @@
 /**
  * This is a sample file
  */
-import { Component, FooInterface } from "@/components";
-import { hash, add, take } from "./utils";
+import { type FooInterface, Component } from "@/components";
+import { hash, add, take, join } from "./utils";
 
 /* variables with _ prefix should be allowed to be unused */
 function sink(..._unused: unknown[]): void {
@@ -34,18 +34,20 @@ export class Foo extends Component implements FooInterface {
     }
 
     private async greet(to: string, from: string[]): Promise<string> {
-        return `Hello, ${to} from ${from.join(",")}`;
+        const joined = await join(from);
+        return `Hello, ${to} from ${joined}`;
     }
 
-    public static myStaticFunction(): void {
-        function nestedFunction<T>(n: T): T {
-            return add(n, this.value);
+    public static async myStaticFunction(): Promise<void> {
+        function nestedFunction<T>(a: T, b: T): T {
+            return add(a, b);
         }
 
-        let x = nestedFunction(1);
+        let x = nestedFunction(1, 2);
 
+        const foo = new Foo();
         while (x-- < 10) {
-            this.greet("me", "you");
+            await foo.greet("me", ["you"]);
         }
     }
 }

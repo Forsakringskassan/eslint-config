@@ -1,0 +1,10 @@
+{
+    "extends": ["@tsconfig/node22", "@tsconfig/strictest"],
+    "compilerOptions": {
+        "composite": true,
+        "noEmit": true,
+        "types": ["svelte"]
+    },
+    "include": ["**/*.svelte.js", "**/*.svelte.ts"],
+    "exclude": ["**/node_modules/**"]
+}

@@ -15,6 +15,7 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "tsc -b",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
     "prettier:check": "prettier --check .",
@@ -33,14 +34,19 @@
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.0.8",
     "@forsakringskassan/prettier-config-svelte": "3.1.7",
+    "@tsconfig/node22": "22.0.2",
+    "@tsconfig/strictest": "2.0.5",
     "@types/jest": "30.0.0",
     "@types/node": "22.18.1",
+    "cypress": "15.2.0",
     "eslint": "9.35.0",
     "globals": "16.4.0",
     "jest": "30.1.3",
     "lerna": "8.2.3",
     "minimatch": "10.0.3",
-    "npm-pkg-lint": "4.0.4"
+    "npm-pkg-lint": "4.0.4",
+    "svelte": "5.38.10",
+    "typescript": "5.9.2"
   },
   "engines": {
     "node": ">= 22.0"
