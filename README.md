@@ -111,3 +111,19 @@ export default [
     },
 ];
 ```
+
+`@forsakringskassan/eslint-config` exports some additional specialized configurations:
+
+```
+import {
+    docsConfig,
+    examplesConfig,
+    sandboxConfig,
+} from "@forsakringskassan/eslint-config";
+```
+
+- `docsConfig` includes overrides for a documentation site (default in the `docs` folder).
+- `examplesConfig` includes overrides for documentation examples.
+- `sandboxConfig` includes overrides for sandbox applications.
+
+These are typically used in a monorepo component library such as [`forsakringskassan/designsystem`](https://github.com/Forsakringskassan/designsystem/tree/main).
