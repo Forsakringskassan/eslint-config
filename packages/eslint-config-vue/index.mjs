@@ -145,6 +145,8 @@ const config = defineConfig({
 
         "@typescript-eslint/no-object-literal-type-assertion": ["off"],
 
+        "sonarjs/different-types-comparison": "off", // does not play well with vue
+
         /* documentation for vue components does not adhere with tsdoc syntax */
         "tsdoc/syntax": "off",
 

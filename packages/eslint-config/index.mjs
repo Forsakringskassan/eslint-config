@@ -109,6 +109,23 @@ export default [
              * keys. */
             "sonarjs/no-duplicate-string": "off",
 
+            "sonarjs/argument-type": "off", // handled by typescript (and this rule is sometimes wrong)
+            "sonarjs/deprecation": "off", // covered by @typescript-eslint/no-deprecated (and this rule crashes on .svelte files)
+            "sonarjs/function-return-type": "off", // overly broad and opinionated, let typescript deal with this
+            "sonarjs/no-control-regex": "off", // covered by no-control-regexp
+            "sonarjs/no-empty-test-file": "off", // could be useful but it does not handle it.each or similar constructs thus yields more false positives than its worth */
+            "sonarjs/no-selector-parameter": "off", // not always possible (e.g. watcher handler in vue)
+            "sonarjs/no-skipped-tests": "off", // covered by jest/no-disabled-tests and mocha/no-pending-tests
+            "sonarjs/no-small-switch": "off", // prefer to use small switches when the intention is to all more cases later
+            "sonarjs/no-unused-vars": "off", // covered by @typescript-eslint/no-unused-vars
+            "sonarjs/prefer-nullish-coalescing": "off", // requires typescript and strictNullChecks, which is sane, but we also use @typescript-eslint/prefer-nullish-coalescing so this becomes redundant
+            "sonarjs/prefer-regexp-exec": "off", // covered by @typescript-eslint/prefer-regexp-exec
+            "sonarjs/redundant-type-aliases": "off", // "redundant" type aliases helps with self-documenting code
+            "sonarjs/todo-tag": "off", // want to be able to leave todo tasks
+            "sonarjs/unused-import": "off", // covered by @typescript-eslint/no-unused-vars
+            "sonarjs/unused-named-groups": "off", // named groups can help readability even if not used
+            "sonarjs/use-type-alias": "off", // overly broad, lets leave this to the discretion of the author
+
             /* Lower some errors to warnings, these are allowed on local builds (to
              * not prevent builds during development where code is unfinished and
              * might contain debugging code) but is disallowed when building from
@@ -116,6 +133,7 @@ export default [
             "no-console": "warn",
             "no-debugger": "warn",
             "prettier/prettier": "warn",
+            "sonarjs/no-commented-code": "warn",
 
             "import/default": "off",
             "import/extensions": [
