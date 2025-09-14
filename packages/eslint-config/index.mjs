@@ -214,4 +214,14 @@ export default [
             "import/extensions": ["error", "always"],
         },
     }),
+
+    /* These legacy files points to compiled files which may or may not exist
+     * yet */
+    defineConfig({
+        name: "@forsakringskassan/eslint-config/legacy-dts",
+        files: ["packages/*/*.d.ts"],
+        rules: {
+            "import/no-unresolved": "off",
+        },
+    }),
 ];

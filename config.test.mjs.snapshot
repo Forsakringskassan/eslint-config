@@ -6387,6 +6387,15 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
         "always"
       ]
     }
+  },
+  {
+    "name": "@forsakringskassan/eslint-config/legacy-dts",
+    "files": [
+      "packages/*/*.d.ts"
+    ],
+    "rules": {
+      "import/no-unresolved": "off"
+    }
   }
 ]
 `;
