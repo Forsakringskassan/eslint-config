@@ -4,3 +4,5 @@ declare const config: Linter.Config[];
 export const globals: typeof import("globals");
 
 export default config;
+
+export function defineConfig(config: Linter.Config): Linter.Config;

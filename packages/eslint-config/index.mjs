@@ -17,7 +17,7 @@ export { default as globals } from "globals";
  * @param {Config} config
  * @returns {Config}
  */
-function defineConfig(config) {
+export function defineConfig(config) {
     return config;
 }
 
