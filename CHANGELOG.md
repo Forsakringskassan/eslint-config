@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 13.0.1 (2025-09-14)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-svelte, @forsakringskassan/eslint-config-typescript-typeinfo, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue:** enable typescript typeinfo rules 152c362
+* **@forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** disable redundant and noisy sonarjs rules 5840470
+* **@forsakringskassan/eslint-config:** add exceptions for cypress e2e monorepo pageobject 5e2ec1b
+* **@forsakringskassan/eslint-config:** add exceptions for legacy dts files 0dd9498
+* **@forsakringskassan/eslint-config:** add overrides for code examples 2c16737
+* **@forsakringskassan/eslint-config:** add overrides for docs application 72f0fb4
+* **@forsakringskassan/eslint-config:** add overrides for sandbox applications f998514
+* **@forsakringskassan/eslint-config:** export `defineConfig` function fe87b85
+* **deps:** update dependency eslint-plugin-svelte to v3.12.3 8a4f14a
+* **deps:** update dependency svelte-eslint-parser to v1.3.2 8a8bfe6
+
 ## 13.0.0 (2025-09-12)
 
 ### ⚠ BREAKING CHANGES
