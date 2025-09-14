@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 13.0.2 (2025-09-14)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** handle bin scripts not needing resolved packages 85f63cb
+* **@forsakringskassan/eslint-config:** handle legacy dts files in root 752baa5
+
 ## 13.0.1 (2025-09-14)
 
 ### Bug Fixes
