@@ -125,8 +125,10 @@ export default [
             "sonarjs/no-duplicate-string": "off",
 
             "sonarjs/argument-type": "off", // handled by typescript (and this rule is sometimes wrong)
+            "sonarjs/arguments-order": "off", // another slow rule, would be nice to have enabled thought
             "sonarjs/deprecation": "off", // covered by @typescript-eslint/no-deprecated (and this rule crashes on .svelte files)
             "sonarjs/function-return-type": "off", // overly broad and opinionated, let typescript deal with this
+            "sonarjs/no-commented-code": "off", // neat rule but is very very slow (over 50% of the total linting time)
             "sonarjs/no-control-regex": "off", // covered by no-control-regexp
             "sonarjs/no-empty-test-file": "off", // could be useful but it does not handle it.each or similar constructs thus yields more false positives than its worth */
             "sonarjs/no-selector-parameter": "off", // not always possible (e.g. watcher handler in vue)
@@ -141,6 +143,27 @@ export default [
             "sonarjs/unused-named-groups": "off", // named groups can help readability even if not used
             "sonarjs/use-type-alias": "off", // overly broad, lets leave this to the discretion of the author
 
+            /* disable sonarjs aws related rules as we dont use aws */
+            "sonarjs/aws-apigateway-public-api": "off",
+            "sonarjs/aws-ec2-rds-dms-public": "off",
+            "sonarjs/aws-ec2-unencrypted-ebs-volume": "off",
+            "sonarjs/aws-efs-unencrypted": "off",
+            "sonarjs/aws-iam-all-privileges": "off",
+            "sonarjs/aws-iam-all-resources-accessible": "off",
+            "sonarjs/aws-iam-privilege-escalation": "off",
+            "sonarjs/aws-iam-public-access": "off",
+            "sonarjs/aws-opensearchservice-domain": "off",
+            "sonarjs/aws-rds-unencrypted-databases": "off",
+            "sonarjs/aws-restricted-ip-admin-access": "off",
+            "sonarjs/aws-s3-bucket-granted-access": "off",
+            "sonarjs/aws-s3-bucket-insecure-http": "off",
+            "sonarjs/aws-s3-bucket-public-access": "off",
+            "sonarjs/aws-s3-bucket-server-encryption": "off",
+            "sonarjs/aws-s3-bucket-versioning": "off",
+            "sonarjs/aws-sagemaker-unencrypted-notebook": "off",
+            "sonarjs/aws-sns-unencrypted-topics": "off",
+            "sonarjs/aws-sqs-unencrypted-queue": "off",
+
             /* Lower some errors to warnings, these are allowed on local builds (to
              * not prevent builds during development where code is unfinished and
              * might contain debugging code) but is disallowed when building from
@@ -148,7 +171,6 @@ export default [
             "no-console": "warn",
             "no-debugger": "warn",
             "prettier/prettier": "warn",
-            "sonarjs/no-commented-code": "warn",
 
             "import/default": "off",
             "import/extensions": [
