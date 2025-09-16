@@ -1,5 +1,4 @@
 import eslintConfigPrettier from "eslint-config-prettier";
-import eslintPluginPrettier from "eslint-plugin-prettier";
 import eslintPluginVue from "eslint-plugin-vue";
 import globals from "globals";
 import {
@@ -7,7 +6,6 @@ import {
     parser as tseParser,
     plugin as tsePlugin,
 } from "typescript-eslint";
-import tsdocPlugin from "eslint-plugin-tsdoc";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
@@ -35,6 +33,17 @@ function merge(result, it) {
         plugins: { ...result.plugins, ...it.plugins },
         rules: { ...result.rules, ...it.rules },
     };
+}
+
+/**
+ * @param {RulesRecord} rules
+ * @param {(rule: string) => boolean} predicate
+ * @returns {RulesRecord}
+ */
+function filterRules(rules, predicate) {
+    return Object.fromEntries(
+        Object.entries(rules).filter(([key]) => predicate(key)),
+    );
 }
 
 const strict = tseConfig.strict.reduce(merge, {});
@@ -67,8 +76,6 @@ const config = defineConfig({
     plugins: {
         "@typescript-eslint": tsePlugin,
         vue: eslintPluginVue,
-        prettier: eslintPluginPrettier,
-        tsdoc: tsdocPlugin,
     },
 
     rules: {
@@ -139,10 +146,9 @@ const config = defineConfig({
         ],
 
         ...recommended.rules,
-        ...eslintConfigPrettier.rules,
-        ...eslintPluginPrettier.configs.recommended.rules,
-
-        curly: "error" /* disabled by prettier/recommended, reenabled again */,
+        ...filterRules(eslintConfigPrettier.rules, (rule) => {
+            return rule.startsWith("vue/");
+        }),
 
         "@typescript-eslint/no-object-literal-type-assertion": ["off"],
 
