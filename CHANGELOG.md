@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 13.0.3 (2025-09-16)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** disable overlapping rules when using typescript typeinfo 425ac2c
+* **@forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** filter out lots of unused rules 35961a9
+* **@forsakringskassan/eslint-config:** disable redundant, unused and slow sonarjs rules 4ffb808
+
 ## 13.0.2 (2025-09-14)
 
 ### Bug Fixes
