@@ -11,6 +11,7 @@ export { default as globals } from "globals";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config
+ * @typedef {import("eslint").Linter.RulesRecord} RulesRecord
  */
 
 /**
@@ -36,6 +37,17 @@ function merge(result, it) {
     };
 }
 
+/**
+ * @param {RulesRecord} rules
+ * @param {(rule: string) => boolean} predicate
+ * @returns {RulesRecord}
+ */
+function filterRules(rules, predicate) {
+    return Object.fromEntries(
+        Object.entries(rules).filter(([key]) => predicate(key)),
+    );
+}
+
 export default [
     defineConfig({
         ...js.configs.recommended,
@@ -59,7 +71,27 @@ export default [
             },
         },
         rules: {
-            ...prettierConfig.rules,
+            ...filterRules(prettierConfig.rules, (rule) => {
+                if (rule.startsWith("@stylistic/")) {
+                    return false;
+                }
+                if (rule.startsWith("@babel/") || rule.startsWith("babel/")) {
+                    return false;
+                }
+                if (rule.startsWith("flowtype/")) {
+                    return false;
+                }
+                if (rule.startsWith("react/")) {
+                    return false;
+                }
+                if (rule.startsWith("standard/")) {
+                    return false;
+                }
+                if (rule.startsWith("unicorn/")) {
+                    return false;
+                }
+                return true;
+            }),
             ...prettierPlugin.configs.recommended.rules,
             ...importPlugin.configs.errors.rules,
             ...eslintCommentsPlugin.configs.recommended.rules,
