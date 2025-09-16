@@ -203,16 +203,9 @@ exports[`Extension .cy.ts 1`] = `
     "prettier/prettier": "warn",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": [
-          "^@"
-        ]
-      }
-    ],
-    "import/named": 2,
-    "import/namespace": 2,
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/namespace": "off",
     "import/default": "off",
     "import/export": 2,
     "@eslint-community/eslint-comments/disable-enable-pair": [
@@ -531,14 +524,7 @@ exports[`Extension .cy.ts 1`] = `
     "@eslint-community/eslint-comments/no-unused-disable": "error",
     "sonarjs/prefer-nullish-coalescing": "off",
     "no-console": "warn",
-    "import/extensions": [
-      "error",
-      "never",
-      {
-        "css": "always",
-        "json": "always"
-      }
-    ],
+    "import/extensions": "off",
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
     "import/no-deprecated": "error",
@@ -547,7 +533,7 @@ exports[`Extension .cy.ts 1`] = `
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
+    "import/no-named-as-default-member": "off",
     "import/no-named-default": "error",
     "import/no-useless-path-segments": "error",
     "import/order": [
@@ -1612,16 +1598,9 @@ exports[`Extension .spec.ts 1`] = `
     "prettier/prettier": "warn",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": [
-          "^@"
-        ]
-      }
-    ],
-    "import/named": 2,
-    "import/namespace": 2,
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/namespace": "off",
     "import/default": "off",
     "import/export": 2,
     "@eslint-community/eslint-comments/disable-enable-pair": [
@@ -1940,14 +1919,7 @@ exports[`Extension .spec.ts 1`] = `
     "@eslint-community/eslint-comments/no-unused-disable": "error",
     "sonarjs/prefer-nullish-coalescing": "off",
     "no-console": "warn",
-    "import/extensions": [
-      "error",
-      "never",
-      {
-        "css": "always",
-        "json": "always"
-      }
-    ],
+    "import/extensions": "off",
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
     "import/no-deprecated": "error",
@@ -1956,7 +1928,7 @@ exports[`Extension .spec.ts 1`] = `
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
+    "import/no-named-as-default-member": "off",
     "import/no-named-default": "error",
     "import/no-useless-path-segments": "error",
     "import/order": [
@@ -3089,16 +3061,9 @@ exports[`Extension .ts 1`] = `
     "prettier/prettier": "warn",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": [
-          "^@"
-        ]
-      }
-    ],
-    "import/named": 2,
-    "import/namespace": 2,
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/namespace": "off",
     "import/default": "off",
     "import/export": 2,
     "@eslint-community/eslint-comments/disable-enable-pair": [
@@ -3417,14 +3382,7 @@ exports[`Extension .ts 1`] = `
     "@eslint-community/eslint-comments/no-unused-disable": "error",
     "sonarjs/prefer-nullish-coalescing": "off",
     "no-console": "warn",
-    "import/extensions": [
-      "error",
-      "never",
-      {
-        "css": "always",
-        "json": "always"
-      }
-    ],
+    "import/extensions": "off",
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
     "import/no-deprecated": "error",
@@ -3433,7 +3391,7 @@ exports[`Extension .ts 1`] = `
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
+    "import/no-named-as-default-member": "off",
     "import/no-named-default": "error",
     "import/no-useless-path-segments": "error",
     "import/order": [
@@ -5782,6 +5740,12 @@ exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-regexp-exec": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "import/named": "off",
+    "import/namespace": "off",
+    "import/default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/consistent-type-definitions": [
       "error",
