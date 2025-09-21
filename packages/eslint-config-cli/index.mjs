@@ -18,14 +18,13 @@ function defineConfig(config) {
  * @returns {Config}
  */
 function merge(result, it) {
-    const merged = { ...result };
-    if (it.files) {
-        merged.files = it.files;
-    }
-    if (it.ignores) {
-        merged.ignores = it.ignores;
-    }
-    return merged;
+    return {
+        ...result,
+        ...it,
+        languageOptions: { ...result.languageOptions, ...it.languageOptions },
+        plugins: { ...result.plugins, ...it.plugins },
+        rules: { ...result.rules, ...it.rules },
+    };
 }
 
 const config = defineConfig({
