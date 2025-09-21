@@ -116,16 +116,18 @@ export default [
 
 `@forsakringskassan/eslint-config` exports some additional specialized configurations:
 
-```
+```ts
 import {
+    appConfig,
     docsConfig,
     examplesConfig,
     sandboxConfig,
 } from "@forsakringskassan/eslint-config";
 ```
 
+- `appConfig` includes overrides for end user applications.
 - `docsConfig` includes overrides for a documentation site (default in the `docs` folder).
 - `examplesConfig` includes overrides for documentation examples.
 - `sandboxConfig` includes overrides for sandbox applications.
 
-These are typically used in a monorepo component library such as [`forsakringskassan/designsystem`](https://github.com/Forsakringskassan/designsystem/tree/main).
+`appConfig` is to be used with end user application and the others are typically used in a monorepo component library such as [`forsakringskassan/designsystem`](https://github.com/Forsakringskassan/designsystem/tree/main).

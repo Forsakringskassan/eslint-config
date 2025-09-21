@@ -317,6 +317,13 @@ export default [
     },
 ];
 
+const defaultAppConfig = defineConfig({
+    name: "@forsakringskassan/eslint-config/app",
+    rules: {
+        "sonarjs/no-commented-code": "warn",
+    },
+});
+
 const defaultDocsConfig = defineConfig({
     name: "@forsakringskassan/eslint-config/docs-app",
     files: ["docs/src/*.{js,ts}"],
@@ -350,6 +357,14 @@ const defaultSandboxConfig = {
         "no-console": "off",
     },
 };
+
+/**
+ * @param {Config} [override]
+ * @returns {Config}
+ */
+export function appConfig(override) {
+    return merge(defaultAppConfig, override ?? {});
+}
 
 /**
  * @param {Config} [override]
