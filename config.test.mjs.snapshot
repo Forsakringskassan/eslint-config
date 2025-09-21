@@ -5265,7 +5265,8 @@ exports[`Package @forsakringskassan/eslint-config-cli 1`] = `
   },
   "rules": {
     "no-console": "off"
-  }
+  },
+  "plugins": {}
 }
 `;
 
