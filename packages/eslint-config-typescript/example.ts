@@ -99,6 +99,12 @@ export function withManyParams(
     return [a, b, c, d, e];
 }
 
+/* should prefer object shorthand */
+const objProperty = 1;
+export const obj = {
+    objProperty,
+};
+
 export function fnExpectingVoidCallback(cb: () => void): void {
     cb();
 }

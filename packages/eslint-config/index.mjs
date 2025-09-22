@@ -118,6 +118,7 @@ export default [
             "no-unused-vars": "error",
             "no-var": "error",
             "no-warning-comments": "error",
+            "object-shorthand": "error",
             "prefer-const": "error",
             "prefer-rest-params": "error",
             "prefer-spread": "error",

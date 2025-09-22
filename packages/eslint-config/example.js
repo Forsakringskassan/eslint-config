@@ -113,3 +113,9 @@ export function errorHandling() {
 export function withManyParams(a, b, c, d, e) {
     return [a, b, c, d, e];
 }
+
+/* should prefer object shorthand */
+const objProperty = 1;
+export const obj = {
+    objProperty,
+};
