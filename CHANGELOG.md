@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 13.0.5 (2025-09-22)
+
+### Bug Fixes
+
+* **deps:** add direct dependency to [@typescript-eslint](undefined/typescript-eslint) ba0b63e
+* **deps:** remove unused semver dependency cdabc89
+
 ## 13.0.4 (2025-09-22)
 
 ### Bug Fixes
