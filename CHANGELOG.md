@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 13.0.4 (2025-09-22)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cli:** fix cli config merge f2db983
+* **@forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config:** enable object-shorthand 4590864
+* **@forsakringskassan/eslint-config:** add app specific config ffc4bd3
+* **deps:** update typescript-eslint monorepo to v8.44.0 573f40e
+
 ## 13.0.3 (2025-09-16)
 
 ### Bug Fixes

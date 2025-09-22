@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-vue",
-  "version": "13.0.3",
+  "version": "13.0.4",
   "description": "Försäkringskassans eslint shareable vue config",
   "keywords": [
     "eslint"
@@ -20,7 +20,7 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "@forsakringskassan/eslint-config-typescript": "^13.0.1",
+    "@forsakringskassan/eslint-config-typescript": "^13.0.4",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-vue": "10.4.0",
     "globals": "16.4.0",
