@@ -37,7 +37,7 @@ const stylistic = tseConfig.stylistic.reduce(merge, {});
 
 const config = defineConfig({
     name: "@forsakringskassan/eslint-config-typescript",
-    files: ["**/*.{ts,cts,mts}"],
+    files: ["**/*.{ts,cts,mts,vue}"],
 
     languageOptions: {
         parser: tseParser,
