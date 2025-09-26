@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 13.0.6 (2025-09-26)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-svelte to v3.12.4 49679a8
+* **deps:** update dependency eslint-plugin-vue to v10.5.0 cdd06c2
+* **deps:** update dependency svelte-eslint-parser to v1.3.3 2136e36
+* **deps:** update eslint monorepo to v9.36.0 f25ed15
+
 ## 13.0.5 (2025-09-22)
 
 ### Bug Fixes
