@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 13.0.7 (2025-09-26)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue:** use ts config directly for vue files b875b63
+* **deps:** update typescript-eslint monorepo to v8.44.1 38221c1
+
 ## 13.0.6 (2025-09-26)
 
 ### Bug Fixes
