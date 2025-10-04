@@ -33,7 +33,7 @@
   "devDependencies": {
     "@tsconfig/svelte": "5.0.5",
     "svelte": "5.39.7",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
