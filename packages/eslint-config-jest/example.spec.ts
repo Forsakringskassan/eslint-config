@@ -1,4 +1,4 @@
-import { myFunction, myAsyncFunction } from "./my-file";
+import { myAsyncFunction, myFunction } from "./my-file";
 
 beforeEach(() => {
     jest.restoreAllMocks();

@@ -542,11 +542,33 @@ exports[`Extension .cy.ts 1`] = `
       {
         "pathGroups": [
           {
+            "pattern": "{vue,vite}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{cypress,cypress/vue}",
+            "group": "external",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "parent",
             "position": "before"
           }
-        ]
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "named": {
+          "enabled": true,
+          "types": "types-first"
+        }
       }
     ],
     "no-new-symbol": "off",
@@ -1360,11 +1382,33 @@ exports[`Extension .js 1`] = `
       {
         "pathGroups": [
           {
+            "pattern": "{vue,vite}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{cypress,cypress/vue}",
+            "group": "external",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "parent",
             "position": "before"
           }
-        ]
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "named": {
+          "enabled": true,
+          "types": "types-first"
+        }
       }
     ]
   },
@@ -1939,11 +1983,33 @@ exports[`Extension .spec.ts 1`] = `
       {
         "pathGroups": [
           {
+            "pattern": "{vue,vite}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{cypress,cypress/vue}",
+            "group": "external",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "parent",
             "position": "before"
           }
-        ]
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "named": {
+          "enabled": true,
+          "types": "types-first"
+        }
       }
     ],
     "no-new-symbol": "off",
@@ -2774,11 +2840,33 @@ exports[`Extension .svelte 1`] = `
       {
         "pathGroups": [
           {
+            "pattern": "{vue,vite}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{cypress,cypress/vue}",
+            "group": "external",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "parent",
             "position": "before"
           }
-        ]
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "named": {
+          "enabled": true,
+          "types": "types-first"
+        }
       }
     ],
     "no-inner-declarations": "off",
@@ -3404,11 +3492,33 @@ exports[`Extension .ts 1`] = `
       {
         "pathGroups": [
           {
+            "pattern": "{vue,vite}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{cypress,cypress/vue}",
+            "group": "external",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "parent",
             "position": "before"
           }
-        ]
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "named": {
+          "enabled": true,
+          "types": "types-first"
+        }
       }
     ],
     "no-new-symbol": "off",
@@ -4183,11 +4293,33 @@ exports[`Extension .vue 1`] = `
       {
         "pathGroups": [
           {
+            "pattern": "{vue,vite}",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "{cypress,cypress/vue}",
+            "group": "external",
+            "position": "before"
+          },
+          {
             "pattern": "@/**",
             "group": "parent",
             "position": "before"
           }
-        ]
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "builtin",
+          "object"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "named": {
+          "enabled": true,
+          "types": "types-first"
+        }
       }
     ],
     "no-new-symbol": "off",
@@ -5079,11 +5211,33 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
         {
           "pathGroups": [
             {
+              "pattern": "{vue,vite}",
+              "group": "external",
+              "position": "before"
+            },
+            {
+              "pattern": "{cypress,cypress/vue}",
+              "group": "external",
+              "position": "before"
+            },
+            {
               "pattern": "@/**",
               "group": "parent",
               "position": "before"
             }
-          ]
+          ],
+          "pathGroupsExcludedImportTypes": [
+            "builtin",
+            "object"
+          ],
+          "alphabetize": {
+            "order": "asc",
+            "orderImportKind": "asc"
+          },
+          "named": {
+            "enabled": true,
+            "types": "types-first"
+          }
         }
       ]
     }

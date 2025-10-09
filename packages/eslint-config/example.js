@@ -6,7 +6,7 @@ import "node:path";
 import "eslint";
 import { Component } from "@/components";
 import { take } from "../parent";
-import { hash, add } from "./utils";
+import { add, hash } from "./utils";
 
 export class Foo extends Component {
     /**
