@@ -1,9 +1,9 @@
+import tsdocPlugin from "eslint-plugin-tsdoc";
 import {
     configs as tseConfig,
     parser as tseParser,
     plugin as tsePlugin,
 } from "typescript-eslint";
-import tsdocPlugin from "eslint-plugin-tsdoc";
 
 /**
  * @typedef {import("eslint").Linter.Config} Config

@@ -2,7 +2,7 @@
  * This is a sample file
  */
 import { type FooInterface, Component } from "@/components";
-import { hash, add, take, join } from "./utils";
+import { add, hash, join, take } from "./utils";
 
 /* variables with _ prefix should be allowed to be unused */
 function sink(..._unused: unknown[]): void {

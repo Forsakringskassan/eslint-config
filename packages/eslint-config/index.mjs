@@ -1,8 +1,8 @@
 import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
+import eslintCommentsPlugin from "@eslint-community/eslint-plugin-eslint-comments";
 import prettierConfig from "eslint-config-prettier";
 import importPlugin from "eslint-plugin-import";
-import eslintCommentsPlugin from "@eslint-community/eslint-plugin-eslint-comments";
 import prettierPlugin from "eslint-plugin-prettier";
 import sonarjsPlugin from "eslint-plugin-sonarjs";
 import globals from "globals";
@@ -237,11 +237,30 @@ export default [
                 {
                     pathGroups: [
                         {
+                            pattern: "{vue,vite}",
+                            group: "external",
+                            position: "before",
+                        },
+                        {
+                            pattern: "{cypress,cypress/vue}",
+                            group: "external",
+                            position: "before",
+                        },
+                        {
                             pattern: "@/**",
                             group: "parent",
                             position: "before",
                         },
                     ],
+                    pathGroupsExcludedImportTypes: ["builtin", "object"],
+                    alphabetize: {
+                        order: "asc",
+                        orderImportKind: "asc",
+                    },
+                    named: {
+                        enabled: true,
+                        types: "types-first",
+                    },
                 },
             ],
         },
