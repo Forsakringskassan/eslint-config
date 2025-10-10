@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 13.0.8 (2025-10-10)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-cypress to v5.2.0 aaadff3
+* **deps:** update dependency eslint-plugin-mocha to v11.2.0 22da8d8
+* **deps:** update eslint monorepo to v9.37.0 aa61a32
+* **deps:** update typescript-eslint monorepo to v8.45.0 9b8b462
+* **deps:** update typescript-eslint monorepo to v8.46.0 0703021
+
 ## 13.0.7 (2025-09-26)
 
 ### Bug Fixes
