@@ -15,7 +15,6 @@ export default defineComponent({
          */
         myProp: {
             type: Boolean,
-            default: true,
         },
         /**
          * Prop description
@@ -58,6 +57,6 @@ export default defineComponent({
         <slot name="my-slot"></slot>
     </div>
     <div>
-        <span>{{ myComplexProp }}</span>
+        <span v-if="myProp">{{ myComplexProp }}</span>
     </div>
 </template>

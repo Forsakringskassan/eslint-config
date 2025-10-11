@@ -4505,7 +4505,13 @@ exports[`Extension .vue 1`] = `
     "vue/require-default-prop": "warn",
     "vue/require-explicit-emits": "warn",
     "vue/require-prop-types": "warn",
-    "vue/v-bind-style": "warn",
+    "vue/v-bind-style": [
+      "error",
+      "shorthand",
+      {
+        "sameNameShorthand": "always"
+      }
+    ],
     "vue/v-on-event-hyphenation": [
       "warn",
       "always",
@@ -4534,7 +4540,39 @@ exports[`Extension .vue 1`] = `
     "vue/this-in-template": "warn",
     "@typescript-eslint/no-object-literal-type-assertion": [
       "off"
-    ]
+    ],
+    "vue/define-emits-declaration": [
+      "error",
+      "type-based"
+    ],
+    "vue/define-macros-order": [
+      "error",
+      {
+        "order": [
+          "defineModel",
+          "defineProps",
+          "defineEmits",
+          "defineSlots",
+          "defineOptions",
+          "defineExpose"
+        ],
+        "defineExposeLast": false
+      }
+    ],
+    "vue/define-props-declaration": [
+      "error",
+      "type-based"
+    ],
+    "vue/no-boolean-default": "error",
+    "vue/no-import-compiler-macros": "error",
+    "vue/no-restricted-block": [
+      "error",
+      "style"
+    ],
+    "vue/no-unused-emit-declarations": "error",
+    "vue/no-unused-properties": "error",
+    "vue/object-shorthand": "error",
+    "vue/prefer-use-template-ref": "error"
   },
   "languageOptions": {
     "globals": [
@@ -6071,7 +6109,13 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
     "vue/require-explicit-emits": "warn",
     "vue/require-prop-types": "warn",
     "vue/singleline-html-element-content-newline": "off",
-    "vue/v-bind-style": "warn",
+    "vue/v-bind-style": [
+      "error",
+      "shorthand",
+      {
+        "sameNameShorthand": "always"
+      }
+    ],
     "vue/v-on-event-hyphenation": [
       "warn",
       "always",
@@ -6129,7 +6173,39 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
       "off"
     ],
     "sonarjs/different-types-comparison": "off",
-    "tsdoc/syntax": "off"
+    "tsdoc/syntax": "off",
+    "vue/define-emits-declaration": [
+      "error",
+      "type-based"
+    ],
+    "vue/define-macros-order": [
+      "error",
+      {
+        "order": [
+          "defineModel",
+          "defineProps",
+          "defineEmits",
+          "defineSlots",
+          "defineOptions",
+          "defineExpose"
+        ],
+        "defineExposeLast": false
+      }
+    ],
+    "vue/define-props-declaration": [
+      "error",
+      "type-based"
+    ],
+    "vue/no-boolean-default": "error",
+    "vue/no-import-compiler-macros": "error",
+    "vue/no-restricted-block": [
+      "error",
+      "style"
+    ],
+    "vue/no-unused-emit-declarations": "error",
+    "vue/no-unused-properties": "error",
+    "vue/object-shorthand": "error",
+    "vue/prefer-use-template-ref": "error"
   }
 }
 `;

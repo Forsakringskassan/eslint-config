@@ -1,12 +1,28 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted } from "vue";
 
-// reactive state
-const count = ref(0);
+const count = defineModel<number>();
+
+const { name } = defineProps<{
+    name: string;
+}>();
+
+const emit = defineEmits<{
+    change: [count: number];
+}>();
+
+defineSlots<{
+    default(props: { count: number }): void;
+}>();
+
+defineOptions({ inheritAttrs: false });
+
+defineExpose({ increment });
 
 // functions that mutate state and trigger updates
 function increment(): void {
     count.value++;
+    emit("change", count.value);
 }
 
 // lifecycle hooks
@@ -19,12 +35,6 @@ onMounted(async () => {
 </script>
 
 <template>
-    <button class="my-awesome-class" @click="increment">Count is: {{ count }}</button>
+    <div><slot v-bind="{ count }">Hello</slot> {{ name }}!</div>
+    <button @click="increment">Count is: {{ count }}</button>
 </template>
-
-<style lang="scss" scoped>
-.my-awesome-class {
-    border: #000000;
-    color: #ffffff;
-}
-</style>
