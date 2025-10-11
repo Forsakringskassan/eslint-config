@@ -86,13 +86,61 @@ const config = defineConfig({
         /* this rule warns about the order of the top-level tags */
         "vue/block-order": [
             "error",
+            { order: ["script", "template", "style"] },
+        ],
+
+        /* requires defineEmit<{ ... }>() over defineEmit({ ... }) */
+        "vue/define-emits-declaration": ["error", "type-based"],
+
+        /* requires a specific order of the compiler macros */
+        "vue/define-macros-order": [
+            "error",
             {
-                order: ["script", "template", "style"],
+                order: [
+                    "defineModel",
+                    "defineProps",
+                    "defineEmits",
+                    "defineSlots",
+                    "defineOptions",
+                    "defineExpose",
+                ],
+                defineExposeLast: false,
             },
         ],
 
+        /* requires defineProps<{ ... }>() over defineProps({ ... }) */
+        "vue/define-props-declaration": ["error", "type-based"],
+
+        /* disallows opt-out booleans as the consumer syntax becomes awkward */
+        "vue/no-boolean-default": "error",
+
         /* underlying custom elements have started to expose native slots */
         "vue/no-deprecated-slot-attribute": "off",
+
+        /* disallows importing compiler macros */
+        "vue/no-import-compiler-macros": "error",
+
+        /* disallows <style> block in SFC components (this is disabled by appConfig) */
+        "vue/no-restricted-block": ["error", "style"],
+
+        /* disallows unused declared events */
+        "vue/no-unused-emit-declarations": "error",
+
+        /* disallows unused declared props */
+        "vue/no-unused-properties": "error",
+
+        /* extended version of original object-shorthand for vue sfc templates */
+        "vue/object-shorthand": "error",
+
+        /* prefer useTemplateRef() over ref() with same name */
+        "vue/prefer-use-template-ref": "error",
+
+        /* require :foo over v-bind:foo */
+        "vue/v-bind-style": [
+            "error",
+            "shorthand",
+            { sameNameShorthand: "always" },
+        ],
     },
 });
 

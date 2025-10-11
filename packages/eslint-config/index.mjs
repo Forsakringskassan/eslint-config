@@ -341,6 +341,7 @@ const defaultAppConfig = defineConfig({
     name: "@forsakringskassan/eslint-config/app",
     rules: {
         "sonarjs/no-commented-code": "warn",
+        "vue/no-restricted-block": "off",
     },
 });
 
