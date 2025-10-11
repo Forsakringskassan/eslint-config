@@ -57,8 +57,6 @@ const config = defineConfig({
             extraFileExtensions: [".svelte", ".vue"],
             parser: tseParser,
         },
-        sourceType: "module",
-        ecmaVersion: "latest",
         globals: {
             ...globals.browser,
         },

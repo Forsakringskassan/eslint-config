@@ -794,11 +794,11 @@ exports[`Extension .cy.ts 1`] = `
     ],
     "ecmaVersion": 2019,
     "sourceType": "module",
+    "parser": "[Parser typescript-eslint/parser]",
     "parserOptions": {
       "projectService": true,
       "tsconfigRootDir": "<rootDir>"
-    },
-    "parser": "[Parser typescript-eslint/parser]"
+    }
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
@@ -1417,12 +1417,7 @@ exports[`Extension .js 1`] = `
       "...globals.node"
     ],
     "ecmaVersion": 2024,
-    "sourceType": "module",
-    "parserOptions": {
-      "ecmaFeatures": {
-        "globalReturn": true
-      }
-    }
+    "sourceType": "module"
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
@@ -2253,11 +2248,11 @@ exports[`Extension .spec.ts 1`] = `
     ],
     "ecmaVersion": 2024,
     "sourceType": "module",
+    "parser": "[Parser typescript-eslint/parser]",
     "parserOptions": {
       "projectService": true,
       "tsconfigRootDir": "<rootDir>"
-    },
-    "parser": "[Parser typescript-eslint/parser]"
+    }
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
@@ -2914,14 +2909,14 @@ exports[`Extension .svelte 1`] = `
     ],
     "ecmaVersion": 2024,
     "sourceType": "module",
+    "parser": "[Parser svelte-eslint-parser]",
     "parserOptions": {
       "extraFileExtensions": [
         ".svelte",
         ".vue"
       ],
       "parser": "[Parser typescript-eslint/parser]"
-    },
-    "parser": "[Parser svelte-eslint-parser]"
+    }
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
@@ -3712,11 +3707,11 @@ exports[`Extension .ts 1`] = `
     ],
     "ecmaVersion": 2024,
     "sourceType": "module",
+    "parser": "[Parser typescript-eslint/parser]",
     "parserOptions": {
       "projectService": true,
       "tsconfigRootDir": "<rootDir>"
-    },
-    "parser": "[Parser typescript-eslint/parser]"
+    }
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
@@ -4578,16 +4573,16 @@ exports[`Extension .vue 1`] = `
     "globals": [
       "...globals.browser"
     ],
-    "ecmaVersion": "latest",
+    "ecmaVersion": 2024,
     "sourceType": "module",
+    "parser": "[Parser vue-eslint-parser]",
     "parserOptions": {
       "extraFileExtensions": [
         ".svelte",
         ".vue"
       ],
       "parser": "[Parser typescript-eslint/parser]"
-    },
-    "parser": "[Parser vue-eslint-parser]"
+    }
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
@@ -5292,12 +5287,7 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
     "name": "@forsakringskassan/eslint-config/ecma-version",
     "languageOptions": {
       "ecmaVersion": 2024,
-      "sourceType": "module",
-      "parserOptions": {
-        "ecmaFeatures": {
-          "globalReturn": true
-        }
-      }
+      "sourceType": "module"
     }
   },
   {
@@ -5984,8 +5974,6 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
       ],
       "parser": "[Parser typescript-eslint/parser]"
     },
-    "sourceType": "module",
-    "ecmaVersion": "latest",
     "globals": [
       "...globals.browser"
     ]
