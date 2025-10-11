@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 13.1.0 (2025-10-11)
+
+### Features
+
+* **@forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** require sorted imports e9272ca
+* **@forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** stricter vue rules 6dd87b2
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** fix `@typescript-eslint/no-unused-vars` false positives for vue files 67618a7
+
 ## 13.0.8 (2025-10-10)
 
 ### Bug Fixes
