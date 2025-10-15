@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.1.1 (2025-10-15)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** fix typing of `appConfig` aab951f
+
 ## 13.1.0 (2025-10-11)
 
 ### Features
