@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.1.2 (2025-10-16)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** typeinfo default ignores cypress, jest and vite configuration files 49c6dff
+
 ## 13.1.1 (2025-10-15)
 
 ### Bug Fixes
