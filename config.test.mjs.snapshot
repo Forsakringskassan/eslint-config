@@ -5814,6 +5814,12 @@ exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
   "files": [
     "**/*.{ts,cts,mts}"
   ],
+  "ignores": [
+    "cypress.config.ts",
+    "jest.config.{js,ts}",
+    "jest.setup.{js,ts}",
+    "vite.config.{ts,mts}"
+  ],
   "languageOptions": {
     "parser": "[Parser typescript-eslint/parser]",
     "sourceType": "module",
