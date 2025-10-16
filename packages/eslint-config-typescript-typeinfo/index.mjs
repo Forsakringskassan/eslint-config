@@ -37,6 +37,12 @@ const stylistic = tseConfig.stylisticTypeCheckedOnly.reduce(merge, {});
 const config = defineConfig({
     name: "@forsakringskassan/eslint-config-typescript-typeinfo",
     files: ["**/*.{ts,cts,mts}"],
+    ignores: [
+        "cypress.config.ts",
+        "jest.config.{js,ts}",
+        "jest.setup.{js,ts}",
+        "vite.config.{ts,mts}",
+    ],
 
     languageOptions: {
         parser: tseParser,
