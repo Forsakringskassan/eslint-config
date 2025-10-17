@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 13.1.3 (2025-10-17)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript-typeinfo, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vue:** allow numbers in template expressions cc5000d
+* **deps:** update typescript-eslint monorepo to v8.46.1 473563a
+
 ## 13.1.2 (2025-10-16)
 
 ### Bug Fixes
