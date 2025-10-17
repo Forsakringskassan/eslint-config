@@ -38,7 +38,8 @@ class Foo extends Component implements FooInterface {
 
     private async greet(to: string, from: string[]): Promise<string> {
         const joined = await join(from);
-        return `Hello, ${to} from ${joined}`;
+        const meaning = 42;
+        return `Hello, ${to} from ${joined}! ${meaning}`;
     }
 
     public static async myStaticFunction(): Promise<void> {
