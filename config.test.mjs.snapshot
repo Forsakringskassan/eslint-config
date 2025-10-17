@@ -723,7 +723,7 @@ exports[`Extension .cy.ts 1`] = `
         "allowBoolean": false,
         "allowNever": false,
         "allowNullish": false,
-        "allowNumber": false,
+        "allowNumber": true,
         "allowRegExp": false
       }
     ],
@@ -2159,7 +2159,7 @@ exports[`Extension .spec.ts 1`] = `
         "allowBoolean": false,
         "allowNever": false,
         "allowNullish": false,
-        "allowNumber": false,
+        "allowNumber": true,
         "allowRegExp": false
       }
     ],
@@ -3668,7 +3668,7 @@ exports[`Extension .ts 1`] = `
         "allowBoolean": false,
         "allowNever": false,
         "allowNullish": false,
-        "allowNumber": false,
+        "allowNumber": true,
         "allowRegExp": false
       }
     ],
@@ -5917,7 +5917,7 @@ exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
         "allowBoolean": false,
         "allowNever": false,
         "allowNullish": false,
-        "allowNumber": false,
+        "allowNumber": true,
         "allowRegExp": false
       }
     ],

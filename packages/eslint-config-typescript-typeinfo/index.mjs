@@ -87,6 +87,7 @@ const config = defineConfig({
                 fixMixedExportsWithInlineTypeSpecifier: true,
             },
         ],
+
         "@typescript-eslint/consistent-type-imports": [
             "error",
             {
@@ -113,6 +114,19 @@ const config = defineConfig({
 
         /* allow expr === false */
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+
+        /* allow numbers in template expressions */
+        "@typescript-eslint/restrict-template-expressions": [
+            "error",
+            {
+                allowAny: false,
+                allowBoolean: false,
+                allowNever: false,
+                allowNullish: false,
+                allowNumber: true,
+                allowRegExp: false,
+            },
+        ],
 
         "tsdoc/syntax": "error",
     },
