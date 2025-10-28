@@ -5,6 +5,7 @@ import jestConfig from "./packages/eslint-config-jest/index.mjs";
 import svelteConfig from "./packages/eslint-config-svelte/index.mjs";
 import typescriptConfig from "./packages/eslint-config-typescript/index.mjs";
 import typeinfoConfig from "./packages/eslint-config-typescript-typeinfo/index.mjs";
+import vitestConfig from "./packages/eslint-config-vitest/index.mjs";
 import vueConfig from "./packages/eslint-config-vue/index.mjs";
 
 export default [
@@ -29,7 +30,12 @@ export default [
         ignores: ["**/*.d.ts", "**/*.cy.ts", "**/*.spec.ts"],
     }),
     vueConfig(),
-    jestConfig(),
+    jestConfig({
+        files: ["packages/eslint-config-jest/**/*.spec.[jt]s"],
+    }),
+    vitestConfig({
+        files: ["packages/eslint-config-vitest/**/*.spec.[jt]s"],
+    }),
     cypressConfig(),
     svelteConfig(),
 
