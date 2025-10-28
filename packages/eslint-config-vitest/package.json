@@ -1,0 +1,35 @@
+{
+  "name": "@forsakringskassan/eslint-config-vitest",
+  "version": "13.1.0",
+  "description": "Försäkringskassans eslint shareable vitest config",
+  "keywords": [
+    "eslint",
+    "vitest"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/eslint-config",
+  "bugs": "https://github.com/Forsakringskassan/eslint-config/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsakringskassan/eslint-config.git",
+    "directory": "packages/eslint-config-vitest"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "main": "index.mjs",
+  "files": [
+    "index.mjs",
+    "index.d.mts"
+  ],
+  "dependencies": {
+    "@vitest/eslint-plugin": "1.3.25"
+  },
+  "devDependencies": {
+    "vitest": "4.0.4"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">= 22.0"
+  }
+}

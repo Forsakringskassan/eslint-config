@@ -7,6 +7,7 @@ import jestConfig from "./packages/eslint-config-jest/index.mjs";
 import svelteConfig from "./packages/eslint-config-svelte/index.mjs";
 import typescriptConfig from "./packages/eslint-config-typescript/index.mjs";
 import typeinfoConfig from "./packages/eslint-config-typescript-typeinfo/index.mjs";
+import vitestConfig from "./packages/eslint-config-vitest/index.mjs";
 import vueConfig from "./packages/eslint-config-vue/index.mjs";
 
 /**
@@ -82,6 +83,7 @@ const packages = [
     "@forsakringskassan/eslint-config-typescript",
     "@forsakringskassan/eslint-config-typescript-typeinfo",
     "@forsakringskassan/eslint-config-vue",
+    "@forsakringskassan/eslint-config-vitest",
 ];
 
 for (const pkg of packages) {
@@ -97,7 +99,8 @@ const config = [
     typescriptConfig(),
     typeinfoConfig(import.meta.dirname),
     vueConfig(),
-    jestConfig(),
+    jestConfig({ files: ["**/*.jest.ts"] }),
+    vitestConfig({ files: ["**/*.vitest.ts"] }),
     cypressConfig(),
     svelteConfig(),
 ];
@@ -134,7 +137,8 @@ const extensions = {
     ".js": "src/index.js",
     ".ts": "src/index.ts",
     ".cy.ts": "src/foo.cy.ts",
-    ".spec.ts": "src/foo.spec.ts",
+    ".spec.ts (jest)": "src/foo.jest.ts",
+    ".spec.ts (vitest)": "src/foo.vitest.ts",
     ".vue": "src/Foo.vue",
     ".svelte": "src/Foo.svelte",
 };
