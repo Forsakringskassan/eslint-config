@@ -1,0 +1,16 @@
+name: "@forsakringskassan/eslint-config"
+author: Försäkringskassan
+description: |
+    Github action to run eslint
+
+branding:
+    icon: git-pull-request
+    color: blue
+
+runs:
+    using: composite
+    steps:
+        - name: ESLint
+          if: ${{ hashFiles('eslint.config.mjs') != '' || hashFiles('.eslintrc.cjs') != '' }}
+          shell: bash
+          run: npm exec eslint -- --max-warnings 0 .
