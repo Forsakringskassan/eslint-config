@@ -131,3 +131,33 @@ import {
 - `sandboxConfig` includes overrides for sandbox applications.
 
 `appConfig` is to be used with end user application and the others are typically used in a monorepo component library such as [`forsakringskassan/designsystem`](https://github.com/Forsakringskassan/designsystem/tree/main).
+
+## Github action
+
+To use with Github actions:
+
+```yml
+steps:
+    - uses: actions/checkout@v5
+    - name: Use Node.js
+      uses: actions/setup-node@v6
+    - name: Install dependencies
+      run: npm ci
+    - name: ESLint
+      uses: Forsakringskassan/eslint-config@main
+```
+
+`main` can also be replaced by a semantic versioned tag such as `v13.0.0`:
+
+```diff
+-uses: Forsakringskassan/eslint-config@main
++uses: Forsakringskassan/eslint-config@v13.0.0
+```
+
+This is recommended when using a tool such as Renovate to manage dependencies.
+
+> [!IMPORTANT]
+> You need to have `@forsakringskassan/eslint-config` installed as a dependency in `package.json`.
+> This ensures you have control over which version of the tool is actually running.
+>
+> If you are using a tag for version make sure it matches the version in `package.json`.
