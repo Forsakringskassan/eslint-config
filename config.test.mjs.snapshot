@@ -3030,14 +3030,14 @@ exports[`Extension .spec.ts (vitest) 1`] = `
       }
     ],
     "vitest/expect-expect": "warn",
-    "vitest/no-identical-title": "error",
     "vitest/no-commented-out-tests": "warn",
-    "vitest/valid-title": "error",
-    "vitest/valid-expect": "error",
-    "vitest/valid-describe-callback": "error",
-    "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+    "vitest/no-identical-title": "error",
     "vitest/no-import-node-test": "error",
     "vitest/prefer-called-exactly-once-with": "error",
+    "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+    "vitest/valid-describe-callback": "error",
+    "vitest/valid-expect": "error",
+    "vitest/valid-title": "error",
     "vitest/consistent-test-it": [
       "error",
       {
@@ -6825,14 +6825,14 @@ exports[`Package @forsakringskassan/eslint-config-vitest 1`] = `
   },
   "rules": {
     "vitest/expect-expect": "warn",
-    "vitest/no-identical-title": "error",
     "vitest/no-commented-out-tests": "warn",
-    "vitest/valid-title": "error",
-    "vitest/valid-expect": "error",
-    "vitest/valid-describe-callback": "error",
-    "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+    "vitest/no-identical-title": "error",
     "vitest/no-import-node-test": "error",
     "vitest/prefer-called-exactly-once-with": "error",
+    "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+    "vitest/valid-describe-callback": "error",
+    "vitest/valid-expect": "error",
+    "vitest/valid-title": "error",
     "vitest/consistent-test-it": [
       "error",
       {
