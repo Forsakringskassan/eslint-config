@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 13.2.0 (2025-11-06)
+
+### Features
+
+* **@forsakringskassan/eslint-config-vitest:** new `@forsakringskassan/eslint-config-vitest` be13af8
+* reusabe github action 1d3caad
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-svelte to v3.13.0 6454573
+* **deps:** update dependency globals to v16.5.0 4bc9ea0
+
 ## 13.1.5 (2025-10-31)
 
 ### Bug Fixes
