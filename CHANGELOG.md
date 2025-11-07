@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.2.1 (2025-11-07)
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8.46.3 b4c7eee
+
 ## 13.2.0 (2025-11-06)
 
 ### Features
