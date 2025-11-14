@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 13.2.2 (2025-11-14)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to v1.4.1 0fc898e
+* **deps:** update dependency @vitest/eslint-plugin to v1.4.2 cd7a07a
+* **deps:** update eslint monorepo to v9.39.1 ([#128](undefined/Forsakringskassan/eslint-config/issues/128)) 185667c
+
 ## 13.2.1 (2025-11-07)
 
 ### Bug Fixes
