@@ -31,7 +31,7 @@
     "typescript-eslint": "8.46.4"
   },
   "devDependencies": {
-    "@tsconfig/svelte": "5.0.5",
+    "@tsconfig/svelte": "5.0.6",
     "svelte": "5.43.6",
     "typescript": "5.9.3"
   },
