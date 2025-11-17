@@ -6151,7 +6151,10 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
     "rules": {
       "import/extensions": [
         "error",
-        "always"
+        "always",
+        {
+          "ignorePackages": true
+        }
       ]
     }
   },
