@@ -23,12 +23,12 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "8.46.4",
-    "@typescript-eslint/parser": "8.46.4",
+    "@typescript-eslint/eslint-plugin": "8.47.0",
+    "@typescript-eslint/parser": "8.47.0",
     "eslint-plugin-svelte": "3.13.0",
     "globals": "16.5.0",
     "svelte-eslint-parser": "1.4.0",
-    "typescript-eslint": "8.46.4"
+    "typescript-eslint": "8.47.0"
   },
   "devDependencies": {
     "@tsconfig/svelte": "5.0.6",

@@ -20,9 +20,9 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "8.46.4",
-    "@typescript-eslint/parser": "8.46.4",
-    "typescript-eslint": "8.46.4"
+    "@typescript-eslint/eslint-plugin": "8.47.0",
+    "@typescript-eslint/parser": "8.47.0",
+    "typescript-eslint": "8.47.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
