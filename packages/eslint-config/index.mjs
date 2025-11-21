@@ -295,7 +295,7 @@ export default [
         name: "@forsakringskassan/eslint-config/esm",
         files: ["**/*.mjs"],
         rules: {
-            "import/extensions": ["error", "always"],
+            "import/extensions": ["error", "always", { ignorePackages: true }],
         },
     }),
 
