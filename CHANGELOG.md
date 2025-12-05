@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 13.2.4 (2025-12-05)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** ignore packages for eslint rule import/extensions d940ae8
+* **deps:** update dependency @vitest/eslint-plugin to v1.5.1 374f28d
+* **deps:** update dependency eslint-plugin-vue to v10.6.1 6a74af1
+* **deps:** update dependency eslint-plugin-vue to v10.6.2 5c7e47b
+
 ## 13.2.3 (2025-11-28)
 
 ### Bug Fixes
