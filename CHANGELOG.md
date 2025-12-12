@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 13.2.5 (2025-12-12)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to v1.5.2 b28bd81
+* **deps:** update dependency eslint-plugin-svelte to v3.13.1 184beb1
+* **deps:** update dependency svelte-eslint-parser to v1.4.1 7ecc41b
+* **deps:** update typescript-eslint monorepo to v8.48.1 f65f9a2
+
 ## 13.2.4 (2025-12-05)
 
 ### Bug Fixes
