@@ -37,7 +37,7 @@
     "@tsconfig/node22": "22.0.5",
     "@tsconfig/strictest": "2.0.8",
     "@types/jest": "30.0.0",
-    "@types/node": "22.19.2",
+    "@types/node": "22.19.3",
     "cypress": "15.7.1",
     "eslint": "9.39.2",
     "globals": "16.5.0",
