@@ -24,7 +24,7 @@
     "@vitest/eslint-plugin": "1.6.6"
   },
   "devDependencies": {
-    "vitest": "4.0.16"
+    "vitest": "4.0.17"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
