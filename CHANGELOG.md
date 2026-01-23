@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 13.2.12 (2026-01-23)
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to v4.6.0 7875d85
+* **deps:** update dependency eslint-plugin-prettier to v5.5.5 99eef55
+* **deps:** update dependency eslint-plugin-vue to v10.7.0 6f910c0
+
 ## 13.2.11 (2026-01-16)
 
 ### Bug Fixes
