@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "3.3.3",
-    "@forsakringskassan/prettier-config-svelte": "3.3.2",
+    "@forsakringskassan/prettier-config-svelte": "3.3.3",
     "@tsconfig/node22": "22.0.5",
     "@tsconfig/strictest": "2.0.8",
     "@types/jest": "30.0.0",
