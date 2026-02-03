@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 13.3.1 (2026-02-03)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue:** disable `@typescript-eslint/no-unsafe` rules for Vue 07366c9
+* **deps:** update dependency eslint-plugin-sonarjs to v3.0.6 eb300fd
+* **deps:** update dependency globals to v17.2.0 720cab7
+
 ## 13.3.0 (2026-01-30)
 
 ### Features
