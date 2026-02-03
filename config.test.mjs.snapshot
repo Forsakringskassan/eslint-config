@@ -5867,8 +5867,13 @@ exports[`Extension .vue 1`] = `
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/no-this-alias": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
     "@typescript-eslint/no-unsafe-declaration-merging": "error",
     "@typescript-eslint/no-unsafe-function-type": "error",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unused-expressions": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -9298,6 +9303,11 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
     "@typescript-eslint/no-object-literal-type-assertion": [
       "off"
     ],
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-useless-default-assignment": "off",
     "sonarjs/different-types-comparison": "off",
     "tsdoc/syntax": "off",

@@ -76,6 +76,13 @@ const config = defineConfig({
 
         "@typescript-eslint/no-object-literal-type-assertion": ["off"],
 
+        /* due to issues using template refs without setting explicit type */
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+
         /* common pattern for props destructuring is to explicitly assign "undefined", which clashes with this rule */
         "@typescript-eslint/no-useless-default-assignment": "off",
 
