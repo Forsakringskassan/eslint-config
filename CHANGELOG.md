@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.3.3 (2026-02-06)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-vitest:** lint mjs and mts for Vitest and Jest 39775b5
+
 ## 13.3.2 (2026-02-06)
 
 ### Bug Fixes
