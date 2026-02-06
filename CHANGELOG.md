@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.3.2 (2026-02-06)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v17.3.0 355dcc6
+
 ## 13.3.1 (2026-02-03)
 
 ### Bug Fixes

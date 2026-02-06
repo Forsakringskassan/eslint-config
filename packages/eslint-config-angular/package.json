@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-angular",
-  "version": "13.3.1",
+  "version": "13.3.2",
   "description": "Försäkringskassans eslint shareable angular config",
   "keywords": [
     "eslint"
