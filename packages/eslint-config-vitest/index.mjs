@@ -31,7 +31,7 @@ const { configs } = vitest;
 
 const config = defineConfig({
     name: "@forsakringskassan/eslint-config-vitest",
-    files: ["**/*.spec.[jt]s"],
+    files: ["**/*.spec.{js,ts,cjs,mjs,mts}"],
     ignores: ["cypress/**", "tests/e2e/**"],
 
     plugins: {
