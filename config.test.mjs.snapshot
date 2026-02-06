@@ -8742,7 +8742,7 @@ exports[`Package @forsakringskassan/eslint-config-jest 1`] = `
 {
   "name": "@forsakringskassan/eslint-config-jest",
   "files": [
-    "**/*.spec.[jt]s"
+    "**/*.spec.{js,ts,cjs,mjs,mts}"
   ],
   "ignores": [
     "cypress/**",
@@ -9191,7 +9191,7 @@ exports[`Package @forsakringskassan/eslint-config-vitest 1`] = `
 {
   "name": "@forsakringskassan/eslint-config-vitest",
   "files": [
-    "**/*.spec.[jt]s"
+    "**/*.spec.{js,ts,cjs,mjs,mts}"
   ],
   "ignores": [
     "cypress/**",

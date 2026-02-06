@@ -32,7 +32,7 @@ const style = jestPlugin.configs["flat/style"];
 
 const config = defineConfig({
     name: "@forsakringskassan/eslint-config-jest",
-    files: ["**/*.spec.[jt]s"],
+    files: ["**/*.spec.{js,ts,cjs,mjs,mts}"],
     ignores: ["cypress/**", "tests/e2e/**"],
 
     languageOptions: {
