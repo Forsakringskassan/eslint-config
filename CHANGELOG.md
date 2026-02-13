@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 13.3.4 (2026-02-13)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-cypress to v5.3.0 322f0f5
+* **deps:** update dependency eslint-plugin-jest to v29.12.2 14f32d3
+* **deps:** update dependency eslint-plugin-jest to v29.13.0 8a4a75a
+
 ## 13.3.3 (2026-02-06)
 
 ### Bug Fixes
