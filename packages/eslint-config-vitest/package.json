@@ -27,7 +27,7 @@
     "vitest": "4.0.18"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0 || ^10.0.0"
   },
   "engines": {
     "node": ">= 22.0"
