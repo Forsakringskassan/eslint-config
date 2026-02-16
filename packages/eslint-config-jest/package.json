@@ -20,7 +20,7 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "eslint-plugin-jest": "29.13.0"
+    "eslint-plugin-jest": "29.14.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
