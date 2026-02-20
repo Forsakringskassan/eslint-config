@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-typescript",
-  "version": "13.3.0",
+  "version": "13.3.5",
   "description": "Försäkringskassans eslint shareable typescript config",
   "keywords": [
     "eslint"

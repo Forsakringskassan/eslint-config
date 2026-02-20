@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 13.3.5 (2026-02-20)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to v1.6.7 86610d8
+* **deps:** update dependency @vitest/eslint-plugin to v1.6.9 2ce71fa
+* **deps:** update dependency eslint-plugin-jest to v29.14.0 b86d068
+* **deps:** update dependency eslint-plugin-sonarjs to v3.0.7 320f7ef
+* **deps:** update dependency eslint-plugin-svelte to v3.15.0 a5a63b9
+* **deps:** update dependency eslint-plugin-vue to v10.8.0 a7d8a00
+* **deps:** update typescript-eslint monorepo to v8.55.0 7b28099
+
 ## 13.3.4 (2026-02-13)
 
 ### Bug Fixes
