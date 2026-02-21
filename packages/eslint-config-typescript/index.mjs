@@ -120,6 +120,9 @@ const config = defineConfig({
         ],
 
         "tsdoc/syntax": "error",
+
+        /* covered by @typescript-eslint/no-unused-vars */
+        "sonarjs/no-dead-store": "off",
     },
 });
 
