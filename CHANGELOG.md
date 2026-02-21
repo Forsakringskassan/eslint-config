@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 13.4.0 (2026-02-21)
+
+### Features
+
+* **deps:** update dependency eslint-plugin-cypress to v6 0be342d
+* **deps:** update dependency eslint-plugin-sonarjs to v4 645f15f
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to v29.15.0 87b0c21
+* **deps:** update typescript-eslint monorepo to v8.56.0 08e5402
+
 ## 13.3.5 (2026-02-20)
 
 ### Bug Fixes
