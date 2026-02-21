@@ -768,31 +768,12 @@ exports[`Extension .cy.ts 1`] = `
   "languageOptions": {
     "globals": [
       "...globals.browser",
-      "\\"cy",
-      "\\"Cypress",
-      "\\"expect",
-      "\\"assert",
-      "\\"chai",
-      "\\"after",
-      "\\"afterEach",
-      "\\"before",
-      "\\"beforeEach",
-      "\\"context",
-      "\\"describe",
-      "\\"it",
-      "\\"mocha",
-      "\\"run",
-      "\\"setup",
-      "\\"specify",
-      "\\"suite",
-      "\\"suiteSetup",
-      "\\"suiteTeardown",
-      "\\"teardown",
-      "\\"test",
-      "\\"xcontext",
-      "\\"xdescribe",
-      "\\"xit",
-      "\\"xspecify"
+      "...globals.mocha",
+      "cy",
+      "Cypress",
+      "expect",
+      "assert",
+      "chai"
     ],
     "ecmaVersion": 2019,
     "sourceType": "module",
@@ -2237,19 +2218,7 @@ exports[`Extension .spec.ts (jest) 1`] = `
   },
   "languageOptions": {
     "globals": [
-      "\\"afterAll",
-      "\\"afterEach",
-      "\\"beforeAll",
-      "\\"beforeEach",
-      "\\"describe",
-      "\\"expect",
-      "\\"fit",
-      "\\"it",
-      "\\"jest",
-      "\\"test",
-      "\\"xdescribe",
-      "\\"xit",
-      "\\"xtest"
+      "...globals.jest"
     ],
     "ecmaVersion": 2024,
     "sourceType": "module",
@@ -6341,31 +6310,12 @@ exports[`Package @forsakringskassan/eslint-config-cypress 1`] = `
     "sourceType": "module",
     "globals": [
       "...globals.browser",
-      "\\"cy",
-      "\\"Cypress",
-      "\\"expect",
-      "\\"assert",
-      "\\"chai",
-      "\\"after",
-      "\\"afterEach",
-      "\\"before",
-      "\\"beforeEach",
-      "\\"context",
-      "\\"describe",
-      "\\"it",
-      "\\"mocha",
-      "\\"run",
-      "\\"setup",
-      "\\"specify",
-      "\\"suite",
-      "\\"suiteSetup",
-      "\\"suiteTeardown",
-      "\\"teardown",
-      "\\"test",
-      "\\"xcontext",
-      "\\"xdescribe",
-      "\\"xit",
-      "\\"xspecify"
+      "...globals.mocha",
+      "cy",
+      "Cypress",
+      "expect",
+      "assert",
+      "chai"
     ]
   },
   "plugins": {
@@ -6398,19 +6348,7 @@ exports[`Package @forsakringskassan/eslint-config-jest 1`] = `
   ],
   "languageOptions": {
     "globals": [
-      "\\"afterAll",
-      "\\"afterEach",
-      "\\"beforeAll",
-      "\\"beforeEach",
-      "\\"describe",
-      "\\"expect",
-      "\\"fit",
-      "\\"it",
-      "\\"jest",
-      "\\"test",
-      "\\"xdescribe",
-      "\\"xit",
-      "\\"xtest"
+      "...globals.jest"
     ]
   },
   "plugins": {
