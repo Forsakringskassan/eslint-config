@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 13.4.1 (2026-02-27)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript:** disable `sonarjs/no-dead-store` for typescript (covered by other rules) 9b59578
+* **deps:** update dependency eslint-plugin-cypress to v6.1.0 a51c77f
+* **deps:** update eslint monorepo to v9.39.3 c3877ed
+* **deps:** update typescript-eslint monorepo to v8.56.1 87dd2c2
+
 ## 13.4.0 (2026-02-21)
 
 ### Features
