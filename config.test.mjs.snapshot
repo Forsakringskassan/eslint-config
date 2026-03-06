@@ -6169,7 +6169,10 @@ exports[`Extension .vue 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "pascalCase"
+        "case": "pascalCase",
+        "ignore": [
+          "^app.vue$"
+        ]
       }
     ],
     "unicorn/import-style": "off",
@@ -8172,7 +8175,10 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "pascalCase"
+        "case": "pascalCase",
+        "ignore": [
+          "^app.vue$"
+        ]
       }
     ],
     "vue/array-bracket-newline": "off",

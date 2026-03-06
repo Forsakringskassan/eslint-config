@@ -92,7 +92,16 @@ const defaultConfig = defineConfig({
         "tsdoc/syntax": "off",
 
         /* for Vue components we use PascalCase instead of kebab-case */
-        "unicorn/filename-case": ["error", { case: "pascalCase" }],
+        "unicorn/filename-case": [
+            "error",
+            {
+                case: "pascalCase",
+                ignore: [
+                    /* used by @forsakringskassan/vite-lib-config as default entrypoint */
+                    "^app.vue$",
+                ],
+            },
+        ],
 
         /* this rule warns about the order of the top-level tags */
         "vue/block-order": [
