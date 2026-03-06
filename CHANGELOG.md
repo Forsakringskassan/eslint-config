@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.5.0 (2026-03-06)
+
+### Features
+
+* **@forsakringskassan/eslint-config-angular, @forsakringskassan/eslint-config-cli, @forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-svelte, @forsakringskassan/eslint-config-typescript-typeinfo, @forsakringskassan/eslint-config-typescript, @forsakringskassan/eslint-config-vitest, @forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** enable eslint-plugin-unicorn 442e569
+
 ## 13.4.2 (2026-03-06)
 
 ### Bug Fixes
