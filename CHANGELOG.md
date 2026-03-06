@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.5.2 (2026-03-06)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** handle apimock-express mocks filename case 2135073
+
 ## 13.5.1 (2026-03-06)
 
 ### Bug Fixes
