@@ -745,7 +745,8 @@ exports[`Extension .cy.ts 1`] = `
       {
         "case": "kebabCase",
         "ignore": [
-          "^Gruntfile.js$"
+          "^Gruntfile.js$",
+          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
         ]
       }
     ],
@@ -1534,7 +1535,8 @@ exports[`Extension .js 1`] = `
       {
         "case": "kebabCase",
         "ignore": [
-          "^Gruntfile.js$"
+          "^Gruntfile.js$",
+          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
         ]
       }
     ],
@@ -2512,7 +2514,8 @@ exports[`Extension .spec.ts (jest) 1`] = `
       {
         "case": "kebabCase",
         "ignore": [
-          "^Gruntfile.js$"
+          "^Gruntfile.js$",
+          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
         ]
       }
     ],
@@ -3460,7 +3463,8 @@ exports[`Extension .spec.ts (vitest) 1`] = `
       {
         "case": "kebabCase",
         "ignore": [
-          "^Gruntfile.js$"
+          "^Gruntfile.js$",
+          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
         ]
       }
     ],
@@ -4339,7 +4343,8 @@ exports[`Extension .svelte 1`] = `
       {
         "case": "kebabCase",
         "ignore": [
-          "^Gruntfile.js$"
+          "^Gruntfile.js$",
+          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
         ]
       }
     ],
@@ -5297,7 +5302,8 @@ exports[`Extension .ts 1`] = `
       {
         "case": "kebabCase",
         "ignore": [
-          "^Gruntfile.js$"
+          "^Gruntfile.js$",
+          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
         ]
       }
     ],
@@ -7240,7 +7246,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
         {
           "case": "kebabCase",
           "ignore": [
-            "^Gruntfile.js$"
+            "^Gruntfile.js$",
+            "_(get|post|put|delete).(js|cjs|mjs|ts)$"
           ]
         }
       ],

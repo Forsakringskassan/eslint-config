@@ -219,7 +219,14 @@ export default [
             ],
             "unicorn/filename-case": [
                 "error",
-                { case: "kebabCase", ignore: ["^Gruntfile.js$"] },
+                {
+                    case: "kebabCase",
+                    ignore: [
+                        "^Gruntfile.js$",
+                        /* ignore mocks for @forsakringskassan/apimock-express */
+                        "_(get|post|put|delete).(js|cjs|mjs|ts)$",
+                    ],
+                },
             ], // enforce kebab-case in filenames
             "unicorn/import-style": "off", // off for now
             "unicorn/isolated-functions": "error",
