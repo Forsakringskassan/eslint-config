@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 13.4.2 (2026-03-06)
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to v4.7.0 abb9364
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to v4.7.1 30e440a
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.1 8627ab1
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.2 eca9a56
+* **deps:** update dependency globals to v17.4.0 6a45ef6
+* **deps:** update dependency svelte-eslint-parser to v1.5.1 10f5e99
+
 ## 13.4.1 (2026-02-27)
 
 ### Bug Fixes
