@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.5.1 (2026-03-06)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue:** handle vite-lib-config app.vue default entrypoint f31d43f
+
 ## 13.5.0 (2026-03-06)
 
 ### Features
