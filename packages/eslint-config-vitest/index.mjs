@@ -29,7 +29,7 @@ function merge(result, it) {
 
 const { configs } = vitest;
 
-const config = defineConfig({
+const defaultConfig = defineConfig({
     name: "@forsakringskassan/eslint-config-vitest",
     files: ["**/*.spec.{js,ts,cjs,mjs,mts}"],
     ignores: ["cypress/**", "tests/e2e/**"],
@@ -93,6 +93,8 @@ const config = defineConfig({
 
         /* jest uses @jest-* tags for per-file configuration */
         "tsdoc/syntax": "off",
+
+        "unicorn/consistent-function-scoping": "off",
     },
 });
 
@@ -100,4 +102,5 @@ const config = defineConfig({
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(config, override ?? {});
+const config = (override) => merge(defaultConfig, override ?? {});
+export default config;

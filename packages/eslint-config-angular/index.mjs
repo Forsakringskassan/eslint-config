@@ -29,7 +29,7 @@ function merge(result, it) {
     };
 }
 
-const config = defineConfig({
+const defaultConfig = defineConfig({
     name: "@forsakringskassan/eslint-config-angular",
     files: ["**/*.[jt]s"],
     languageOptions: {
@@ -47,6 +47,9 @@ const config = defineConfig({
         "angular/controller-as-vm": ["error", "$ctrl"],
         "angular/di-unused": "error",
         "angular/directive-name": ["error", "/^(exp|fk)[A-Z].*/"],
+
+        /* angularjs controller-as pattern (e.g. var vm = this) requires this-assignment */
+        "unicorn/no-this-assignment": "off",
     },
 });
 
@@ -54,4 +57,5 @@ const config = defineConfig({
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(config, override ?? {});
+const config = (override) => merge(defaultConfig, override ?? {});
+export default config;
