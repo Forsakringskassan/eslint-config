@@ -85,7 +85,7 @@ function serialize(value, parent) {
                 ];
                 return [key, values];
             }
-            return [key.replace(/\\/g, "/"), serialize(it, key)];
+            return [key.replaceAll("\\", "/"), serialize(it, key)];
         });
         const sorted = needSorting(parent) ? mapped.toSorted(cmp) : mapped;
         return Object.fromEntries(sorted);

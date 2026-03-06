@@ -47,7 +47,7 @@ const recommended = eslintPluginVue.configs["flat/recommended"].reduce(
     {},
 );
 
-const config = defineConfig({
+const defaultConfig = defineConfig({
     name: "@forsakringskassan/eslint-config-vue",
     files: ["**/*.vue"],
 
@@ -90,6 +90,9 @@ const config = defineConfig({
 
         /* documentation for vue components does not adhere with tsdoc syntax */
         "tsdoc/syntax": "off",
+
+        /* for Vue components we use PascalCase instead of kebab-case */
+        "unicorn/filename-case": ["error", { case: "pascalCase" }],
 
         /* this rule warns about the order of the top-level tags */
         "vue/block-order": [
@@ -156,4 +159,5 @@ const config = defineConfig({
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(config, override ?? {});
+const config = (override) => merge(defaultConfig, override ?? {});
+export default config;

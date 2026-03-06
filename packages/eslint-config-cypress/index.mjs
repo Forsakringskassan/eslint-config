@@ -31,7 +31,7 @@ function merge(result, it) {
 const globals = cypressPlugin.configs.globals;
 const recommended = cypressPlugin.configs.recommended;
 
-const config = defineConfig({
+const defaultConfig = defineConfig({
     name: "@forsakringskassan/eslint-config-cypress",
     files: ["**/*.cy.[jt]s", "cypress/support/**/*.[jt]s"],
 
@@ -63,4 +63,5 @@ const config = defineConfig({
  * @param {Config} [override]
  * @returns {Config}
  */
-export default (override) => merge(config, override ?? {});
+const config = (override) => merge(defaultConfig, override ?? {});
+export default config;
