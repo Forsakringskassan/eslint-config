@@ -95,6 +95,17 @@ const defaultConfig = defineConfig({
         "tsdoc/syntax": "off",
 
         "unicorn/consistent-function-scoping": "off",
+
+        /* allow either kebab-case or PascalCase for testcases, it should match the file under test */
+        "unicorn/filename-case": [
+            "error",
+            {
+                cases: {
+                    kebabCase: true,
+                    pascalCase: true,
+                },
+            },
+        ],
     },
 });
 

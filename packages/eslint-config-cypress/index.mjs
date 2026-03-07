@@ -56,6 +56,17 @@ const defaultConfig = defineConfig({
         "mocha/no-exclusive-tests": "warn",
         "mocha/no-identical-title": "error",
         "mocha/no-pending-tests": "warn",
+
+        /* allow either kebab-case or PascalCase for testcases, it should match the file under test */
+        "unicorn/filename-case": [
+            "error",
+            {
+                cases: {
+                    kebabCase: true,
+                    pascalCase: true,
+                },
+            },
+        ],
     },
 });
 

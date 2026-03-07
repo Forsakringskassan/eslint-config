@@ -743,11 +743,10 @@ exports[`Extension .cy.ts 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "kebabCase",
-        "ignore": [
-          "^Gruntfile.js$",
-          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
-        ]
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        }
       }
     ],
     "unicorn/import-style": "off",
@@ -2512,11 +2511,10 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "kebabCase",
-        "ignore": [
-          "^Gruntfile.js$",
-          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
-        ]
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        }
       }
     ],
     "unicorn/import-style": "off",
@@ -3461,11 +3459,10 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "kebabCase",
-        "ignore": [
-          "^Gruntfile.js$",
-          "_(get|post|put|delete).(js|cjs|mjs|ts)$"
-        ]
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        }
       }
     ],
     "unicorn/import-style": "off",
@@ -7603,7 +7600,16 @@ exports[`Package @forsakringskassan/eslint-config-cypress 1`] = `
     "cypress/unsafe-to-chain-command": "error",
     "mocha/no-exclusive-tests": "warn",
     "mocha/no-identical-title": "error",
-    "mocha/no-pending-tests": "warn"
+    "mocha/no-pending-tests": "warn",
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        }
+      }
+    ]
   }
 }
 `;
@@ -7668,7 +7674,16 @@ exports[`Package @forsakringskassan/eslint-config-jest 1`] = `
     "jest/valid-expect-in-promise": "error",
     "jest/valid-title": "error",
     "tsdoc/syntax": "off",
-    "unicorn/consistent-function-scoping": "off"
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        }
+      }
+    ]
   }
 }
 `;
@@ -8072,6 +8087,15 @@ exports[`Package @forsakringskassan/eslint-config-vitest 1`] = `
     "@typescript-eslint/no-unsafe-assignment": "off",
     "tsdoc/syntax": "off",
     "unicorn/consistent-function-scoping": "off",
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        }
+      }
+    ],
     "vitest/consistent-test-it": [
       "error",
       {
