@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 13.5.3 (2026-03-07)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cypress, @forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-vitest:** allow testcases to be in either kebab-case (default) or PascalCase (vue) d6be0f6
+
 ## 13.5.2 (2026-03-06)
 
 ### Bug Fixes
