@@ -21,15 +21,15 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "@vitest/eslint-plugin": "1.6.9"
+    "@vitest/eslint-plugin": "1.6.10"
   },
   "devDependencies": {
     "vitest": "4.0.18"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
-    "node": ">= 22.0"
+    "node": "^22.13.0"
   }
 }
