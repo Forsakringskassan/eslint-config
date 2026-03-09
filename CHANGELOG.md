@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [Unreleased]
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** ESLint v10 or later is now required.
+* **deps:** NodeJS v22.13.0 or later is now required.
+
 ## 13.5.3 (2026-03-07)
 
 ### Bug Fixes
