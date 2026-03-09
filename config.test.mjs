@@ -95,7 +95,6 @@ function serialize(value, parent) {
 
 const packages = [
     "@forsakringskassan/eslint-config",
-    "@forsakringskassan/eslint-config-angular",
     "@forsakringskassan/eslint-config-cli",
     "@forsakringskassan/eslint-config-cypress",
     "@forsakringskassan/eslint-config-jest",
