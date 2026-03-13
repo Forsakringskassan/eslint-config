@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 14.0.0 (2026-03-13)
+
+### ⚠ BREAKING CHANGES
+
+* remove Angular config as we no longer build any Angular applications.
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-sonarjs to v4.0.1 ac2239e
+* **deps:** update dependency svelte-eslint-parser to v1.6.0 fdffbe1
+* **deps:** update eslint monorepo to v9.39.4 aa5ab4e
+
+### Code Refactoring
+
+* drop Angular config (refs SB-4982) 1ba5a5f
+
 ## 13.5.3 (2026-03-07)
 
 ### Bug Fixes
