@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 14.0.1 (2026-03-17)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to v1.6.10 9110e51
+* **deps:** update dependency @vitest/eslint-plugin to v1.6.11 277e353
+* **deps:** update dependency eslint-plugin-cypress to v6.2.0 0ad8359
+* **deps:** update dependency eslint-plugin-sonarjs to v4.0.2 a628586
+* **deps:** update dependency eslint-plugin-svelte to v3.15.2 c606c46
+* **deps:** update typescript-eslint monorepo to v8.57.0 1a64fcc
+
 ## 14.0.0 (2026-03-13)
 
 ### ⚠ BREAKING CHANGES
