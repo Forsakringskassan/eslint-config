@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.0.4 (2026-03-21)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** pageobjects and selectors shoudl be PascalCase 01fe5f3
+
 ## 14.0.3 (2026-03-20)
 
 ### Bug Fixes
