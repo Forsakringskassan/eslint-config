@@ -7424,6 +7424,21 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
     }
   },
   {
+    "name": "@forsakringskassan/eslint-config/pageobjects",
+    "files": [
+      "**/*.pageobject.ts",
+      "**/*.selectors.ts"
+    ],
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "case": "pascalCase"
+        }
+      ]
+    }
+  },
+  {
     "name": "@forsakringskassan/eslint-config/legacy-dts",
     "files": [
       "*.d.ts",

@@ -456,6 +456,20 @@ export default [
         },
     }),
 
+    defineConfig({
+        /* pageobjects and selectors are related to components and should always be PascalCase */
+        name: "@forsakringskassan/eslint-config/pageobjects",
+        files: ["**/*.pageobject.ts", "**/*.selectors.ts"],
+        rules: {
+            "unicorn/filename-case": [
+                "error",
+                {
+                    case: "pascalCase",
+                },
+            ],
+        },
+    }),
+
     /* These legacy files points to compiled files which may or may not exist
      * yet */
     defineConfig({
