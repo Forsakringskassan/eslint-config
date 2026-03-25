@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
-    "typescript": "^3.0.1 || ^4.0.2 || ^5.0.2"
+    "typescript": "^3.0.1 || ^4.0.2 || ^5.0.2 || ^6.0.2"
   },
   "engines": {
     "node": ">= 22.13"
