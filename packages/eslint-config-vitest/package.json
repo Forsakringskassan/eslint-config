@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-vitest",
-  "version": "14.0.2",
+  "version": "14.0.6",
   "description": "Försäkringskassans eslint shareable vitest config",
   "keywords": [
     "eslint",
