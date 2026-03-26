@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.0.7 (2026-03-26)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript-typeinfo, @forsakringskassan/eslint-config-typescript:** allow peer typescript 6 4a51db5
+
 ## 14.0.6 (2026-03-25)
 
 ### Bug Fixes
