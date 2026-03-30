@@ -46,7 +46,7 @@
     "minimatch": "10.2.4",
     "npm-pkg-lint": "4.6.2",
     "svelte": "5.55.0",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "engines": {
     "node": ">= 22.0"
