@@ -20,7 +20,7 @@
     "index.d.mts"
   ],
   "scripts": {
-    "test": "tsc --noEmit"
+    "test": "tsc"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "8.58.0",
