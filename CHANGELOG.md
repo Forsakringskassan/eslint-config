@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.1.0 (2026-03-31)
+
+### Features
+
+* **deps:** update dependency eslint-plugin-unicorn to v64 84285a1
+
 ## 14.0.11 (2026-03-30)
 
 ### Bug Fixes
