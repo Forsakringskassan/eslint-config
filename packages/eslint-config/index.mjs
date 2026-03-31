@@ -209,6 +209,7 @@ export default [
             "unicorn/consistent-empty-array-spread": "off",
             "unicorn/consistent-existence-index-check": "error",
             "unicorn/consistent-function-scoping": "error",
+            "unicorn/consistent-template-literal-escape": "error",
             "unicorn/custom-error-definition": "error",
             "unicorn/error-message": "error",
             "unicorn/escape-case": "off", // typically not useful for this organisation
@@ -275,6 +276,7 @@ export default [
             "unicorn/no-useless-collection-argument": "error",
             "unicorn/no-useless-error-capture-stack-trace": "error",
             "unicorn/no-useless-fallback-in-spread": "error",
+            "unicorn/no-useless-iterator-to-array": "error",
             "unicorn/no-useless-length-check": "error",
             "unicorn/no-useless-promise-resolve-reject": "error",
             "unicorn/no-useless-spread": "error",
@@ -328,6 +330,7 @@ export default [
             "unicorn/prefer-response-static-json": "off",
             "unicorn/prefer-set-has": "error",
             "unicorn/prefer-set-size": "error",
+            "unicorn/prefer-simple-condition-first": "error",
             "unicorn/prefer-single-call": "off",
             "unicorn/prefer-spread": "off", // for now
             "unicorn/prefer-string-raw": "off", // for now
@@ -347,6 +350,7 @@ export default [
             "unicorn/require-module-specifiers": "off",
             "unicorn/require-number-to-fixed-digits-argument": "error",
             "unicorn/switch-case-braces": "off",
+            "unicorn/switch-case-break-position": "error",
             "unicorn/text-encoding-identifier-case": "error",
             "unicorn/throw-new-error": "error",
             ...filterRules(prettierConfig.rules, (rule) => {
