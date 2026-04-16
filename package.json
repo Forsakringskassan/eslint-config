@@ -40,7 +40,7 @@
     "@types/node": "22.19.17",
     "cypress": "15.13.1",
     "eslint": "9.39.4",
-    "globals": "17.4.0",
+    "globals": "17.5.0",
     "jest": "30.3.0",
     "lerna": "9.0.7",
     "minimatch": "10.2.5",
