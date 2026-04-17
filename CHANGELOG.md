@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.1.11 (2026-04-17)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v17.5.0 af54a0b
+
 ## 14.1.10 (2026-04-16)
 
 ### Bug Fixes
