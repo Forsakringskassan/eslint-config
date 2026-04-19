@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.1.14 (2026-04-19)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-sonarjs to v4.0.3 16ec807
+
 ## 14.1.13 (2026-04-18)
 
 ### Bug Fixes
