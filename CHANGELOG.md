@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.1.17 (2026-04-25)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-svelte to v3.17.1 05dd2e4
+
 ## 14.1.16 (2026-04-25)
 
 ### Bug Fixes

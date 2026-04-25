@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-vue",
-  "version": "14.1.16",
+  "version": "14.1.17",
   "description": "Försäkringskassans eslint shareable vue config",
   "keywords": [
     "eslint"
