@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-cypress",
-  "version": "14.1.16",
+  "version": "14.1.19",
   "description": "Försäkringskassans eslint shareable cypress config",
   "keywords": [
     "eslint"
