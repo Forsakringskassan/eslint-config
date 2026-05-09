@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.1.24 (2026-05-09)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-cypress to v6.4.1 6e59d31
+
 ## 14.1.23 (2026-05-09)
 
 ### Bug Fixes
