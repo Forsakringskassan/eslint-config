@@ -527,7 +527,10 @@ const defaultDocsConfig = defineConfig({
 
 const defaultExampleConfig = {
     name: "@forsakringskassan/eslint-config/docs-examples",
-    files: ["**/examples/**/*.{js,ts,vue}"],
+    files: [
+        "**/examples/**/*.{js,ts,vue}",
+        "**/src/**/{docs,tests}/**/*.{js,ts,vue}",
+    ],
     rules: {
         "@eslint-community/eslint-comments/require-description": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
