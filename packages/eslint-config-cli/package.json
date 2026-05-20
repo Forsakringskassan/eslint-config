@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-cli",
-  "version": "14.1.20",
+  "version": "14.2.0",
   "description": "Försäkringskassans eslint shareable cli config",
   "keywords": [
     "eslint"

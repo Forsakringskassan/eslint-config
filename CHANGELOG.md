@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.2.0 (2026-05-20)
+
+### Features
+
+* **@forsakringskassan/eslint-config:** update example config to include docs, tests folders aa90c6a
+
 ## 14.1.27 (2026-05-19)
 
 ### Bug Fixes
