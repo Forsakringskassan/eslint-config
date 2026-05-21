@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@tsconfig/svelte": "5.0.8",
-    "svelte": "5.55.7",
+    "svelte": "5.55.8",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
