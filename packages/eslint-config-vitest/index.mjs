@@ -75,7 +75,7 @@ const defaultConfig = defineConfig({
         "vitest/prefer-hooks-on-top": "error",
         "vitest/prefer-import-in-mock": "error",
         "vitest/prefer-importing-vitest-globals": "error",
-        "vitest/prefer-lowercase-title": "error",
+        "vitest/prefer-lowercase-title": "off", // Disabled since we want to allow uppercase titles when for example testing Classes or Vue Components.
         "vitest/prefer-mock-promise-shorthand": "error",
         "vitest/prefer-spy-on": "error",
         "vitest/prefer-to-be": "error",
