@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.2.2 (2026-05-22)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-mocha to v11.3.0 9913350
+
 ## 14.2.1 (2026-05-22)
 
 ### Bug Fixes
