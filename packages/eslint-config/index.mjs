@@ -1,8 +1,8 @@
-import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
 import eslintCommentsPlugin from "@eslint-community/eslint-plugin-eslint-comments";
 import prettierConfig from "eslint-config-prettier";
-import importPlugin from "eslint-plugin-import";
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
+import { createNodeResolver, importX } from "eslint-plugin-import-x";
 import prettierPlugin from "eslint-plugin-prettier";
 import sonarjsPlugin from "eslint-plugin-sonarjs";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
@@ -57,20 +57,16 @@ export default [
     defineConfig({
         plugins: {
             prettier: prettierPlugin,
-            import: importPlugin,
+            "import-x": importX,
             "@eslint-community/eslint-comments": eslintCommentsPlugin,
             sonarjs: sonarjsPlugin,
             unicorn: eslintPluginUnicorn,
         },
         settings: {
-            "import/resolver": {
-                [fileURLToPath(
-                    import.meta.resolve("eslint-import-resolver-node"),
-                )]: true,
-                [fileURLToPath(
-                    import.meta.resolve("eslint-import-resolver-typescript"),
-                )]: true,
-            },
+            "import-x/resolver-next": [
+                createNodeResolver(),
+                createTypeScriptImportResolver(),
+            ],
         },
         rules: {
             ...filterRules(prettierConfig.rules, (rule) => {
@@ -95,7 +91,7 @@ export default [
                 return true;
             }),
             ...prettierPlugin.configs.recommended.rules,
-            ...importPlugin.configs.errors.rules,
+            ...importX.flatConfigs.errors.rules,
             ...eslintCommentsPlugin.configs.recommended.rules,
             ...sonarjsPlugin.configs.recommended.rules,
         },
@@ -365,8 +361,8 @@ export default [
             "no-debugger": "warn",
             "prettier/prettier": "warn",
 
-            "import/default": "off",
-            "import/extensions": [
+            "import-x/default": "off",
+            "import-x/extensions": [
                 "error",
                 "never",
                 {
@@ -374,25 +370,25 @@ export default [
                     json: "always",
                 },
             ],
-            "import/newline-after-import": "error",
-            "import/no-absolute-path": "error",
-            "import/no-deprecated": "error",
-            "import/no-duplicates": "error",
-            "import/no-dynamic-require": "error",
-            "import/no-extraneous-dependencies": "error",
-            "import/no-mutable-exports": "error",
-            "import/no-named-as-default": "error",
-            "import/no-named-as-default-member": "error",
-            "import/no-named-default": "error",
-            "import/no-unresolved": [
+            "import-x/newline-after-import": "error",
+            "import-x/no-absolute-path": "error",
+            "import-x/no-deprecated": "error",
+            "import-x/no-duplicates": "error",
+            "import-x/no-dynamic-require": "error",
+            "import-x/no-extraneous-dependencies": "error",
+            "import-x/no-mutable-exports": "error",
+            "import-x/no-named-as-default": "error",
+            "import-x/no-named-as-default-member": "error",
+            "import-x/no-named-default": "error",
+            "import-x/no-unresolved": [
                 "error",
                 {
                     /* neither of the resolvers will handle @ alias */
                     ignore: ["^@"],
                 },
             ],
-            "import/no-useless-path-segments": "error",
-            "import/order": [
+            "import-x/no-useless-path-segments": "error",
+            "import-x/order": [
                 "error",
                 {
                     pathGroups: [
@@ -455,8 +451,11 @@ export default [
         name: "@forsakringskassan/eslint-config/esm",
         files: ["**/*.mjs"],
         rules: {
-            /* Could be removed once https://github.com/import-js/eslint-plugin-import/issues/3189 is fixed */
-            "import/extensions": ["error", "always", { ignorePackages: true }],
+            "import-x/extensions": [
+                "error",
+                "always",
+                { ignorePackages: true },
+            ],
         },
     }),
 
@@ -480,7 +479,7 @@ export default [
         name: "@forsakringskassan/eslint-config/legacy-dts",
         files: ["*.d.ts", "packages/*/*.d.ts"],
         rules: {
-            "import/no-unresolved": "off",
+            "import-x/no-unresolved": "off",
         },
     }),
 
@@ -489,9 +488,9 @@ export default [
         files: ["bin/*.{js,cjs,mjs}"],
         rules: {
             /* esm requires the usage of extension in this context */
-            "import/extensions": "off",
+            "import-x/extensions": "off",
             /* needed to run eslint before sources are compiled to dist folder */
-            "import/no-unresolved": "off",
+            "import-x/no-unresolved": "off",
         },
     }),
 
@@ -501,8 +500,8 @@ export default [
         name: "@forsakringskassan/eslint-config/cypress-pageobjects",
         files: ["cypress/**/*.[jt]s"],
         rules: {
-            "import/no-extraneous-dependencies": "off",
-            "import/order": "off",
+            "import-x/no-extraneous-dependencies": "off",
+            "import-x/order": "off",
         },
     },
 ];
@@ -535,8 +534,8 @@ const defaultExampleConfig = {
         "@eslint-community/eslint-comments/require-description": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "import/no-duplicates": "off",
-        "import/no-extraneous-dependencies": "off",
+        "import-x/no-duplicates": "off",
+        "import-x/no-extraneous-dependencies": "off",
         "no-console": "off",
         "no-unused-vars": "off",
         "sonarjs/no-dead-store": "off",
