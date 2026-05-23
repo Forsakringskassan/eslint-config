@@ -253,24 +253,24 @@ exports[`Extension .cy.ts 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "off",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": "off",
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "off",
-    "import/no-named-default": "error",
-    "import/no-unresolved": "off",
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": "off",
+    "import-x/named": "off",
+    "import-x/namespace": "off",
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "off",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": "off",
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -948,7 +948,7 @@ exports[`Extension .cy.ts 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]",
@@ -958,10 +958,18 @@ exports[`Extension .cy.ts 1`] = `
     "mocha": "[Plugin mocha]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   }
 }
 `;
@@ -1042,9 +1050,9 @@ exports[`Extension .js 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "error",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": [
       "error",
       "never",
       {
@@ -1052,19 +1060,19 @@ exports[`Extension .js 1`] = `
         "json": "always"
       }
     ],
-    "import/named": 2,
-    "import/namespace": 2,
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
-    "import/no-named-default": "error",
-    "import/no-unresolved": [
+    "import-x/named": 2,
+    "import-x/namespace": 2,
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "error",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": [
       "error",
       {
         "ignore": [
@@ -1072,8 +1080,8 @@ exports[`Extension .js 1`] = `
         ]
       }
     ],
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -1733,16 +1741,24 @@ exports[`Extension .js 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   }
 }
 `;
@@ -1998,24 +2014,24 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "off",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": "off",
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "off",
-    "import/no-named-default": "error",
-    "import/no-unresolved": "off",
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": "off",
+    "import-x/named": "off",
+    "import-x/namespace": "off",
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "off",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": "off",
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -2722,7 +2738,7 @@ exports[`Extension .spec.ts (jest) 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]",
@@ -2731,10 +2747,18 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "jest": "[Plugin eslint-plugin-jest]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   }
 }
 `;
@@ -2990,24 +3014,24 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "off",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": "off",
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "off",
-    "import/no-named-default": "error",
-    "import/no-unresolved": "off",
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": "off",
+    "import-x/named": "off",
+    "import-x/namespace": "off",
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "off",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": "off",
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -3735,7 +3759,7 @@ exports[`Extension .spec.ts (vitest) 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]",
@@ -3744,10 +3768,18 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "vitest": "[Plugin vitest]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   }
 }
 `;
@@ -3828,9 +3860,9 @@ exports[`Extension .svelte 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "error",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": [
       "error",
       "never",
       {
@@ -3838,19 +3870,19 @@ exports[`Extension .svelte 1`] = `
         "json": "always"
       }
     ],
-    "import/named": 2,
-    "import/namespace": 2,
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
-    "import/no-named-default": "error",
-    "import/no-unresolved": [
+    "import-x/named": 2,
+    "import-x/namespace": 2,
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "error",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": [
       "error",
       {
         "ignore": [
@@ -3858,8 +3890,8 @@ exports[`Extension .svelte 1`] = `
         ]
       }
     ],
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -4565,17 +4597,25 @@ exports[`Extension .svelte 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]",
     "svelte": "[Plugin eslint-plugin-svelte]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   },
   "processor": {
     "meta": {
@@ -4840,24 +4880,24 @@ exports[`Extension .ts 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "off",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": "off",
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "off",
-    "import/no-named-default": "error",
-    "import/no-unresolved": "off",
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": "off",
+    "import-x/named": "off",
+    "import-x/namespace": "off",
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "off",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": "off",
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -5527,7 +5567,7 @@ exports[`Extension .ts 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]",
@@ -5535,10 +5575,18 @@ exports[`Extension .ts 1`] = `
     "tsdoc": "[Plugin tsdoc]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   }
 }
 `;
@@ -5711,9 +5759,9 @@ exports[`Extension .vue 1`] = `
     "generator-star-spacing": "off",
     "getter-return": "off",
     "implicit-arrow-linebreak": "off",
-    "import/default": "off",
-    "import/export": 2,
-    "import/extensions": [
+    "import-x/default": "off",
+    "import-x/export": 2,
+    "import-x/extensions": [
       "error",
       "never",
       {
@@ -5721,19 +5769,19 @@ exports[`Extension .vue 1`] = `
         "json": "always"
       }
     ],
-    "import/named": 2,
-    "import/namespace": 2,
-    "import/newline-after-import": "error",
-    "import/no-absolute-path": "error",
-    "import/no-deprecated": "error",
-    "import/no-duplicates": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
-    "import/no-named-default": "error",
-    "import/no-unresolved": [
+    "import-x/named": 2,
+    "import-x/namespace": 2,
+    "import-x/newline-after-import": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-deprecated": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-dynamic-require": "error",
+    "import-x/no-extraneous-dependencies": "error",
+    "import-x/no-mutable-exports": "error",
+    "import-x/no-named-as-default": "error",
+    "import-x/no-named-as-default-member": "error",
+    "import-x/no-named-default": "error",
+    "import-x/no-unresolved": [
       "error",
       {
         "ignore": [
@@ -5741,8 +5789,8 @@ exports[`Extension .vue 1`] = `
         ]
       }
     ],
-    "import/no-useless-path-segments": "error",
-    "import/order": [
+    "import-x/no-useless-path-segments": "error",
+    "import-x/order": [
       "error",
       {
         "pathGroups": [
@@ -6569,7 +6617,7 @@ exports[`Extension .vue 1`] = `
   },
   "plugins": {
     "prettier": "[Plugin eslint-plugin-prettier]",
-    "import": "[Plugin import]",
+    "import-x": "[Plugin eslint-plugin-import-x]",
     "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
     "sonarjs": "[Plugin eslint-plugin-sonarjs]",
     "unicorn": "[Plugin eslint-plugin-unicorn]",
@@ -6578,10 +6626,18 @@ exports[`Extension .vue 1`] = `
     "vue": "[Plugin eslint-plugin-vue]"
   },
   "settings": {
-    "import/resolver": {
-      "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-      "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-    }
+    "import-x/resolver-next": [
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-plugin-import-x:node",
+        "resolve": "[Function resolve]"
+      },
+      {
+        "interfaceVersion": 3,
+        "name": "eslint-import-resolver-typescript",
+        "resolve": "[Function resolve]"
+      }
+    ]
   },
   "processor": {
     "preprocess": "[Function preprocess]",
@@ -6665,16 +6721,24 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
   {
     "plugins": {
       "prettier": "[Plugin eslint-plugin-prettier]",
-      "import": "[Plugin import]",
+      "import-x": "[Plugin eslint-plugin-import-x]",
       "@eslint-community/eslint-comments": "[Plugin @eslint-community/eslint-comments]",
       "sonarjs": "[Plugin eslint-plugin-sonarjs]",
       "unicorn": "[Plugin eslint-plugin-unicorn]"
     },
     "settings": {
-      "import/resolver": {
-        "<rootDir>/node_modules/eslint-import-resolver-node/index.js": true,
-        "<rootDir>/node_modules/eslint-import-resolver-typescript/lib/index.js": true
-      }
+      "import-x/resolver-next": [
+        {
+          "interfaceVersion": 3,
+          "name": "eslint-plugin-import-x:node",
+          "resolve": "[Function resolve]"
+        },
+        {
+          "interfaceVersion": 3,
+          "name": "eslint-import-resolver-typescript",
+          "resolve": "[Function resolve]"
+        }
+      ]
     },
     "rules": {
       "@eslint-community/eslint-comments/disable-enable-pair": "error",
@@ -6722,11 +6786,11 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "generator-star": "off",
       "generator-star-spacing": "off",
       "implicit-arrow-linebreak": "off",
-      "import/default": 2,
-      "import/export": 2,
-      "import/named": 2,
-      "import/namespace": 2,
-      "import/no-unresolved": 2,
+      "import-x/default": 2,
+      "import-x/export": 2,
+      "import-x/named": 2,
+      "import-x/namespace": 2,
+      "import-x/no-unresolved": 2,
       "indent": "off",
       "indent-legacy": "off",
       "jsx-quotes": "off",
@@ -7130,8 +7194,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "consistent-return": "error",
       "curly": "error",
       "eqeqeq": "error",
-      "import/default": "off",
-      "import/extensions": [
+      "import-x/default": "off",
+      "import-x/extensions": [
         "error",
         "never",
         {
@@ -7139,17 +7203,17 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
           "json": "always"
         }
       ],
-      "import/newline-after-import": "error",
-      "import/no-absolute-path": "error",
-      "import/no-deprecated": "error",
-      "import/no-duplicates": "error",
-      "import/no-dynamic-require": "error",
-      "import/no-extraneous-dependencies": "error",
-      "import/no-mutable-exports": "error",
-      "import/no-named-as-default": "error",
-      "import/no-named-as-default-member": "error",
-      "import/no-named-default": "error",
-      "import/no-unresolved": [
+      "import-x/newline-after-import": "error",
+      "import-x/no-absolute-path": "error",
+      "import-x/no-deprecated": "error",
+      "import-x/no-duplicates": "error",
+      "import-x/no-dynamic-require": "error",
+      "import-x/no-extraneous-dependencies": "error",
+      "import-x/no-mutable-exports": "error",
+      "import-x/no-named-as-default": "error",
+      "import-x/no-named-as-default-member": "error",
+      "import-x/no-named-default": "error",
+      "import-x/no-unresolved": [
         "error",
         {
           "ignore": [
@@ -7157,8 +7221,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
           ]
         }
       ],
-      "import/no-useless-path-segments": "error",
-      "import/order": [
+      "import-x/no-useless-path-segments": "error",
+      "import-x/order": [
         "error",
         {
           "pathGroups": [
@@ -7454,7 +7518,7 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "**/*.mjs"
     ],
     "rules": {
-      "import/extensions": [
+      "import-x/extensions": [
         "error",
         "always",
         {
@@ -7485,7 +7549,7 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "packages/*/*.d.ts"
     ],
     "rules": {
-      "import/no-unresolved": "off"
+      "import-x/no-unresolved": "off"
     }
   },
   {
@@ -7494,8 +7558,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "bin/*.{js,cjs,mjs}"
     ],
     "rules": {
-      "import/extensions": "off",
-      "import/no-unresolved": "off"
+      "import-x/extensions": "off",
+      "import-x/no-unresolved": "off"
     }
   },
   {
@@ -7504,8 +7568,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "cypress/**/*.[jt]s"
     ],
     "rules": {
-      "import/no-extraneous-dependencies": "off",
-      "import/order": "off"
+      "import-x/no-extraneous-dependencies": "off",
+      "import-x/order": "off"
     }
   }
 ]
@@ -7996,12 +8060,12 @@ exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
     "constructor-super": "off",
     "dot-notation": "off",
     "getter-return": "off",
-    "import/default": "off",
-    "import/extensions": "off",
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/no-named-as-default-member": "off",
-    "import/no-unresolved": "off",
+    "import-x/default": "off",
+    "import-x/extensions": "off",
+    "import-x/named": "off",
+    "import-x/namespace": "off",
+    "import-x/no-named-as-default-member": "off",
+    "import-x/no-unresolved": "off",
     "no-class-assign": "off",
     "no-const-assign": "off",
     "no-dupe-args": "off",
