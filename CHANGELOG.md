@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 14.2.3 (2026-05-24)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vitest:** disable vitest/prefer-lowercase-title 006cfc6
+
 ## 14.2.2 (2026-05-22)
 
 ### Bug Fixes
