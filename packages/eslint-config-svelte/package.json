@@ -36,10 +36,10 @@
     "typescript": "6.0.3"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^10.0.0",
     "svelte": "^5.0.0"
   },
   "engines": {
-    "node": ">= 22.13"
+    "node": "^22.13 || >= 24"
   }
 }
