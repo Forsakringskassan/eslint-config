@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 15.0.0 (2026-05-25)
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** This configuration now uses the `eslint-plugin-import-x` fork
+instead of `eslint-plugin-import`. If your repo contains overrides or
+eslint-disable suppressions they must now be changed to use the new rule names
+with the `import-x` prefix. Or better yet, file a bug describing the scenario so
+it can be fixed properly.
+
+### Features
+
+* **deps:** migrate from `eslint-plugin-import` to `eslint-plugin-import-x` 27d866e
+* **deps:** update eslint to v10 83639cd
+
 ## 14.2.3 (2026-05-24)
 
 ### Bug Fixes
