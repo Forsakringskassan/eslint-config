@@ -44,7 +44,7 @@
     "jest": "30.4.2",
     "lerna": "9.0.7",
     "minimatch": "10.2.5",
-    "npm-pkg-lint": "5.1.0",
+    "npm-pkg-lint": "5.1.1",
     "svelte": "5.55.9",
     "typescript": "6.0.3"
   },
