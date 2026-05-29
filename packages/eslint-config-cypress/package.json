@@ -24,7 +24,7 @@
     "eslint-plugin-mocha": "11.3.0"
   },
   "devDependencies": {
-    "cypress": "15.15.0"
+    "cypress": "15.16.0"
   },
   "peerDependencies": {
     "eslint": "^10.0.0"
