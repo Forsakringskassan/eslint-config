@@ -29,7 +29,7 @@
     "typescript-eslint": "8.60.0"
   },
   "devDependencies": {
-    "vue": "3.5.34"
+    "vue": "3.5.35"
   },
   "peerDependencies": {
     "eslint": "^10.0.0",
