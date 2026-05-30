@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.0.3 (2026-05-30)
+
+### Bug Fixes
+
+* **deps:** update dependency @eslint-community/eslint-plugin-eslint-comments to v4.7.2 e391d28
+
 ## 15.0.2 (2026-05-29)
 
 ### Bug Fixes
