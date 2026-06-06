@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.0.10 (2026-06-06)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to v4.4.5 22300f2
+
 ## 15.0.9 (2026-06-06)
 
 ### Bug Fixes
