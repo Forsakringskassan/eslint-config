@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.0.17 (2026-06-16)
+
+### Bug Fixes
+
+* **deps:** update eslint monorepo to v10.5.0 0f0cf4f
+
 ## 15.0.16 (2026-06-14)
 
 ### Bug Fixes
