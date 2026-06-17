@@ -51,5 +51,11 @@
   },
   "engines": {
     "node": "^22.13 || >= 24"
+  },
+  "allowScripts": {
+    "cypress": false,
+    "fsevents": false,
+    "nx": false,
+    "unrs-resolver": true
   }
 }
