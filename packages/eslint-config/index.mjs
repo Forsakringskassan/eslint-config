@@ -165,6 +165,7 @@ export default [
             "sonarjs/no-selector-parameter": "off", // not always possible (e.g. watcher handler in vue)
             "sonarjs/no-skipped-tests": "off", // covered by jest/no-disabled-tests and mocha/no-pending-tests
             "sonarjs/no-exclusive-tests": "off", // covered by jest/no-focused-tests and mocha/no-exclusive-tests
+            "sonarjs/no-redundant-optional": "off", // flags "foo?: string | undefined" as redundant even if `exactOptionalPropertyTypes` tsconfig is enabled */
             "sonarjs/no-small-switch": "off", // prefer to use small switches when the intention is to all more cases later
             "sonarjs/no-unused-vars": "off", // covered by @typescript-eslint/no-unused-vars
             "sonarjs/prefer-nullish-coalescing": "off", // requires typescript and strictNullChecks, which is sane, but we also use @typescript-eslint/prefer-nullish-coalescing so this becomes redundant
