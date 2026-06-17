@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.0.18 (2026-06-17)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable `sonarjs/no-redundant-optional` 9294e3b
+
 ## 15.0.17 (2026-06-16)
 
 ### Bug Fixes
