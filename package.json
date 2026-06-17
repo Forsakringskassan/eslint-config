@@ -18,6 +18,7 @@
     "build": "tsc -b",
     "eslint": "eslint .",
     "eslint:fix": "eslint --fix .",
+    "prepare": "commitlint-config",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "pretest": "lerna run test",
@@ -32,7 +33,7 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.6.9",
+    "@forsakringskassan/commitlint-config": "4.0.0",
     "@forsakringskassan/prettier-config-svelte": "3.7.1",
     "@tsconfig/node22": "22.0.5",
     "@tsconfig/strictest": "2.0.8",
