@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.1.0 (2026-06-23)
+
+### Features
+
+* **@forsakringskassan/eslint-config:** replace `unicorn/better-regex` and `sonarjs/slow-regex` with `eslint-plugin-regexp` 87f2f3d
+
 ## 15.0.19 (2026-06-19)
 
 ### Bug Fixes

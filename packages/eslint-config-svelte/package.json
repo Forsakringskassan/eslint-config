@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/eslint-config-svelte",
-  "version": "15.0.19",
+  "version": "15.1.0",
   "description": "Försäkringskassans eslint shareable svelte config",
   "keywords": [
     "eslint"
