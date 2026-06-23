@@ -4,6 +4,7 @@ import prettierConfig from "eslint-config-prettier";
 import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import { createNodeResolver, importX } from "eslint-plugin-import-x";
 import prettierPlugin from "eslint-plugin-prettier";
+import regexpPlugin from "eslint-plugin-regexp";
 import sonarjsPlugin from "eslint-plugin-sonarjs";
 import eslintPluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
@@ -59,6 +60,7 @@ export default [
             prettier: prettierPlugin,
             "import-x": importX,
             "@eslint-community/eslint-comments": eslintCommentsPlugin,
+            regexp: regexpPlugin,
             sonarjs: sonarjsPlugin,
             unicorn: eslintPluginUnicorn,
         },
@@ -93,6 +95,7 @@ export default [
             ...prettierPlugin.configs.recommended.rules,
             ...importX.flatConfigs.errors.rules,
             ...eslintCommentsPlugin.configs.recommended.rules,
+            ...regexpPlugin.configs.recommended.rules, // eslint-disable-line import-x/no-named-as-default-member -- to match other plugins here
             ...sonarjsPlugin.configs.recommended.rules,
         },
     }),
@@ -162,15 +165,16 @@ export default [
             "sonarjs/no-commented-code": "off", // neat rule but is very very slow (over 50% of the total linting time)
             "sonarjs/no-control-regex": "off", // covered by no-control-regexp
             "sonarjs/no-empty-test-file": "off", // could be useful but it does not handle it.each or similar constructs thus yields more false positives than its worth */
-            "sonarjs/no-selector-parameter": "off", // not always possible (e.g. watcher handler in vue)
-            "sonarjs/no-skipped-tests": "off", // covered by jest/no-disabled-tests and mocha/no-pending-tests
             "sonarjs/no-exclusive-tests": "off", // covered by jest/no-focused-tests and mocha/no-exclusive-tests
             "sonarjs/no-redundant-optional": "off", // flags "foo?: string | undefined" as redundant even if `exactOptionalPropertyTypes` tsconfig is enabled */
+            "sonarjs/no-selector-parameter": "off", // not always possible (e.g. watcher handler in vue)
+            "sonarjs/no-skipped-tests": "off", // covered by jest/no-disabled-tests and mocha/no-pending-tests
             "sonarjs/no-small-switch": "off", // prefer to use small switches when the intention is to all more cases later
             "sonarjs/no-unused-vars": "off", // covered by @typescript-eslint/no-unused-vars
             "sonarjs/prefer-nullish-coalescing": "off", // requires typescript and strictNullChecks, which is sane, but we also use @typescript-eslint/prefer-nullish-coalescing so this becomes redundant
             "sonarjs/prefer-regexp-exec": "off", // covered by @typescript-eslint/prefer-regexp-exec
             "sonarjs/redundant-type-aliases": "off", // "redundant" type aliases helps with self-documenting code
+            "sonarjs/slow-regex": "off", // covered by regexp/no-super-linear-backtracking
             "sonarjs/todo-tag": "off", // want to be able to leave todo tasks
             "sonarjs/unused-import": "off", // covered by @typescript-eslint/no-unused-vars
             "sonarjs/unused-named-groups": "off", // named groups can help readability even if not used
@@ -199,7 +203,7 @@ export default [
 
             /* enable eslint-plugin-unicorn */
             ...eslintPluginUnicorn.configs.recommended.rules,
-            "unicorn/better-regex": "error",
+            "unicorn/better-regex": "off", // covered by eslint-plugin-regexp
             "unicorn/catch-error-name": "off",
             "unicorn/consistent-assert": "off",
             "unicorn/consistent-date-clone": "off", // we prefer to use FDate instead of Date and structuredClone does not play well with jest
