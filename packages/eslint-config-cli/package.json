@@ -20,7 +20,7 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "globals": "17.6.0"
+    "globals": "17.7.0"
   },
   "peerDependencies": {
     "eslint": "^10.0.0"

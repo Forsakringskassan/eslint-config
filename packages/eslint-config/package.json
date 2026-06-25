@@ -34,7 +34,7 @@
     "eslint-plugin-regexp": "3.1.0",
     "eslint-plugin-sonarjs": "4.0.3",
     "eslint-plugin-unicorn": "64.0.0",
-    "globals": "17.6.0"
+    "globals": "17.7.0"
   },
   "peerDependencies": {
     "prettier": "^2.0.0 || ^3.0.0"
