@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.1.1 (2026-06-26)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v17.7.0 c128efe
+
 ## 15.1.0 (2026-06-23)
 
 ### Features
