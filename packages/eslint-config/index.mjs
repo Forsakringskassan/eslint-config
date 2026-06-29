@@ -160,6 +160,7 @@ export default [
 
             "sonarjs/argument-type": "off", // handled by typescript (and this rule is sometimes wrong)
             "sonarjs/arguments-order": "off", // another slow rule, would be nice to have enabled thought
+            "sonarjs/assertions-in-tests": "off", // could be useful but yields lots of false positives (e.g. node:test isn't recognized)
             "sonarjs/deprecation": "off", // covered by @typescript-eslint/no-deprecated (and this rule crashes on .svelte files)
             "sonarjs/function-return-type": "off", // overly broad and opinionated, let typescript deal with this
             "sonarjs/no-commented-code": "off", // neat rule but is very very slow (over 50% of the total linting time)
@@ -170,11 +171,13 @@ export default [
             "sonarjs/no-selector-parameter": "off", // not always possible (e.g. watcher handler in vue)
             "sonarjs/no-skipped-tests": "off", // covered by jest/no-disabled-tests and mocha/no-pending-tests
             "sonarjs/no-small-switch": "off", // prefer to use small switches when the intention is to all more cases later
+            "sonarjs/no-trivial-assertions": "off", // produces a bit too much noise
             "sonarjs/no-unused-vars": "off", // covered by @typescript-eslint/no-unused-vars
             "sonarjs/prefer-nullish-coalescing": "off", // requires typescript and strictNullChecks, which is sane, but we also use @typescript-eslint/prefer-nullish-coalescing so this becomes redundant
             "sonarjs/prefer-regexp-exec": "off", // covered by @typescript-eslint/prefer-regexp-exec
             "sonarjs/redundant-type-aliases": "off", // "redundant" type aliases helps with self-documenting code
             "sonarjs/slow-regex": "off", // covered by regexp/no-super-linear-backtracking
+            "sonarjs/super-linear-regex": "off", // covered by regexp/no-super-linear-backtracking
             "sonarjs/todo-tag": "off", // want to be able to leave todo tasks
             "sonarjs/unused-import": "off", // covered by @typescript-eslint/no-unused-vars
             "sonarjs/unused-named-groups": "off", // named groups can help readability even if not used
