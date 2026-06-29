@@ -1027,7 +1027,8 @@ exports[`Extension .cy.ts 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -1881,7 +1882,8 @@ exports[`Extension .js 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -2946,7 +2948,8 @@ exports[`Extension .spec.ts (jest) 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -4032,7 +4035,8 @@ exports[`Extension .spec.ts (vitest) 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -4933,7 +4937,8 @@ exports[`Extension .svelte 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -5969,7 +5974,8 @@ exports[`Extension .ts 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -7085,7 +7091,8 @@ exports[`Extension .vue 1`] = `
       {
         "interfaceVersion": 3,
         "name": "eslint-plugin-import-x:node",
-        "resolve": "[Function resolve]"
+        "resolve": "[Function resolve]",
+        "clearCache": "[Function clearCache]"
       },
       {
         "interfaceVersion": 3,
@@ -7191,7 +7198,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
         {
           "interfaceVersion": 3,
           "name": "eslint-plugin-import-x:node",
-          "resolve": "[Function resolve]"
+          "resolve": "[Function resolve]",
+          "clearCache": "[Function clearCache]"
         },
         {
           "interfaceVersion": 3,
