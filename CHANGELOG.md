@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.1.6 (2026-06-29)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-regexp to v3.1.1 575d79f
+
 ## 15.1.5 (2026-06-29)
 
 ### Bug Fixes
