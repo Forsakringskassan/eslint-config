@@ -72,6 +72,7 @@ const defaultConfig = defineConfig({
         "jest/padding-around-expect-groups": "off",
         "jest/padding-around-test-blocks": "warn",
         "jest/prefer-hooks-on-top": "error",
+        "jest/prefer-importing-jest-globals": "error",
         "jest/prefer-todo": "error",
 
         /* jest uses @jest-* tags for per-file configuration */
