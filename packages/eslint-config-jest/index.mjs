@@ -64,6 +64,13 @@ const defaultConfig = defineConfig({
             { maxSize: 25, inlineMaxSize: 10 },
         ],
         "jest/no-test-prefixes": "warn",
+        "jest/padding-around-after-all-blocks": "warn",
+        "jest/padding-around-after-each-blocks": "warn",
+        "jest/padding-around-before-all-blocks": "warn",
+        "jest/padding-around-before-each-blocks": "warn",
+        "jest/padding-around-describe-blocks": "warn",
+        "jest/padding-around-expect-groups": "off",
+        "jest/padding-around-test-blocks": "warn",
         "jest/prefer-hooks-on-top": "error",
         "jest/prefer-todo": "error",
 
