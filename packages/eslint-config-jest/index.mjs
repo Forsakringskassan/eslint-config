@@ -80,6 +80,7 @@ const defaultConfig = defineConfig({
         "jest/prefer-hooks-on-top": "error",
         "jest/prefer-importing-jest-globals": "error",
         "jest/prefer-jest-mocked": "error",
+        "jest/prefer-lowercase-title": "off", // Disabled since we want to allow uppercase titles when for example testing Classes or Vue Components.
         "jest/prefer-mock-promise-shorthand": "error",
         "jest/prefer-spy-on": "error",
         "jest/prefer-todo": "error",
