@@ -72,6 +72,7 @@ const defaultConfig = defineConfig({
         "jest/padding-around-expect-groups": "off",
         "jest/padding-around-test-blocks": "warn",
         "jest/prefer-expect-assertions": "error",
+        "jest/prefer-hooks-in-order": "error",
         "jest/prefer-hooks-on-top": "error",
         "jest/prefer-importing-jest-globals": "error",
         "jest/prefer-spy-on": "error",
