@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 15.2.0 (2026-07-03)
+
+### Features
+
+* **@forsakringskassan/eslint-config-jest:** enable `jest/no-conditinal-in-test` rule for symmetry with vitest config c10b2d2
+* **@forsakringskassan/eslint-config-jest:** enable `jest/no-test-return-statement` rule for symmetry with vitest config 4d4bc55
+* **@forsakringskassan/eslint-config-jest:** enable `jest/padding-around-*` rules for symmetry with vitest config df820f3
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-comparison-matcher` rule for symmetry with vitest config ea619d4
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-equality-matcher` rule for symmetry with vitest config 82c41eb
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-expect-assertions` rule for symmetry with vitest config eb6eaba
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-hooks-in-order` rule for symmetry with vitest config c4e610d
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-importing-jest-globals` rule for symmetry with vitest config f186a22
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-jest-mocked` rule for symmetry with vitest config 68455a6
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-mock-promise-shorthand` rule for symmetry with vitest config a3e6390
+* **@forsakringskassan/eslint-config-jest:** enable `jest/prefer-spy-on` rule for symmetry with vitest config 8a57087
+
 ## 15.1.12 (2026-07-03)
 
 ### Bug Fixes
