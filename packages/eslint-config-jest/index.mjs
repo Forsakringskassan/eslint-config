@@ -71,6 +71,7 @@ const defaultConfig = defineConfig({
         "jest/padding-around-describe-blocks": "warn",
         "jest/padding-around-expect-groups": "off",
         "jest/padding-around-test-blocks": "warn",
+        "jest/no-test-return-statement": "error",
         "jest/prefer-comparison-matcher": "error",
         "jest/prefer-equality-matcher": "error",
         "jest/prefer-expect-assertions": "error",
