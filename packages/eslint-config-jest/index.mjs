@@ -75,9 +75,10 @@ const defaultConfig = defineConfig({
         "jest/prefer-hooks-in-order": "error",
         "jest/prefer-hooks-on-top": "error",
         "jest/prefer-importing-jest-globals": "error",
+        "jest/prefer-jest-mocked": "error",
+        "jest/prefer-mock-promise-shorthand": "error",
         "jest/prefer-spy-on": "error",
         "jest/prefer-todo": "error",
-        "jest/prefer-jest-mocked": "error",
 
         /* jest uses @jest-* tags for per-file configuration */
         "tsdoc/syntax": "off",
