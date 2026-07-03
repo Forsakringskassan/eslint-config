@@ -74,6 +74,7 @@ const defaultConfig = defineConfig({
         "jest/prefer-expect-assertions": "error",
         "jest/prefer-hooks-on-top": "error",
         "jest/prefer-importing-jest-globals": "error",
+        "jest/prefer-spy-on": "error",
         "jest/prefer-todo": "error",
         "jest/prefer-jest-mocked": "error",
 
