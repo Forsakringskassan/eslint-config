@@ -87,9 +87,7 @@ import { defineConfig } from "@forsakringskassan/eslint-config";
 export default [
     defineConfig({
         name: "local",
-        rules: {
-            /* ... */
-        },
+        rules: {/* ... */},
     }),
 ];
 ```
