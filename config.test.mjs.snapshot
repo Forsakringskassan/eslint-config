@@ -1895,6 +1895,7 @@ exports[`Extension .js 1`] = `
       "error",
       {
         "case": "kebabCase",
+        "checkDirectories": false,
         "ignore": [
           "^__(fixtures|mocks|snapshots|tests)__$",
           "^Gruntfile.js$",
@@ -5538,6 +5539,7 @@ exports[`Extension .svelte 1`] = `
       "error",
       {
         "case": "kebabCase",
+        "checkDirectories": false,
         "ignore": [
           "^__(fixtures|mocks|snapshots|tests)__$",
           "^Gruntfile.js$",
@@ -6770,6 +6772,7 @@ exports[`Extension .ts 1`] = `
       "error",
       {
         "case": "kebabCase",
+        "checkDirectories": false,
         "ignore": [
           "^__(fixtures|mocks|snapshots|tests)__$",
           "^Gruntfile.js$",
@@ -9281,6 +9284,7 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
         "error",
         {
           "case": "kebabCase",
+          "checkDirectories": false,
           "ignore": [
             "^__(fixtures|mocks|snapshots|tests)__$",
             "^Gruntfile.js$",

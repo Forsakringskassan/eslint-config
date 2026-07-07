@@ -233,6 +233,7 @@ export default [
                 "error",
                 {
                     case: "kebabCase",
+                    checkDirectories: false,
                     ignore: [
                         "^__(fixtures|mocks|snapshots|tests)__$",
                         "^Gruntfile.js$",
