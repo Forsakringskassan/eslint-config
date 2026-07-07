@@ -81,7 +81,7 @@ function serialize(value, parent) {
                 }
                 const values = [
                     ...complete.map(({ name }) => `...${name}`),
-                    ...Array.from(remainder, (it) => `${it}`),
+                    ...Array.from(remainder, (it) => it),
                 ];
                 return [key, values];
             }

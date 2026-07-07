@@ -98,6 +98,7 @@ const defaultConfig = defineConfig({
                     kebabCase: true,
                     pascalCase: true,
                 },
+                checkDirectories: false,
             },
         ],
     },

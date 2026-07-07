@@ -41,6 +41,7 @@ const defaultConfig = defineConfig({
     },
     rules: {
         "no-console": "off",
+        "unicorn/no-top-level-side-effects": "off",
     },
 });
 
