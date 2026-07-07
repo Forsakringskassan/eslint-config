@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.0 (2026-07-07)
+
+### Features
+
+* **deps:** update dependency eslint-plugin-unicorn to v70 bc28aa1
+
 ## 15.2.0 (2026-07-03)
 
 ### Features
