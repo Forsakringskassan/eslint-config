@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.1 (2026-07-07)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** ignore directories for `unicorn/filename-case` 03aab3a
+
 ## 15.3.0 (2026-07-07)
 
 ### Features
