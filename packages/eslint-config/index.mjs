@@ -206,157 +206,85 @@ export default [
 
             /* enable eslint-plugin-unicorn */
             ...eslintPluginUnicorn.configs.recommended.rules,
-            "unicorn/better-regex": "off", // covered by eslint-plugin-regexp
             "unicorn/catch-error-name": "off",
             "unicorn/consistent-assert": "off",
+            "unicorn/consistent-boolean-name": "off",
+            "unicorn/consistent-class-member-order": "off",
+            "unicorn/consistent-compound-words": "off",
             "unicorn/consistent-date-clone": "off", // we prefer to use FDate instead of Date and structuredClone does not play well with jest
             "unicorn/consistent-empty-array-spread": "off",
-            "unicorn/consistent-existence-index-check": "error",
-            "unicorn/consistent-function-scoping": "error",
-            "unicorn/consistent-template-literal-escape": "error",
-            "unicorn/custom-error-definition": "error",
-            "unicorn/error-message": "error",
-            "unicorn/escape-case": "off", // typically not useful for this organisation
+            "unicorn/default-export-style": [
+                "error",
+                {
+                    /* right now this rule is too restrictive with functions */
+                    functions: "ignore",
+                    /* classes should be default exported inline */
+                    classes: "inline",
+                },
+            ],
+            "unicorn/escape-case": "off", // typically not useful for this organization
             "unicorn/expiring-todo-comments": "off", // could be useful later
             "unicorn/explicit-length-check": [
                 "error",
                 { "non-zero": "greater-than" },
             ],
             "unicorn/filename-case": [
+                /* enforce kebab-case in filenames */
                 "error",
                 {
                     case: "kebabCase",
                     ignore: [
+                        "^__(fixtures|mocks|snapshots|tests)__$",
                         "^Gruntfile.js$",
                         /* ignore mocks for @forsakringskassan/apimock-express */
                         "_(get|post|put|delete).(js|cjs|mjs|ts)$",
                     ],
                 },
-            ], // enforce kebab-case in filenames
+            ],
             "unicorn/import-style": "off", // off for now
-            "unicorn/isolated-functions": "error",
-            "unicorn/new-for-builtins": "error",
+            "unicorn/name-replacements": "off", // maybe later
             "unicorn/no-abusive-eslint-disable": "off", // covered by eslint-plugin-eslint-comments
-            "unicorn/no-accessor-recursion": "error",
             "unicorn/no-anonymous-default-export": "off", // often used with configuration packages
-            "unicorn/no-array-callback-reference": "off", // opinionated, prefer to allow passing function references to array methods (and for most part typescript will handle this)
-            "unicorn/no-array-for-each": "error",
-            "unicorn/no-array-method-this-argument": "error",
+            "unicorn/no-array-callback-reference": "off", // opinionated, prefer to allow passing function references to array methods (and for most part TypeScript will handle this)
             "unicorn/no-array-reduce": "off", // allow usage of reduce()
-            "unicorn/no-array-reverse": "error", // prefer immutable .toReversed() (available in Node.js 20+)
-            "unicorn/no-array-sort": "error", // prefer immutable .toSorted() (available in Node.js 20+)
-            "unicorn/no-await-expression-member": "error",
-            "unicorn/no-await-in-promise-methods": "error",
-            "unicorn/no-console-spaces": "error",
-            "unicorn/no-document-cookie": "error",
             "unicorn/no-empty-file": "off",
-            "unicorn/no-for-loop": "error",
-            "unicorn/no-hex-escape": "error",
             "unicorn/no-immediate-mutation": "off",
-            "unicorn/no-instanceof-builtins": "error",
-            "unicorn/no-invalid-fetch-options": "off", // let typescript and tests handle this
-            "unicorn/no-invalid-remove-event-listener": "error",
-            "unicorn/no-magic-array-flat-depth": "error",
-            "unicorn/no-named-default": "off", // named default is useful for vue
+            "unicorn/no-invalid-argument-count": "off", // does not respect optional parameters (e.g. jsdoc [param])
+            "unicorn/no-invalid-fetch-options": "off", // let TypeScript and tests handle this
+            "unicorn/no-named-default": "off", // named default is useful for Vue.js
             "unicorn/no-negated-condition": "off", // mostly agree with the rule but sometimes its useful to have the common case first even if negated
             "unicorn/no-negation-in-equality-check": "off",
-            "unicorn/no-new-array": "error",
-            "unicorn/no-new-buffer": "error",
             "unicorn/no-null": "off", // prefer using null over undefined
-            "unicorn/no-object-as-default-parameter": "error",
-            "unicorn/no-process-exit": "off", // covered by n/no-process-exit (enabled by recommended-module preset)
-            "unicorn/no-single-promise-in-promise-methods": "error",
-            "unicorn/no-static-only-class": "off",
-            "unicorn/no-thenable": "off",
-            "unicorn/no-this-assignment": "error",
-            "unicorn/no-typeof-undefined": "error",
-            "unicorn/no-unnecessary-array-flat-depth": "error",
-            "unicorn/no-unnecessary-array-splice-count": "error",
-            "unicorn/no-unnecessary-await": "error",
+            "unicorn/no-this-outside-of-class": "off", // disagree somewhat with the rule, flags stateful objects
             "unicorn/no-unnecessary-polyfills": "off",
-            "unicorn/no-unnecessary-slice-end": "error",
             "unicorn/no-unreadable-array-destructuring": "off",
-            "unicorn/no-unreadable-iife": "off",
-            "unicorn/no-useless-collection-argument": "error",
-            "unicorn/no-useless-error-capture-stack-trace": "error",
-            "unicorn/no-useless-fallback-in-spread": "error",
-            "unicorn/no-useless-iterator-to-array": "error",
-            "unicorn/no-useless-length-check": "error",
-            "unicorn/no-useless-promise-resolve-reject": "error",
-            "unicorn/no-useless-spread": "error",
             "unicorn/no-useless-switch-case": "off",
             "unicorn/no-useless-undefined": "off", // opinionated, I prefer to explicitly pass undefined
-            "unicorn/no-zero-fractions": "error",
-            "unicorn/number-literal-case": [
-                "error",
-                { hexadecimalValue: "lowercase" },
-            ],
-            "unicorn/numeric-separators-style": "off",
-            "unicorn/prefer-add-event-listener": "error",
-            "unicorn/prefer-array-find": "error",
-            "unicorn/prefer-array-flat": "error",
-            "unicorn/prefer-array-flat-map": "error",
-            "unicorn/prefer-array-index-of": "error",
-            "unicorn/prefer-array-some": "error",
-            "unicorn/prefer-at": "error",
             "unicorn/prefer-bigint-literals": "off",
-            "unicorn/prefer-blob-reading-methods": "error",
-            "unicorn/prefer-class-fields": "error",
-            "unicorn/prefer-classlist-toggle": "error",
-            "unicorn/prefer-code-point": "error",
-            "unicorn/prefer-date-now": "error",
-            "unicorn/prefer-default-parameters": "error",
-            "unicorn/prefer-dom-node-append": "error",
-            "unicorn/prefer-dom-node-dataset": "error",
-            "unicorn/prefer-dom-node-remove": "error",
-            "unicorn/prefer-dom-node-text-content": "error",
-            "unicorn/prefer-event-target": "error",
-            "unicorn/prefer-export-from": "error",
+            "unicorn/prefer-boolean-return": "off", // creates inconsistent functions when using multiple conditions
             "unicorn/prefer-global-this": "off",
+            "unicorn/prefer-hoisting-branch-code": "off", // lots of false positives with TypeScript code
             "unicorn/prefer-import-meta-properties": "error",
-            "unicorn/prefer-includes": "error",
-            "unicorn/prefer-keyboard-event-key": "error",
-            "unicorn/prefer-logical-operator-over-ternary": "off",
-            "unicorn/prefer-math-min-max": "error",
-            "unicorn/prefer-math-trunc": "error",
-            "unicorn/prefer-modern-dom-apis": "error",
-            "unicorn/prefer-modern-math-apis": "error",
+            "unicorn/prefer-minimal-ternary": "off", // situational, i dont think `foo[expr ? "x": "y"].bar` is more readable than `expr ? foo.x.bar : foo.y.bar`.
             "unicorn/prefer-module": "off",
-            "unicorn/prefer-native-coercion-functions": "off",
-            "unicorn/prefer-negative-index": "error",
-            "unicorn/prefer-number-properties": "error",
-            "unicorn/prefer-object-from-entries": "error",
             "unicorn/prefer-optional-catch-binding": "off", // covered by sonarjs/no-ignored-exceptions
-            "unicorn/prefer-prototype-methods": "error",
-            "unicorn/prefer-query-selector": "error",
-            "unicorn/prefer-reflect-apply": "error",
-            "unicorn/prefer-regexp-test": "error",
-            "unicorn/prefer-response-static-json": "off",
-            "unicorn/prefer-set-has": "error",
-            "unicorn/prefer-set-size": "error",
-            "unicorn/prefer-simple-condition-first": "error",
+            "unicorn/prefer-promise-try": "off", // baseline but requires Node.js 23
+            "unicorn/prefer-queue-microtask": [
+                "error",
+                { checkSetImmediate: true, checkSetTimeout: true },
+            ],
+            "unicorn/prefer-scoped-selector": "off",
             "unicorn/prefer-single-call": "off",
             "unicorn/prefer-spread": "off", // for now
             "unicorn/prefer-string-raw": "off", // for now
-            "unicorn/prefer-string-replace-all": "error",
-            "unicorn/prefer-string-slice": "error",
-            "unicorn/prefer-string-starts-ends-with": "error",
-            "unicorn/prefer-string-trim-start-end": "error",
             "unicorn/prefer-structured-clone": "off", // we use `deepClone` from `@fkui/logic` and structuredClone does not play well with jest
-            "unicorn/prefer-switch": "error",
             "unicorn/prefer-ternary": "off",
-            "unicorn/prefer-top-level-await": "error",
-            "unicorn/prefer-type-error": "error",
-            "unicorn/prevent-abbreviations": "off",
-            "unicorn/relative-url-style": "error",
-            "unicorn/require-array-join-separator": "error",
+            "unicorn/prefer-uint8array-base64": "off",
+            "unicorn/relative-url-style": "warn",
             "unicorn/require-module-attributes": "off",
             "unicorn/require-module-specifiers": "off",
-            "unicorn/require-number-to-fixed-digits-argument": "error",
             "unicorn/switch-case-braces": "off",
-            "unicorn/switch-case-break-position": "error",
             "unicorn/text-encoding-identifier-case": "error",
-            "unicorn/throw-new-error": "error",
             ...filterRules(prettierConfig.rules, (rule) => {
                 return rule.startsWith("unicorn/");
             }),
@@ -476,6 +404,7 @@ export default [
                 "error",
                 {
                     case: "pascalCase",
+                    checkDirectories: false,
                 },
             ],
         },

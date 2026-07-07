@@ -96,6 +96,7 @@ const defaultConfig = defineConfig({
             "error",
             {
                 case: "pascalCase",
+                checkDirectories: false,
                 ignore: [
                     /* used by @forsakringskassan/vite-lib-config as default entrypoint */
                     "^app.vue$",
