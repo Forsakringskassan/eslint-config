@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.3 (2026-07-08)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable `unicorn/no-top-level-assignment-in-function` for all configs c7ee89a
+
 ## 15.3.2 (2026-07-08)
 
 ### Bug Fixes
