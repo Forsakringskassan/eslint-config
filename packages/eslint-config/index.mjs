@@ -257,6 +257,7 @@ export default [
             "unicorn/no-negation-in-equality-check": "off",
             "unicorn/no-null": "off", // prefer using null over undefined
             "unicorn/no-this-outside-of-class": "off", // disagree somewhat with the rule, flags stateful objects
+            "unicorn/no-top-level-assignment-in-function": "off", // would be useful, right now this gives to many errors, maybe enable later
             "unicorn/no-unnecessary-polyfills": "off",
             "unicorn/no-unreadable-array-destructuring": "off",
             "unicorn/no-useless-switch-case": "off",
