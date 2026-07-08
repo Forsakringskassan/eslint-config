@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.2 (2026-07-08)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-jest, @forsakringskassan/eslint-config-vitest:** disable some new unicorn rules for tests 4f1fa5c
+
 ## 15.3.1 (2026-07-07)
 
 ### Bug Fixes
