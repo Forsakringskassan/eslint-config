@@ -107,6 +107,9 @@ const defaultConfig = defineConfig({
                 checkDirectories: false,
             },
         ],
+
+        "unicorn/no-non-function-verb-prefix": "off", // interferes with jest.spyOn()
+        "unicorn/no-top-level-assignment-in-function": "off", // variables are often assigned from {beforeEach,beforeAll} */
     },
 });
 

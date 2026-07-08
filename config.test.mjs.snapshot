@@ -3250,7 +3250,7 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "unicorn/no-nested-ternary": "off",
     "unicorn/no-new-array": "off",
     "unicorn/no-new-buffer": "off",
-    "unicorn/no-non-function-verb-prefix": "error",
+    "unicorn/no-non-function-verb-prefix": "off",
     "unicorn/no-nonstandard-builtin-properties": "error",
     "unicorn/no-null": "off",
     "unicorn/no-object-as-default-parameter": "error",
@@ -3266,7 +3266,7 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "unicorn/no-thenable": "error",
     "unicorn/no-this-assignment": "off",
     "unicorn/no-this-outside-of-class": "off",
-    "unicorn/no-top-level-assignment-in-function": "error",
+    "unicorn/no-top-level-assignment-in-function": "off",
     "unicorn/no-top-level-side-effects": "error",
     "unicorn/no-typeof-undefined": "error",
     "unicorn/no-uncalled-method": "error",
@@ -4471,7 +4471,7 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "unicorn/no-nested-ternary": "off",
     "unicorn/no-new-array": "off",
     "unicorn/no-new-buffer": "off",
-    "unicorn/no-non-function-verb-prefix": "error",
+    "unicorn/no-non-function-verb-prefix": "off",
     "unicorn/no-nonstandard-builtin-properties": "error",
     "unicorn/no-null": "off",
     "unicorn/no-object-as-default-parameter": "error",
@@ -4487,7 +4487,7 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "unicorn/no-thenable": "error",
     "unicorn/no-this-assignment": "off",
     "unicorn/no-this-outside-of-class": "off",
-    "unicorn/no-top-level-assignment-in-function": "error",
+    "unicorn/no-top-level-assignment-in-function": "off",
     "unicorn/no-top-level-side-effects": "error",
     "unicorn/no-typeof-undefined": "error",
     "unicorn/no-uncalled-method": "error",
@@ -9838,7 +9838,9 @@ exports[`Package @forsakringskassan/eslint-config-jest 1`] = `
         },
         "checkDirectories": false
       }
-    ]
+    ],
+    "unicorn/no-non-function-verb-prefix": "off",
+    "unicorn/no-top-level-assignment-in-function": "off"
   }
 }
 `;
@@ -10252,6 +10254,8 @@ exports[`Package @forsakringskassan/eslint-config-vitest 1`] = `
         "checkDirectories": false
       }
     ],
+    "unicorn/no-non-function-verb-prefix": "off",
+    "unicorn/no-top-level-assignment-in-function": "off",
     "vitest/consistent-test-it": [
       "error",
       {
