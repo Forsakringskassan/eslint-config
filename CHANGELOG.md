@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.5 (2026-07-12)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to v1.6.22 ([#208](undefined/Forsakringskassan/eslint-config/issues/208)) 2d1044d
+
 ## 15.3.4 (2026-07-10)
 
 ### Bug Fixes
