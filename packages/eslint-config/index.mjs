@@ -449,6 +449,10 @@ const defaultAppConfig = defineConfig({
     name: "@forsakringskassan/eslint-config/app",
     rules: {
         "sonarjs/no-commented-code": "warn",
+
+        /* some (bad?) patterns in FKDS forces the use of top level side-effects */
+        "unicorn/no-top-level-side-effects": "off",
+
         "vue/no-restricted-block": "off",
     },
 });
