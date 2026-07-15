@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.9 (2026-07-15)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable `unicorn/no-top-level-side-effects` for example config 9459380
+
 ## 15.3.8 (2026-07-15)
 
 ### Bug Fixes
