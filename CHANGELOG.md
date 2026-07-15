@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.12 (2026-07-15)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue:** disable `unicorn/no-top-level-assignment-in-function` for vue config e0490e2
+
 ## 15.3.11 (2026-07-15)
 
 ### Bug Fixes
