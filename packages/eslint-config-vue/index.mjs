@@ -104,6 +104,9 @@ const defaultConfig = defineConfig({
             },
         ],
 
+        /* common to assign to top level in vue sfc */
+        "unicorn/no-top-level-assignment-in-function": "off",
+
         /* this rule warns about the order of the top-level tags */
         "vue/block-order": [
             "error",

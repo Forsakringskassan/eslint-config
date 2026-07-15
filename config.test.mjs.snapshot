@@ -10375,6 +10375,7 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
         ]
       }
     ],
+    "unicorn/no-top-level-assignment-in-function": "off",
     "vue/array-bracket-newline": "off",
     "vue/array-bracket-spacing": "off",
     "vue/array-element-newline": "off",
