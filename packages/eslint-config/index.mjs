@@ -483,6 +483,9 @@ const defaultExampleConfig = {
         "no-unused-vars": "off",
         "sonarjs/no-dead-store": "off",
         "sonarjs/pseudo-random": "off",
+
+        /* some (bad?) patterns in FKDS forces the use of top level side-effects */
+        "unicorn/no-top-level-side-effects": "off",
     },
 };
 
