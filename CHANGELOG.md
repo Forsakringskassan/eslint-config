@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.11 (2026-07-15)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable redundant `sonarjs/no-alphabetical-sort` 3d50f7d
+
 ## 15.3.10 (2026-07-15)
 
 ### Bug Fixes
