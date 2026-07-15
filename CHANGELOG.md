@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.10 (2026-07-15)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cypress:** disable `unicorn/prefer-await` for cypress config f365eaf
+
 ## 15.3.9 (2026-07-15)
 
 ### Bug Fixes
