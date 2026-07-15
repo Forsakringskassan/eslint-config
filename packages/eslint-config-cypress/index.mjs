@@ -68,6 +68,9 @@ const defaultConfig = defineConfig({
                 checkDirectories: false,
             },
         ],
+
+        /* flags cypress "promises" which cannot be awaited */
+        "unicorn/prefer-await": "off",
     },
 });
 

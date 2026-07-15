@@ -1003,7 +1003,7 @@ exports[`Extension .cy.ts 1`] = `
     "unicorn/prefer-array-slice": "error",
     "unicorn/prefer-array-some": "error",
     "unicorn/prefer-at": "error",
-    "unicorn/prefer-await": "error",
+    "unicorn/prefer-await": "off",
     "unicorn/prefer-bigint-literals": "off",
     "unicorn/prefer-blob-reading-methods": "error",
     "unicorn/prefer-block-statement-over-iife": "error",
@@ -9745,7 +9745,8 @@ exports[`Package @forsakringskassan/eslint-config-cypress 1`] = `
         },
         "checkDirectories": false
       }
-    ]
+    ],
+    "unicorn/prefer-await": "off"
   }
 }
 `;
