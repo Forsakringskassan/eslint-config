@@ -164,6 +164,7 @@ export default [
             "sonarjs/deprecation": "off", // covered by @typescript-eslint/no-deprecated (and this rule crashes on .svelte files)
             "sonarjs/function-return-type": "off", // overly broad and opinionated, let typescript deal with this
             "sonarjs/no-alphabetical-sort": "off", // covered by unicorn/require-array-sort-compare
+            "sonarjs/no-clear-text-protocols": "off", // covered by unicorn/prefer-https
             "sonarjs/no-commented-code": "off", // neat rule but is very very slow (over 50% of the total linting time)
             "sonarjs/no-control-regex": "off", // covered by no-control-regexp
             "sonarjs/no-empty-test-file": "off", // could be useful but it does not handle it.each or similar constructs thus yields more false positives than its worth */
