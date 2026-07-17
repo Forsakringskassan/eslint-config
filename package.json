@@ -47,7 +47,7 @@
     "lerna": "9.0.7",
     "minimatch": "10.2.5",
     "npm-pkg-lint": "5.1.11",
-    "svelte": "5.56.4",
+    "svelte": "5.56.5",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   },
   "engines": {
