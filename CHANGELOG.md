@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 15.3.13 (2026-07-17)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable `unicorn/prefer-location-assign` for jsdom compatibility ddad27a
+* **@forsakringskassan/eslint-config:** disable `unicorn/require-css-escape` for jsdom compatibility f4da004
+* **@forsakringskassan/eslint-config:** disable redundant `sonarjs/no-clear-text-protocols` 47158ae
+* **@forsakringskassan/eslint-config:** lower some errors to warnings 5297653
+
 ## 15.3.12 (2026-07-15)
 
 ### Bug Fixes
