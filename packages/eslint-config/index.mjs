@@ -271,6 +271,7 @@ export default [
             "unicorn/prefer-import-meta-properties": "error",
             "unicorn/prefer-minimal-ternary": "off", // situational, i dont think `foo[expr ? "x": "y"].bar` is more readable than `expr ? foo.x.bar : foo.y.bar`.
             "unicorn/prefer-module": "off",
+            "unicorn/prefer-location-assign": "off", // jsdom does not impoement `Location.assign`
             "unicorn/prefer-optional-catch-binding": "off", // covered by sonarjs/no-ignored-exceptions
             "unicorn/prefer-promise-try": "off", // baseline but requires Node.js 23
             "unicorn/prefer-queue-microtask": [
