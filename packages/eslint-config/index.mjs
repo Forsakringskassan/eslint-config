@@ -45,9 +45,43 @@ function merge(result, it) {
  * @returns {RulesRecord}
  */
 function filterRules(rules, predicate) {
-    return Object.fromEntries(
-        Object.entries(rules).filter(([key]) => predicate(key)),
-    );
+    const entries = Object.entries(rules).filter(([key]) => predicate(key));
+    return Object.fromEntries(entries);
+}
+
+/**
+ * Returns true if rule is configured with error severity.
+ *
+ * @returns {boolean}
+ */
+function isErrorSeverity(config) {
+    if (Array.isArray(config)) {
+        config = config[0];
+    }
+    return config === "error";
+}
+
+/**
+ * Downgrades errors to warnings.
+ *
+ * | input   | output |
+ * |---------|--------|
+ * | "error" | "warn" |
+ * | "warn"  | "warn" |
+ * | "off"   | "off"  |
+ *
+ * @param {RulesRecord} rules
+ * @param {string[]} list
+ * @returns {RulesRecord}
+ */
+function downgradeToWarning(rules, list) {
+    const entries = Object.entries(rules).map(([key, config]) => {
+        if (list.includes(key) && isErrorSeverity(config)) {
+            config = "warn";
+        }
+        return [key, config];
+    });
+    return Object.fromEntries(entries);
 }
 
 export default [
@@ -208,6 +242,70 @@ export default [
 
             /* enable eslint-plugin-unicorn */
             ...eslintPluginUnicorn.configs.recommended.rules,
+            ...downgradeToWarning(
+                eslintPluginUnicorn.configs.recommended.rules,
+                [
+                    "unicorn/explicit-timer-delay",
+                    "unicorn/logical-assignment-operators",
+                    "unicorn/max-nested-calls",
+                    "unicorn/no-await-expression-member",
+                    "unicorn/no-break-in-nested-loop",
+                    "unicorn/no-computed-property-existence-check",
+                    "unicorn/no-confusing-array-splice",
+                    "unicorn/no-declarations-before-early-exit",
+                    "unicorn/no-duplicate-if-branches",
+                    "unicorn/no-duplicate-loops",
+                    "unicorn/no-duplicate-loops",
+                    "unicorn/no-incorrect-query-selector",
+                    "unicorn/no-negated-array-predicate",
+                    "unicorn/no-unnecessary-boolean-comparison",
+                    "unicorn/no-unnecessary-splice",
+                    "unicorn/no-unreadable-for-of-expression",
+                    "unicorn/no-unsafe-string-replacement",
+                    "unicorn/no-useless-boolean-cast",
+                    "unicorn/no-useless-coercion",
+                    "unicorn/no-useless-else",
+                    "unicorn/no-useless-logical-operand",
+                    "unicorn/no-useless-recursion",
+                    "unicorn/no-useless-spread",
+                    "unicorn/no-useless-template-literals",
+                    "unicorn/numeric-separators-style",
+                    "unicorn/operator-assignment",
+                    "unicorn/prefer-array-from-map",
+                    "unicorn/prefer-array-some",
+                    "unicorn/prefer-at",
+                    "unicorn/prefer-await",
+                    "unicorn/prefer-direct-iteration",
+                    "unicorn/prefer-dom-node-append",
+                    "unicorn/prefer-dom-node-remove",
+                    "unicorn/prefer-dom-node-replace-children",
+                    "unicorn/prefer-dom-node-text-content",
+                    "unicorn/prefer-early-return",
+                    "unicorn/prefer-else-if",
+                    "unicorn/prefer-https",
+                    "unicorn/prefer-includes-over-repeated-comparisons",
+                    "unicorn/prefer-iterator-helpers",
+                    "unicorn/prefer-iterator-to-array-at-end",
+                    "unicorn/prefer-iterator-to-array",
+                    "unicorn/prefer-logical-operator-over-ternary",
+                    "unicorn/prefer-math-constants",
+                    "unicorn/prefer-modern-dom-apis",
+                    "unicorn/prefer-number-is-safe-integer",
+                    "unicorn/prefer-object-define-properties",
+                    "unicorn/prefer-object-iterable-methods",
+                    "unicorn/prefer-queue-microtask",
+                    "unicorn/prefer-set-has",
+                    "unicorn/prefer-split-limit",
+                    "unicorn/prefer-string-repeat",
+                    "unicorn/prefer-string-replace-all",
+                    "unicorn/prefer-toggle-attribute",
+                    "unicorn/prefer-type-literal-last",
+                    "unicorn/prefer-unicode-code-point-escapes",
+                    "unicorn/require-array-join-separator",
+                    "unicorn/require-array-sort-compare",
+                    "unicorn/require-css-escape",
+                ],
+            ),
             "unicorn/catch-error-name": "off",
             "unicorn/consistent-assert": "off",
             "unicorn/consistent-boolean-name": "off",
@@ -275,7 +373,7 @@ export default [
             "unicorn/prefer-optional-catch-binding": "off", // covered by sonarjs/no-ignored-exceptions
             "unicorn/prefer-promise-try": "off", // baseline but requires Node.js 23
             "unicorn/prefer-queue-microtask": [
-                "error",
+                "warn",
                 { checkSetImmediate: true, checkSetTimeout: true },
             ],
             "unicorn/prefer-scoped-selector": "off",
