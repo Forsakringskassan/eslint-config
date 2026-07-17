@@ -285,6 +285,7 @@ export default [
             "unicorn/prefer-ternary": "off",
             "unicorn/prefer-uint8array-base64": "off",
             "unicorn/relative-url-style": "warn",
+            "unicorn/require-css-escape": "off", // jsdom does not implement `CSS.escape()`
             "unicorn/require-module-attributes": "off",
             "unicorn/require-module-specifiers": "off",
             "unicorn/switch-case-braces": "off",
