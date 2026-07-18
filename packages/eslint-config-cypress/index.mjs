@@ -71,6 +71,9 @@ const defaultConfig = defineConfig({
 
         /* flags cypress "promises" which cannot be awaited */
         "unicorn/prefer-await": "off",
+
+        /* covered by cypress/no-unnecessary-waiting */
+        "sonarjs/no-fixed-wait-in-tests": "off",
     },
 });
 

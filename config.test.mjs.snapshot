@@ -637,7 +637,7 @@ exports[`Extension .cy.ts 1`] = `
     "sonarjs/no-exclusive-tests": "off",
     "sonarjs/no-extra-arguments": "error",
     "sonarjs/no-fallthrough": "error",
-    "sonarjs/no-fixed-wait-in-tests": "error",
+    "sonarjs/no-fixed-wait-in-tests": "off",
     "sonarjs/no-floating-point-equality": "error",
     "sonarjs/no-for-in-iterable": "off",
     "sonarjs/no-forced-browser-interaction": "error",
@@ -9827,6 +9827,7 @@ exports[`Package @forsakringskassan/eslint-config-cypress 1`] = `
     "mocha/no-exclusive-tests": "warn",
     "mocha/no-identical-title": "error",
     "mocha/no-pending-tests": "warn",
+    "sonarjs/no-fixed-wait-in-tests": "off",
     "unicorn/filename-case": [
       "error",
       {
