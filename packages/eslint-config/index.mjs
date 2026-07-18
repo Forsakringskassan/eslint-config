@@ -432,7 +432,7 @@ export default [
             ],
             "import-x/no-useless-path-segments": "error",
             "import-x/order": [
-                "error",
+                "warn",
                 {
                     pathGroups: [
                         {

@@ -271,7 +271,7 @@ exports[`Extension .cy.ts 1`] = `
     "import-x/no-unresolved": "off",
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -1352,7 +1352,7 @@ exports[`Extension .js 1`] = `
     ],
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -2573,7 +2573,7 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "import-x/no-unresolved": "off",
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -3861,7 +3861,7 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "import-x/no-unresolved": "off",
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -4991,7 +4991,7 @@ exports[`Extension .svelte 1`] = `
     ],
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -6268,7 +6268,7 @@ exports[`Extension .ts 1`] = `
     "import-x/no-unresolved": "off",
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -7432,7 +7432,7 @@ exports[`Extension .vue 1`] = `
     ],
     "import-x/no-useless-path-segments": "error",
     "import-x/order": [
-      "error",
+      "warn",
       {
         "pathGroups": [
           {
@@ -9217,7 +9217,7 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       ],
       "import-x/no-useless-path-segments": "error",
       "import-x/order": [
-        "error",
+        "warn",
         {
           "pathGroups": [
             {
