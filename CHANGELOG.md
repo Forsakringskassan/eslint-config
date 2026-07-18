@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.3.15 (2026-07-18)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** few more unicorn rules lowered to warning f1e6488
+
 ## 15.3.14 (2026-07-18)
 
 ### Bug Fixes
