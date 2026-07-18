@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 15.3.17 (2026-07-18)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cypress:** disable `sonarjs/no-fixed-wait-in-tests` for cypress fea910a
+* **@forsakringskassan/eslint-config:** lower `import-x/order` to warning 1289797
+
 ## 15.3.16 (2026-07-18)
 
 ### Bug Fixes
