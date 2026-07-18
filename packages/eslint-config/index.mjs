@@ -209,6 +209,7 @@ export default [
             "sonarjs/no-small-switch": "off", // prefer to use small switches when the intention is to all more cases later
             "sonarjs/no-trivial-assertions": "off", // produces a bit too much noise
             "sonarjs/no-unused-vars": "off", // covered by @typescript-eslint/no-unused-vars
+            "sonarjs/parameterized-tests": "off", // prefer explicit test titles over non-descript parameterized
             "sonarjs/prefer-nullish-coalescing": "off", // requires typescript and strictNullChecks, which is sane, but we also use @typescript-eslint/prefer-nullish-coalescing so this becomes redundant
             "sonarjs/prefer-regexp-exec": "off", // covered by @typescript-eslint/prefer-regexp-exec
             "sonarjs/redundant-type-aliases": "off", // "redundant" type aliases helps with self-documenting code
