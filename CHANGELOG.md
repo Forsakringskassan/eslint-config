@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.4.1 (2026-07-20)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable `unicorn/prefer-simple-condition-first` (refs SFKUI-6500) 99070d2
+
 ## 15.4.0 (2026-07-20)
 
 ### Features
