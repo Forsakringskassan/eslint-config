@@ -367,6 +367,7 @@ export default [
             "unicorn/no-useless-undefined": "off", // opinionated, I prefer to explicitly pass undefined
             "unicorn/prefer-bigint-literals": "off",
             "unicorn/prefer-boolean-return": "off", // creates inconsistent functions when using multiple conditions
+            "unicorn/prefer-dom-node-html-methods": "off", // not baseline as of 2026-07-20 (but should be enabled later)
             "unicorn/prefer-global-this": "off",
             "unicorn/prefer-hoisting-branch-code": "off", // lots of false positives with TypeScript code
             "unicorn/prefer-import-meta-properties": "error",
