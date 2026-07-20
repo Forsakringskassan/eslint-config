@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 15.4.0 (2026-07-20)
+
+### Features
+
+* **deps:** update dependency eslint-plugin-unicorn to v72 86519f5
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8.64.0 331e04b
+
 ## 15.3.17 (2026-07-18)
 
 ### Bug Fixes
