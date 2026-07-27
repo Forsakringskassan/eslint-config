@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.4.8 (2026-07-27)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to v29.16.0 20839a0
+
 ## 15.4.7 (2026-07-27)
 
 ### Bug Fixes
