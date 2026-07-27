@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.4.7 (2026-07-27)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to v1.6.24 7d49f1f
+
 ## 15.4.6 (2026-07-25)
 
 ### Bug Fixes
