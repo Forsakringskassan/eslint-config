@@ -33,7 +33,7 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "4.2.4",
+    "@forsakringskassan/commitlint-config": "4.2.5",
     "@forsakringskassan/prettier-config-svelte": "3.7.8",
     "@tsconfig/node22": "22.0.5",
     "@tsconfig/strictest": "2.0.8",
