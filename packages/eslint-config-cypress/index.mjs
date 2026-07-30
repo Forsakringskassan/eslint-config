@@ -53,7 +53,10 @@ const defaultConfig = defineConfig({
 
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/triple-slash-reference": "off",
+        "mocha/consistent-spacing-between-blocks": "warn",
+        "mocha/no-conditional-tests": "error",
         "mocha/no-exclusive-tests": "warn",
+        "mocha/no-exports": "error",
         "mocha/no-identical-title": "error",
         "mocha/no-pending-tests": "warn",
 
