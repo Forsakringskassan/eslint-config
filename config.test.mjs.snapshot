@@ -319,7 +319,10 @@ exports[`Extension .cy.ts 1`] = `
     "max-len": 0,
     "max-params": "off",
     "max-statements-per-line": "off",
+    "mocha/consistent-spacing-between-blocks": "warn",
+    "mocha/no-conditional-tests": "error",
     "mocha/no-exclusive-tests": "warn",
+    "mocha/no-exports": "error",
     "mocha/no-identical-title": "error",
     "mocha/no-pending-tests": "warn",
     "multiline-ternary": "off",
@@ -1233,7 +1236,7 @@ exports[`Extension .cy.ts 1`] = `
     "@typescript-eslint": "[Plugin @typescript-eslint/eslint-plugin]",
     "tsdoc": "[Plugin tsdoc]",
     "cypress": "[Plugin eslint-plugin-cypress]",
-    "mocha": "[Plugin mocha]"
+    "mocha": "[Plugin eslint-plugin-mocha]"
   },
   "settings": {
     "import-x/resolver-next": [
@@ -9887,7 +9890,7 @@ exports[`Package @forsakringskassan/eslint-config-cypress 1`] = `
   },
   "plugins": {
     "cypress": "[Plugin eslint-plugin-cypress]",
-    "mocha": "[Plugin mocha]"
+    "mocha": "[Plugin eslint-plugin-mocha]"
   },
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
@@ -9896,7 +9899,10 @@ exports[`Package @forsakringskassan/eslint-config-cypress 1`] = `
     "cypress/no-async-tests": "error",
     "cypress/no-unnecessary-waiting": "error",
     "cypress/unsafe-to-chain-command": "error",
+    "mocha/consistent-spacing-between-blocks": "warn",
+    "mocha/no-conditional-tests": "error",
     "mocha/no-exclusive-tests": "warn",
+    "mocha/no-exports": "error",
     "mocha/no-identical-title": "error",
     "mocha/no-pending-tests": "warn",
     "sonarjs/no-fixed-wait-in-tests": "off",
