@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.5.0 (2026-07-30)
+
+### Features
+
+* **deps:** update dependency eslint-plugin-mocha to v12 d7bb85d
+
 ## 15.4.10 (2026-07-29)
 
 ### Bug Fixes
