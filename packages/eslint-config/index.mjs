@@ -392,6 +392,7 @@ export default [
             "unicorn/require-css-escape": "off", // jsdom does not implement `CSS.escape()`
             "unicorn/require-module-attributes": "off",
             "unicorn/require-module-specifiers": "off",
+            "unicorn/single-line-block-comment-style": "off",
             "unicorn/switch-case-braces": "off",
             "unicorn/text-encoding-identifier-case": "error",
             ...filterRules(prettierConfig.rules, (rule) => {
