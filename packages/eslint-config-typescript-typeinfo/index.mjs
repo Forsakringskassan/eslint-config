@@ -43,6 +43,7 @@ const defaultConfig = defineConfig({
         "**/jest.config.{ts,mts}",
         "**/jest.setup.{ts,mts}",
         "**/vite.config.{ts,mts}",
+        "**/vitest.config.{ts,mts}",
     ],
 
     languageOptions: {
