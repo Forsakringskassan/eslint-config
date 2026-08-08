@@ -39,10 +39,10 @@ const defaultConfig = defineConfig({
     files: ["**/*.{ts,cts,mts}"],
     ignores: [
         "**/*.d.ts",
-        "cypress.config.ts",
-        "jest.config.{js,ts}",
-        "jest.setup.{js,ts}",
-        "vite.config.{ts,mts}",
+        "**/cypress.config.{ts,mts}",
+        "**/jest.config.{ts,mts}",
+        "**/jest.setup.{ts,mts}",
+        "**/vite.config.{ts,mts}",
     ],
 
     languageOptions: {
