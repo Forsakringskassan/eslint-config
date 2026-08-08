@@ -10286,6 +10286,7 @@ exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
     "**/*.{ts,cts,mts}"
   ],
   "ignores": [
+    "**/*.d.ts",
     "cypress.config.ts",
     "jest.config.{js,ts}",
     "jest.setup.{js,ts}",

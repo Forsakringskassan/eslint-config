@@ -38,6 +38,7 @@ const defaultConfig = defineConfig({
     name: "@forsakringskassan/eslint-config-typescript-typeinfo",
     files: ["**/*.{ts,cts,mts}"],
     ignores: [
+        "**/*.d.ts",
         "cypress.config.ts",
         "jest.config.{js,ts}",
         "jest.setup.{js,ts}",
