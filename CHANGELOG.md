@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 15.6.3 (2026-08-08)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** ignore typeinfo rules for `vitest.config.{ts,mts}` 1df718d
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** ignore typeinfo rules for `vitest.global.{ts,mts}` ee5d8e8
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** ignore typeinfo rules for `vitest.setup.{ts,mts}` 7afa2aa
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** ignore typeinfo rules for configuration files in subdirectories (e.g. monorepo) 2f94ad4
+* **@forsakringskassan/eslint-config-typescript-typeinfo:** ignore typeinfo rules for dts files 7300d73
+
 ## 15.6.2 (2026-08-08)
 
 ### Bug Fixes
