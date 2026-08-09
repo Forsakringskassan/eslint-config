@@ -493,9 +493,9 @@ export default [
     }),
 
     defineConfig({
-        /* mjs requires file extension */
+        /* mjs and mts requires file extension */
         name: "@forsakringskassan/eslint-config/esm",
-        files: ["**/*.mjs"],
+        files: ["**/*.mjs", "**/*.mts"],
         rules: {
             "import-x/extensions": [
                 "error",

@@ -9826,7 +9826,8 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
   {
     "name": "@forsakringskassan/eslint-config/esm",
     "files": [
-      "**/*.mjs"
+      "**/*.mjs",
+      "**/*.mts"
     ],
     "rules": {
       "import-x/extensions": [
