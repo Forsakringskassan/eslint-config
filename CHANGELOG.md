@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.6.4 (2026-08-09)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** require file extensions for mts files 0923f00
+
 ## 15.6.3 (2026-08-08)
 
 ### Bug Fixes
