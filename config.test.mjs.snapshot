@@ -9893,8 +9893,7 @@ exports[`Package @forsakringskassan/eslint-config-cli 1`] = `
   "name": "@forsakringskassan/eslint-config-cli",
   "files": [
     "*.{js,ts,cjs,mjs}",
-    "**/scripts/*.{js,ts,cjs,mjs}",
-    "{internal,packages}/*/*.{js,ts,cjs,mjs}"
+    "**/scripts/*.{js,ts,cjs,mjs}"
   ],
   "languageOptions": {
     "globals": [
@@ -10790,4 +10789,13 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
     "vue/valid-v-text": "error"
   }
 }
+`;
+
+exports[`workspace configuration > @forsakringskassan/eslint-config-cli should handle workspace configuration 1`] = `
+[
+  "*.{js,ts,cjs,mjs}",
+  "**/scripts/*.{js,ts,cjs,mjs}",
+  "docs/*.{js,ts,cjs,mjs}",
+  "packages/*/*.{js,ts,cjs,mjs}"
+]
 `;
