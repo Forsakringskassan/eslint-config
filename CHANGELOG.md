@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.8.0 (2026-08-10)
+
+### Features
+
+* **@forsakringskassan/eslint-config-cli:** cli config handles workspaces configuration 05611ab
+
 ## 15.7.0 (2026-08-09)
 
 ### Features
