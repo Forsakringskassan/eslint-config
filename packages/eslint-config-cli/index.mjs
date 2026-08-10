@@ -34,7 +34,10 @@ function merge(result, it) {
 
 const defaultConfig = defineConfig({
     name: "@forsakringskassan/eslint-config-cli",
-    files: ["*.{js,ts,cjs,mjs}", "**/scripts/*.{js,ts,cjs,mjs}"],
+    files: [
+        "*.{js,ts,cjs,mjs,cts,mts}",
+        "**/scripts/*.{js,ts,cjs,mjs,cts,mts}",
+    ],
     languageOptions: {
         globals: {
             ...globals.node,
