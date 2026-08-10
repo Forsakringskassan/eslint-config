@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.8.1 (2026-08-10)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-cli:** match mts files for cli configuration d19080e
+
 ## 15.8.0 (2026-08-10)
 
 ### Features
