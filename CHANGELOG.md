@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.8.5 (2026-08-15)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v17.10.0 866a8f7
+
 ## 15.8.4 (2026-08-14)
 
 ### Bug Fixes
