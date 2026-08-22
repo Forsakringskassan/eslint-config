@@ -44,7 +44,7 @@
     "eslint": "10.8.1",
     "globals": "17.11.0",
     "jest": "30.4.2",
-    "lerna": "10.0.0",
+    "lerna": "10.0.1",
     "minimatch": "10.2.6",
     "npm-pkg-lint": "5.2.3",
     "svelte": "5.56.9",
