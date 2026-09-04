@@ -43,7 +43,7 @@
     "cypress": "15.21.1",
     "eslint": "10.9.1",
     "globals": "17.11.0",
-    "jest": "30.5.0",
+    "jest": "30.5.1",
     "lerna": "10.0.1",
     "minimatch": "10.2.6",
     "npm-pkg-lint": "5.2.4",
