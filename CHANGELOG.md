@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.9.3 (2026-09-05)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v17.12.0 ed8324d
+
 ## 15.9.2 (2026-09-04)
 
 ### Bug Fixes
