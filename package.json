@@ -42,7 +42,7 @@
     "@typescript/native": "npm:typescript@7.0.2",
     "cypress": "16.0.0",
     "eslint": "10.9.1",
-    "globals": "17.11.0",
+    "globals": "17.12.0",
     "jest": "30.5.1",
     "lerna": "10.0.1",
     "minimatch": "10.2.6",
@@ -54,6 +54,7 @@
     "node": "^22.22.2 || ^24.15.0 || >= 26.0.0"
   },
   "allowScripts": {
+    "@parcel/watcher": false,
     "cypress": false,
     "fsevents": false,
     "nx": false,
