@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 
-const count = defineModel<number>();
+const count = defineModel<number>({ default: 0 });
 
 const { name } = defineProps<{
     name: string;
