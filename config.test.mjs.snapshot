@@ -103,6 +103,7 @@ exports[`Extension .cy.ts 1`] = `
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-generated-empty-object-type": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-invalid-void-type": [
@@ -2440,6 +2441,7 @@ exports[`Extension .spec.ts (jest) 1`] = `
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-generated-empty-object-type": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-invalid-void-type": [
@@ -3742,6 +3744,7 @@ exports[`Extension .spec.ts (vitest) 1`] = `
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-generated-empty-object-type": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-invalid-void-type": [
@@ -6177,6 +6180,7 @@ exports[`Extension .ts 1`] = `
     "@typescript-eslint/no-extraneous-class": "error",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-generated-empty-object-type": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-invalid-void-type": [
@@ -10332,6 +10336,7 @@ exports[`Package @forsakringskassan/eslint-config-typescript-typeinfo 1`] = `
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-generated-empty-object-type": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-meaningless-void-operator": "error",
