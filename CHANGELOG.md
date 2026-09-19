@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.9.11 (2026-09-19)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.3 ([#237](undefined/Forsakringskassan/eslint-config/issues/237)) 9342563
+
 ## 15.9.10 (2026-09-16)
 
 ### Bug Fixes
