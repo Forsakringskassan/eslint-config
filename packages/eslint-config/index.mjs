@@ -276,6 +276,7 @@ export default [
                     "unicorn/prefer-array-some",
                     "unicorn/prefer-at",
                     "unicorn/prefer-await",
+                    "unicorn/prefer-continue",
                     "unicorn/prefer-direct-iteration",
                     "unicorn/prefer-dom-node-append",
                     "unicorn/prefer-dom-node-remove",
