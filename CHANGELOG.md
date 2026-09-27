@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.5 (2026-09-27)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-vue to v10.11.1 421153f
+
 ## 15.11.4 (2026-09-27)
 
 ### Bug Fixes
