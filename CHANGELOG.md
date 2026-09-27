@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.4 (2026-09-27)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** lower `unicorn/prefer-continue` to a warning 8341f54
+
 ## 15.11.3 (2026-09-26)
 
 ### Bug Fixes
