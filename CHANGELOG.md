@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.6 (2026-10-01)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-sonarjs to v4.2.2 ([#241](undefined/Forsakringskassan/eslint-config/issues/241)) 4d5afcf
+
 ## 15.11.5 (2026-09-27)
 
 ### Bug Fixes
