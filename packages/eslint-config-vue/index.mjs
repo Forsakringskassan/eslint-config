@@ -74,6 +74,9 @@ const defaultConfig = defineConfig({
             return rule.startsWith("vue/");
         }),
 
+        /* filename is not required to be multi-word, however the export should be multi-word */
+        "vue/multi-word-component-names": "off",
+
         "@typescript-eslint/no-object-literal-type-assertion": ["off"],
 
         /* due to issues using template refs without setting explicit type */
@@ -91,16 +94,15 @@ const defaultConfig = defineConfig({
         /* documentation for vue components does not adhere with tsdoc syntax */
         "tsdoc/syntax": "off",
 
-        /* for Vue components we use PascalCase instead of kebab-case */
+        /* allow either kebab-case or PascalCase filename for vue sfc */
         "unicorn/filename-case": [
             "error",
             {
-                case: "pascalCase",
+                cases: {
+                    kebabCase: true,
+                    pascalCase: true,
+                },
                 checkDirectories: false,
-                ignore: [
-                    /* used by @forsakringskassan/vite-lib-config as default entrypoint */
-                    "^app.vue$",
-                ],
             },
         ],
 

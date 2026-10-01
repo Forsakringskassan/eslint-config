@@ -8319,11 +8319,11 @@ exports[`Extension .vue 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "pascalCase",
-        "checkDirectories": false,
-        "ignore": [
-          "^app.vue$"
-        ]
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        },
+        "checkDirectories": false
       }
     ],
     "unicorn/id-match": "off",
@@ -8720,7 +8720,7 @@ exports[`Extension .vue 1`] = `
     "vue/keyword-spacing": "off",
     "vue/max-attributes-per-line": "off",
     "vue/max-len": 0,
-    "vue/multi-word-component-names": "error",
+    "vue/multi-word-component-names": "off",
     "vue/multiline-html-element-content-newline": "off",
     "vue/multiline-ternary": "off",
     "vue/mustache-interpolation-spacing": "off",
@@ -10871,11 +10871,11 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
     "unicorn/filename-case": [
       "error",
       {
-        "case": "pascalCase",
-        "checkDirectories": false,
-        "ignore": [
-          "^app.vue$"
-        ]
+        "cases": {
+          "kebabCase": true,
+          "pascalCase": true
+        },
+        "checkDirectories": false
       }
     ],
     "unicorn/no-top-level-assignment-in-function": "off",
@@ -10939,7 +10939,7 @@ exports[`Package @forsakringskassan/eslint-config-vue 1`] = `
     "vue/keyword-spacing": "off",
     "vue/max-attributes-per-line": "off",
     "vue/max-len": 0,
-    "vue/multi-word-component-names": "error",
+    "vue/multi-word-component-names": "off",
     "vue/multiline-html-element-content-newline": "off",
     "vue/multiline-ternary": "off",
     "vue/mustache-interpolation-spacing": "off",
