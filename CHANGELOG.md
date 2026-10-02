@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.9 (2026-10-02)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue, @forsakringskassan/eslint-config:** allow pageobject, selectors files with pascal, kebab a2b95e0
+
 ## 15.11.8 (2026-10-02)
 
 ### Bug Fixes
