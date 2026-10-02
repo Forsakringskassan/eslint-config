@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.8 (2026-10-02)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config-vue:** allow vue sfc pascal, kebab, non-multiword 56a6fde
+
 ## 15.11.7 (2026-10-01)
 
 ### Bug Fixes
