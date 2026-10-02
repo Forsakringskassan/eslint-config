@@ -508,14 +508,17 @@ export default [
     }),
 
     defineConfig({
-        /* pageobjects and selectors are related to components and should always be PascalCase */
+        /* pageobjects and selectors are related to components and should use kebab-case or PascalCase */
         name: "@forsakringskassan/eslint-config/pageobjects",
         files: ["**/*.pageobject.ts", "**/*.selectors.ts"],
         rules: {
             "unicorn/filename-case": [
                 "error",
                 {
-                    case: "pascalCase",
+                    cases: {
+                        kebabCase: true,
+                        pascalCase: true,
+                    },
                     checkDirectories: false,
                 },
             ],
