@@ -10137,7 +10137,10 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
       "unicorn/filename-case": [
         "error",
         {
-          "case": "pascalCase",
+          "cases": {
+            "kebabCase": true,
+            "pascalCase": true
+          },
           "checkDirectories": false
         }
       ]
