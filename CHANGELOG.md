@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.10 (2026-10-03)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-tsdoc to v0.5.4 a5bcaae
+
 ## 15.11.9 (2026-10-02)
 
 ### Bug Fixes
