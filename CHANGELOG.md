@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.11 (2026-10-04)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to v17.13.0 08b83be
+
 ## 15.11.10 (2026-10-03)
 
 ### Bug Fixes
