@@ -46,7 +46,7 @@
     "jest": "30.5.2",
     "lerna": "10.0.1",
     "minimatch": "10.2.6",
-    "npm-pkg-lint": "5.3.1",
+    "npm-pkg-lint": "5.4.0",
     "svelte": "5.57.1",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   },
