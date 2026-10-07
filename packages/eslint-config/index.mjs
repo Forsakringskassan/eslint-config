@@ -382,6 +382,7 @@ export default [
                 "warn",
                 { checkSetImmediate: true, checkSetTimeout: true },
             ],
+            "unicorn/prefer-set-methods": "off", // baseline 2024, for now we prefer to wait before requiring these methods
             "unicorn/prefer-scoped-selector": "off",
             "unicorn/prefer-simple-condition-first": "off", // too much noise
             "unicorn/prefer-single-call": "off",
