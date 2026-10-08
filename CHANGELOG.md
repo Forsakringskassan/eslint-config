@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.11.13 (2026-10-08)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** disable `unicorn/prefer-set-methods` fcd91dd
+
 ## 15.11.12 (2026-10-06)
 
 ### Bug Fixes
