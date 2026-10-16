@@ -84,6 +84,7 @@ function downgradeToWarning(rules, list) {
     return Object.fromEntries(entries);
 }
 
+/* eslint-disable-next-line unicorn/no-top-level-side-effects -- false positive */
 export default [
     defineConfig({
         ...js.configs.recommended,
@@ -353,6 +354,7 @@ export default [
             "unicorn/no-array-callback-reference": "off", // opinionated, prefer to allow passing function references to array methods (and for most part TypeScript will handle this)
             "unicorn/no-array-reduce": "off", // allow usage of reduce()
             "unicorn/no-empty-file": "off",
+            "unicorn/no-asterisk-prefix-in-documentation-comments": "off", // prefer to have asterisk
             "unicorn/no-immediate-mutation": "off",
             "unicorn/no-invalid-argument-count": "off", // does not respect optional parameters (e.g. jsdoc [param])
             "unicorn/no-invalid-fetch-options": "off", // let TypeScript and tests handle this
@@ -557,6 +559,16 @@ export default [
             "import-x/order": "off",
         },
     },
+
+    /* This rule is overly strict and gives more false positives than beneficial
+     * errors (including `defineConfig()` in `eslint.config.mjs`) */
+    defineConfig({
+        name: "@forsakringskassan/eslint-config/config-files",
+        files: ["**/*.config.{js,cjs,mjs,ts,cts,mts}"],
+        rules: {
+            "unicorn/no-top-level-side-effects": "off",
+        },
+    }),
 ];
 
 const defaultAppConfig = defineConfig({
