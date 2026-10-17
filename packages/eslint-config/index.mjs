@@ -364,6 +364,17 @@ export default [
             "unicorn/no-null": "off", // prefer using null over undefined
             "unicorn/no-this-outside-of-class": "off", // disagree somewhat with the rule, flags stateful objects
             "unicorn/no-top-level-assignment-in-function": "off", // would be useful, right now this gives to many errors, maybe enable later
+            "unicorn/no-top-level-side-effects": [
+                "error",
+                {
+                    allow: {
+                        "@forsakringskassan/apimock-express/helpers": [
+                            "defineMock",
+                        ],
+                        "@forsakringskassan/eslint-config": ["defineConfig"],
+                    },
+                },
+            ],
             "unicorn/no-unnecessary-polyfills": "off",
             "unicorn/no-unreadable-array-destructuring": "off",
             "unicorn/no-useless-switch-case": "off",
