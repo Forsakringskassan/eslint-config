@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.12.3 (2026-10-17)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** declare `defineMock()` from `@forsakringskassan/apimock-express` as side-effect free 6163b52
+
 ## 15.12.2 (2026-10-17)
 
 ### Bug Fixes
