@@ -372,6 +372,12 @@ export default [
                             "defineMock",
                         ],
                         "@forsakringskassan/eslint-config": ["defineConfig"],
+                        "html-validate": [
+                            "defineConfig",
+                            "defineFlatConfig",
+                            "defineMetadata",
+                            "definePlugin",
+                        ],
                     },
                 },
             ],

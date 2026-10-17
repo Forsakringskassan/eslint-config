@@ -1003,6 +1003,12 @@ exports[`Extension .cy.ts 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -2158,6 +2164,12 @@ exports[`Extension .js 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -3520,6 +3532,12 @@ exports[`Extension .spec.ts (jest) 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -4834,6 +4852,12 @@ exports[`Extension .spec.ts (vitest) 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -6079,6 +6103,12 @@ exports[`Extension .svelte 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -7405,6 +7435,12 @@ exports[`Extension .ts 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -8643,6 +8679,12 @@ exports[`Extension .vue 1`] = `
           ],
           "@forsakringskassan/eslint-config": [
             "defineConfig"
+          ],
+          "html-validate": [
+            "defineConfig",
+            "defineFlatConfig",
+            "defineMetadata",
+            "definePlugin"
           ]
         }
       }
@@ -10102,6 +10144,12 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
             ],
             "@forsakringskassan/eslint-config": [
               "defineConfig"
+            ],
+            "html-validate": [
+              "defineConfig",
+              "defineFlatConfig",
+              "defineMetadata",
+              "definePlugin"
             ]
           }
         }
