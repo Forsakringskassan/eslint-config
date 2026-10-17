@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.12.1 (2026-10-17)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-prettier to v5.5.7 ed1cf8e
+
 ## 15.12.0 (2026-10-16)
 
 ### Features
