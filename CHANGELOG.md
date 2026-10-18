@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.12.4 (2026-10-18)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** declare `define*` helpers from `html-validate` as side-effect free 9e83844
+
 ## 15.12.3 (2026-10-17)
 
 ### Bug Fixes
