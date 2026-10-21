@@ -25,6 +25,13 @@
     "test": "npm run eslint && npm run prettier:check",
     "posttest": "node --test config.test.mjs"
   },
+  "allowScripts": {
+    "@parcel/watcher": false,
+    "cypress": false,
+    "fsevents": false,
+    "nx": false,
+    "unrs-resolver": true
+  },
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
@@ -34,7 +41,7 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "4.2.8",
-    "@forsakringskassan/prettier-config-svelte": "3.7.12",
+    "@forsakringskassan/prettier-config-svelte": "3.7.13",
     "@tsconfig/node22": "22.0.6",
     "@tsconfig/strictest": "2.0.8",
     "@types/jest": "30.0.0",
@@ -52,12 +59,5 @@
   },
   "engines": {
     "node": "^22.22.2 || ^24.15.0 || >= 26.0.0"
-  },
-  "allowScripts": {
-    "@parcel/watcher": false,
-    "cypress": false,
-    "fsevents": false,
-    "nx": false,
-    "unrs-resolver": true
   }
 }
