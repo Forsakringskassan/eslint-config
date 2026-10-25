@@ -21,7 +21,7 @@
     "index.d.mts"
   ],
   "dependencies": {
-    "@vitest/eslint-plugin": "1.6.27"
+    "@vitest/eslint-plugin": "1.6.28"
   },
   "devDependencies": {
     "vitest": "5.0.5"
