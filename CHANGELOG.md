@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.12.8 (2026-10-27)
+
+### Bug Fixes
+
+* **deps:** update dependency svelte-eslint-parser to v1.10.0 fef6bab
+
 ## 15.12.7 (2026-10-26)
 
 ### Bug Fixes
