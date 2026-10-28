@@ -84,7 +84,6 @@ function downgradeToWarning(rules, list) {
     return Object.fromEntries(entries);
 }
 
-/* eslint-disable-next-line unicorn/no-top-level-side-effects -- false positive */
 export default [
     defineConfig({
         ...js.configs.recommended,
