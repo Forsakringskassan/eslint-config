@@ -86,7 +86,6 @@ export async function asyncFunction() {
     await Promise.resolve();
 }
 
-/* eslint-disable-next-line unicorn/no-top-level-side-effects -- example only */
 await asyncFunction();
 
 export function errorHandling() {
