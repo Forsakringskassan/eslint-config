@@ -1,6 +1,6 @@
+import path from "node:path";
 import test, { describe } from "node:test";
 import globals from "globals";
-import { minimatch } from "minimatch";
 import defaultConfig from "./packages/eslint-config/index.mjs";
 import cliConfig from "./packages/eslint-config-cli/index.mjs";
 import cypressConfig from "./packages/eslint-config-cypress/index.mjs";
@@ -142,7 +142,8 @@ function matchConfig(filePath) {
     return config.filter((it) => {
         const { files = [] } = it;
         return (
-            files.length === 0 || files.some((jt) => minimatch(filePath, jt))
+            files.length === 0 ||
+            files.some((jt) => path.matchesGlob(filePath, jt))
         );
     });
 }
