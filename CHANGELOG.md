@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.13.4 (2026-11-03)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint to v10.14.0 ba6cecb
+
 ## 15.13.3 (2026-11-01)
 
 ### Bug Fixes
