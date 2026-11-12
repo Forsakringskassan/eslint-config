@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.13.12 (2026-11-12)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-import-x to v4.18.1 9aa7c77
+
 ## 15.13.11 (2026-11-10)
 
 ### Bug Fixes
