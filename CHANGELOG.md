@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.13.15 (2026-11-13)
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8.72.2 b2db959
+
 ## 15.13.14 (2026-11-13)
 
 ### Bug Fixes
