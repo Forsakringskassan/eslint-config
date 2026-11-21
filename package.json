@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@forsakringskassan/commitlint-config": "4.2.8",
-    "@forsakringskassan/prettier-config-svelte": "3.7.15",
+    "@forsakringskassan/prettier-config-svelte": "3.7.16",
     "@tsconfig/node22": "22.0.7",
     "@tsconfig/strictest": "2.0.9",
     "@types/jest": "30.0.0",
