@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.13.20 (2026-11-25)
+
+### Bug Fixes
+
+* **@forsakringskassan/eslint-config:** ignore packages in css import extension 93dfa8a
+
 ## 15.13.19 (2026-11-23)
 
 ### Bug Fixes
