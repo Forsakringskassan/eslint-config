@@ -433,8 +433,8 @@ export default [
                 "error",
                 "never",
                 {
-                    css: "always",
-                    json: "always",
+                    ignorePackages: true,
+                    pattern: { css: "always", json: "always" },
                 },
             ],
             "import-x/newline-after-import": "error",

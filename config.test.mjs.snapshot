@@ -1417,8 +1417,11 @@ exports[`Extension .js 1`] = `
       "error",
       "never",
       {
-        "css": "always",
-        "json": "always"
+        "ignorePackages": true,
+        "pattern": {
+          "css": "always",
+          "json": "always"
+        }
       }
     ],
     "import-x/named": 2,
@@ -5318,8 +5321,11 @@ exports[`Extension .svelte 1`] = `
       "error",
       "never",
       {
-        "css": "always",
-        "json": "always"
+        "ignorePackages": true,
+        "pattern": {
+          "css": "always",
+          "json": "always"
+        }
       }
     ],
     "import-x/named": 2,
@@ -7933,8 +7939,11 @@ exports[`Extension .vue 1`] = `
       "error",
       "never",
       {
-        "css": "always",
-        "json": "always"
+        "ignorePackages": true,
+        "pattern": {
+          "css": "always",
+          "json": "always"
+        }
       }
     ],
     "import-x/named": 2,
@@ -9822,8 +9831,11 @@ exports[`Package @forsakringskassan/eslint-config 1`] = `
         "error",
         "never",
         {
-          "css": "always",
-          "json": "always"
+          "ignorePackages": true,
+          "pattern": {
+            "css": "always",
+            "json": "always"
+          }
         }
       ],
       "import-x/newline-after-import": "error",
