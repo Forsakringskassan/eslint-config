@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.13.22 (2026-11-26)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-cypress to v7.2.0 ac82bcb
+
 ## 15.13.21 (2026-11-26)
 
 ### Bug Fixes
