@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 15.14.0 (2026-11-27)
+
+### Features
+
+* **deps:** update dependency eslint-plugin-unicorn to v80 7f41023
+
 ## 15.13.23 (2026-11-27)
 
 ### Bug Fixes
